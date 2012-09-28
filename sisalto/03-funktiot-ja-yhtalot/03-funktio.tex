@@ -3,6 +3,22 @@ Matematiikassa tutkitaan paljon suureiden välisiä riippuvuuksia. Tällaiset ri
 
 [Esimerkki, kuva arvonlisäverofunktiosta, missä \[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\},\]$f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
 
-\laatikko{Funktio $f$ joukosta $A$ joukkoon $B$ on sääntö, joka liittää $A$:n jokaiseen alkioon täsmälleen yhden $B$:n alkion. $A$ on tällöin $f$:n määrittelyjoukko ja $B$ sen maalijoukko. Funktion arvojoukko on kaikkien sen saamien arvojen joukko.}
+\laatikko{Funktio $f$ joukosta $A$ joukkoon $B$ on sääntö, joka liittää $A$:n jokaiseen alkioon $x$ täsmälleen yhden $B$:n alkion, jota merkitään $f(x)$. $A$:ta kutsutaan funktion $f$ määrittelyjoukoksi ja $B$:tä funktion $f$ maalijoukoksi.}
 
-Funktioita kutsutaan myös kuvauksiksi. Monesti funktion määrittely- ja maalijoukot jätetään merkitsemättä. Tällöin 
+Käytäntöjä:
+\begin{itemize}
+\item $f(x) = y$ lausutaan: "Funktio saa arvon y pisteessä x."
+\item Funktioita voidaan kutsua myös kuvauksiksi.
+\item Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne ovat selviä asiayhteydestä. Tällä kurssilla maalijoukko on yleensä reaaliluvut.
+\end{itemize}
+
+Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arvokseen jossakin määrittelyjoukon pisteessä.
+
+Funktio määritellään usein kaavan avulla. Voimme esimerkiksi määritellä funktion $f$ reaaliluvuilta reaaliluvuille kaavalla
+\[f(x) = x^2 + 1,\]
+eli $f$ liittää jokaiseen reaalilukuun $x$ luvun $x^2+1$. Tästä funktiosta huomaamme, että arvojoukko ei ole aina sama kuin maalijoukko. Esimerkiksi luku $0$ kuuluu funktion $f$ maalijoukkoon, mutta ei funktion $f$ arvojoukkoon, koska $x^2+1\geq 1$ neliön epänegatiivisuuden perusteella. [kuva]
+
+\esimerkki{Määritellään funktio $f$ kaavalla [kuva]
+\[f(x) = \frac{1}{x-1}.\]
+Funktiolle ei ole erikseen annettu määrittelyjoukkoa, joten se täytyy päätellä asiayhteydestä. Huomataan, että sääntö ei määrittele funktion $f$ arvoa kun $x = 1$, mutta kylläkin kaikilla $x\in\mathbb{R}\setminus\{1\}$ [vai?]. Näin ollen luonnollinen valinta määrittelyjoukoksi on $\mathbb{R}\setminus\{1\}$.
+}
