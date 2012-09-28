@@ -8,8 +8,8 @@ Esimerkki: Meillä on orsivaaka, joka on tasapainossa. (kuva!) Toisessa vaakakup
 Määritelmä: Yhtälöksi kutsutaan kahden lausekkeen merkittyä yhtäsuuruutta. Siis mielivaltaisille lausekkeille A ja B merkitään A=B. (Esim. A=3x+5 ja B=7x+7). Yhtälö on tosi, jos sen molemmat puolet todella ovat yhtäsuuret. Jos yhtälö ei ole tosi, se on epätosi. Tosi ja epätosi ovat totuusarvoja.
 
 Yhtälöitä voidaan muokata siten, että niiden totuusarvo ei muutu. Tällaisia sallittuja muunnoksia ovat:
-(A) Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla luvulla $m$. Muutos tehdään aina molemmille puolille. Tällöin saadaan yhtälö $mA = mB$.
-(B) Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta vähentää luku $n$. Tällöin saadaan yhtälö $A+n = B+n$.
+(A) Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla luvulla $a$. Muutos tehdään aina molemmille puolille. Tällöin saadaan yhtälö $aA = aB$.
+(B) Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta vähentää luku $b$. Tällöin saadaan yhtälö $A+b = B+b$.
 
 Muuttujaksi kutsutaan symbolia, jonka arvoa ei ole kiinnitetty. Muuttujia merkitään usein kirjaimilla $x$, $y$ ja $z$. Yhtälöissä muuttujaa voidaan käyttää kuvaamaan tuntematonta määrää, jolloin yhtälöä muokkaamalla ("ratkaisemalla yhtälö") saadaan selville tuntematon.
 
@@ -20,40 +20,65 @@ Yhtälöitä on oleellisesti kolmenlaisia: \\
 Tämän kurssin ja ylipäätään matematiikan kannalta selvästi tärkein yhtälötyyppi on (2). Siirrymme nyt tarkastelemaan tärkeää erikoistapausta yhtälöistä, ensimmäisen asteen yhtälöitä.
 
 \chapter{Ensimmäisen asteen yhtälö}
-\laatikko{
-\textbf{Määritelmä.} Ensimmäisen asteen yhtälö on yhtälö, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.
-}
+Ensimmäisen asteen yhtälö on yhtälö, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.
 
-\laatikko{
-\textbf{Lause.} Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä.
+\begin{theorem}
+Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä.
+\end{theorem}
 
-\textbf{Todistus.} Muokataan yhtälön esitystä:
+\begin{proof}
 \begin{align*}
-ax+b &= cx+d & &| \, \text{Vähennetään molemmilta puolilta $cx+d$.} \\
-ax+b - (cx+d) &= 0 & &| \, \text{Sievennetään.} \\
-ax-cx+b-d &= 0 \\
-(a-c)x+(b-d) &= 0 & &| \, \text{Ensimmäisen asteen yhtälö, sillä $(a-c) \neq 0$.} \, \square
+ax+b &= cx+d & &| \, \textbf{Vähennetään molemmilta puolilta $cx+d$.} \\
+ax+b - (cx+d) &= 0 & &|
 \end{align*}
-}
+\end{proof}
 
-\laatikko{
-\textbf{Ratkaisutapa.} Yleinen lähemistymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun on: \\
+\begin{theorem}
+Yleinen lähemistymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun on: \\
 (1) Vähennä molemmilta puolilta $cx$. Saat yhtälön $(a-c)x + b = d$. \\
 (2) Vähennä molemmilta puolita $b$. Saat yhtälön $(a-c)x = d-b$. \\
-(3) Jaa $(a-c)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
-}
+(3) Jaa $(A-C)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
+\end{theorem}
 
-\laatikko{
-\textbf{Esimerkki.} Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+Esimerkki. Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
 \begin{align*}
 7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta 4x.} \\
 3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
 3x &= 3 & &| \, \text{Jaetaan molemmat puolet kolmella eli kerrotaan $\frac{1}{3}$:lla.} \\
-x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x=1$ on siis yhtälön ratkaisu.}
+x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x=1$ on siis yhtälön ratkaisu.} \\
 \end{align*}
-}
+
+\chapter{Yhtälöpari}
+
 
 \chapter{Yleinen potenssi ja potenssiyhtälö}
+%pitää esitellä mitä on mega, milli, sentti jne.
+
+Esitä luku ilman kymmenpotenssia.
+a) $3,2 * 10^4$
+b) $-7,03 * 10^{-5}$
+c) $10,005 * 10^{-2}$
+Vastaus
+a) $32000$
+b) $-0,0000703$
+c) $0,10005$
+
+Esitä luku ilman etuliitettä.
+a) $0,5 dl$
+b) $233 mm$
+c) $33 cm$
+d) $16 kg$
+e) $2 MJ$
+f) %megatavu, mibitavu jne.
+g) 
+Vastaus:
+a) $0,05 l$
+b) $0,233 m$
+c) $0,33 m$
+d) $16 000 g$
+e) $2 000 000 J$
+f) $ $
+g) $ $
 \chapter{Kertaustiivistelmä}
 
 \part{Funktiot}
