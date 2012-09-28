@@ -60,7 +60,7 @@
 
 % Text fonts 
 % TODO: Poistettu jotta kääntyisi kaikilla.
-\usepackage{dejavu}
+%\usepackage{dejavu}
 
 \renewcommand{\familydefault}{\sfdefault}
 \fontfamily{\familydefault}
@@ -195,6 +195,12 @@
 \usepackage{mdframed}
 \newcommand{\laatikko}[1]{\begin{mdframed}[backgroundcolor=yellow] #1 \end{mdframed}}
 
+% Esimerkeille oma komento http://tex.stackexchange.com/questions/21227/example-environment
+\newtheorem{esimerkki}{Esimerkki} %[section]
+
+% Euron merkki
+\usepackage{eurosym}
+
 \begin{document}
 
 \selectlanguage{finnish}
@@ -238,9 +244,9 @@
 \input{01_johdanto_ym}
 \input{02_lukualueet}
 \input{03_funktiot_ja_yhtalot}
-\input{02_lukualueet}
 \input{04_sovelluksia}
 \input{05_loppuosa}
+\input{06_liitteet}
 \end{document}
 
 % -*- coding: utf-8 -*-
