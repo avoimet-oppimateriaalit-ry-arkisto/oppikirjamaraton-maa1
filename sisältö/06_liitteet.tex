@@ -8,18 +8,29 @@ Reaaliluvut ovat kunta, eräs algebrallinen rakenne. Myös esimerkiksi rationaal
 
 Reaalilukujen aksiomaattinen määritelmä muodostuu kolmesta osasta:
 
-\textbf{1. Kunta-aksioomat reaalilukuihin sovellettuna} \\
+% Pitäisikö 'kunta-aksioomat' erottaa 'kunta-aksioomista reaalilukujen tapauksessa'
+
 \begin{align*}
-&\text{K1.} \, \forall x, y \in \mathbb{R}: x+(y+z) = (x+y)+z & &| \, \text{summan liitäntälaki} \\
-&\text{K2.} \, \exists 0 \in \mathbb{R}: x+0 = x & &| \, \text{summan neutraalialkio} \\
-&\text{K3.} \, \forall x \in \mathbb{R} \, \exists (-x) \in \mathbb{R}: x+(-x)=0 & &| \, \text{vasta-alkio} \\
-&\text{K4.} \, \forall x, y \in \mathbb{R}: x+y = y+x & &| \, \text{summan vaihdantalaki} \\
-&\text{K5.} \, \forall x, y, z \in \mathbb{R}: x*(y+z) = x*y + x*z & &| \, \text{osittelulaki} \\
-&\text{K6.} \, \forall x, y, z \in \mathbb{R}: x*(y*z) = (x*y)*z & &| \, \text{tulon liitäntälaki} \\
-&\text{K7.} \, \exists 1 \in \mathbb{R}: 1*x = x & &| \, \text{tulon neutraalialkio} \\
-&\text{K8.} \, \forall x \in \mathbb{R} \setminus \{0\} \, \exists x^{-1} \in \mathbb{R} \setminus \{0\}: x*x^{-1}=1 & &| \, \text{tulon käänteisalkio} \\
-&\text{K9.} \, \forall x, y \in \mathbb{R}: x*y = y*x & &| \, \text{tulon vaihdantalaki}
+&\textbf{Kunta-aksioomat} \\
+&\textbf{K1.} \, \forall x, y \in \mathbb{R}: & &x+(y+z) = (x+y)+z & &| \, \text{summan liitäntälaki} \\
+&\textbf{K2.} \, \exists 0 \in \mathbb{R}: & &x+0 = x & &| \, \text{summan neutraalialkio} \\
+&\textbf{K3.} \, \forall x \in \mathbb{R} & &\exists (-x) \in \mathbb{R}: \quad x+(-x)=0 & &| \, \text{vasta-alkio} \\
+&\textbf{K4.} \, \forall x, y \in \mathbb{R}: & &x+y = y+x & &| \, \text{summan vaihdantalaki} \\
+&\textbf{K5.} \, \forall x, y, z \in \mathbb{R}: & &x \cdot (y+z) = x \cdot y + x \cdot z & &| \, \text{osittelulaki} \\
+&\textbf{K6.} \, \forall x, y, z \in \mathbb{R}: & &x \cdot (y \cdot z) = (x \cdot y) \cdot z & &| \, \text{tulon liitäntälaki} \\
+&\textbf{K7.} \, \exists 1 \in \mathbb{R}: & &1 \cdot x = x & &| \, \text{tulon neutraalialkio} \\
+&\textbf{K8.} \, \forall x \in \mathbb{R} \setminus \{0\} & &\exists x^{-1} \in \mathbb{R} \setminus \{0\}: \quad x \cdot x^{-1}=1 & &| \, \text{tulon käänteisalkio} \\
+&\textbf{K9.} \, \forall x, y \in \mathbb{R}: & &x \cdot y = y \cdot x & &| \, \text{tulon vaihdantalaki} \\
+&\textbf{Järjestysaksioomat} \\
+&\textbf{J1.} \, \forall x, y \in \mathbb{R}: & &\text{täsmälleen yksi seuraavista:} & \\
+& & &(x > y), \, (x = y), \, (x < y) & \\
+&\textbf{J2.} \, \forall x, y, z \in \mathbb{R}: & &(x < y) \land (y < z) \Rightarrow (x < z) & \\
+&\textbf{J3.} \, \forall x, y, z \in \mathbb{R}: & &(x < y) \Leftrightarrow (x + z < y + z) & \\
+&\textbf{J4.} \, \forall x, y \in ]0,\infty[: & &x \cdot y \in ]0,\infty[ & \\
+&\textbf{Täydellisyysaksiooma}
 \end{align*}
+% Kuinka saadaan seuraava rivi alignin sisään ilman että kaikki hajoaa?:
+\textbf{T1.} \, Jokaisella ylhäältä rajoitetulla epätyhjällä reaalilukujen osajoukolla on pienin yläraja.
 
 \Closesolutionfile{ans} % Answers-ratkaisut
 \chapter{Ratkaisut}
@@ -27,3 +38,16 @@ Reaalilukujen aksiomaattinen määritelmä muodostuu kolmesta osasta:
 
 \chapter{Tekijät}
 
+Lauri Hellsten\\
+Tero Keinänen\\
+Vesa Linja-aho\\
+Ossi Mauno\\
+Joonas Mäkinen\\
+Annika Piiroinen\\
+Kaisa Pohjonen\\
+Juha Sointu\\
+Tommi Sottinen\\
+Ville Tilvis\\
+Sampo Tiensuu\\
+Matti Pajunen\\
+Pekka Peura\\
