@@ -8,33 +8,45 @@ Esimerkki: Meillä on orsivaaka, joka on tasapainossa. (kuva!) Toisessa vaakakup
 Määritelmä: Yhtälöksi kutsutaan kahden lausekkeen merkittyä yhtäsuuruutta. Siis mielivaltaisille lausekkeille A ja B merkitään A=B. (Esim. A=3x+5 ja B=7x+7). Yhtälö on tosi, jos sen molemmat puolet todella ovat yhtäsuuret. Jos yhtälö ei ole tosi, se on epätosi. Tosi ja epätosi ovat totuusarvoja.
 
 Yhtälöitä voidaan muokata siten, että niiden totuusarvo ei muutu. Tällaisia sallittuja muunnoksia ovat:
-(A) Yhtälön molemmat puolet voidaan kertoa samalla luvulla a != 0.
-(B) Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta vähentää luku b.
+(A) Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla luvulla $a$. Muutos tehdään aina molemmille puolille. Tällöin saadaan yhtälö $aA = aB$.
+(B) Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta vähentää luku $b$. Tällöin saadaan yhtälö $A+b = B+b$.
 
-Muuttujaksi kutsutaan symbolia, jonka arvoa ei ole kiinnitetty. Muuttujia merkitään usein kirjaimilla x, y ja z. Yhtälöissä muuttujaa voidaan käyttää kuvaamaan tuntematonta määrää, jolloin yhtälöä muokkaamalla ("ratkaisemalla yhtälö") saadaan selville tuntematon.
+Muuttujaksi kutsutaan symbolia, jonka arvoa ei ole kiinnitetty. Muuttujia merkitään usein kirjaimilla $x$, $y$ ja $z$. Yhtälöissä muuttujaa voidaan käyttää kuvaamaan tuntematonta määrää, jolloin yhtälöä muokkaamalla ("ratkaisemalla yhtälö") saadaan selville tuntematon.
 
-Yhtälöitä on oleellisesti kolmenlaisia:
-(1) Yhtälö, joka on aina tosi. Esimerkiksi yhtälöt 8=8 ja x=x.
-(2) Yhtälö, joka on joskus tosi. Esimerkiksi yhtälö x=1 on tosi jos ja vain jos x=1. Muuttujan arvoja, joilla tällainen yhtälö toteutuu, kutsutaan yhtälön ratkaisuiksi tai juuriksi.
-(3) Yhtälö, joka ei ole koskaan tosi. Esimerkiksi yhtälö 0=1.
-Tämän kurssin ja ylipäätään matematiikan kannalta selvästi tärkein yhtälötyyppi on (2).
+Yhtälöitä on oleellisesti kolmenlaisia: \\
+(1) Yhtälö, joka on aina tosi. Esimerkiksi yhtälöt $8=8$ ja $x=x$. \\
+(2) Yhtälö, joka on joskus tosi. Esimerkiksi yhtälö $x=1$ on tosi jos ja vain jos $x=1$. Muuttujan arvoja, joilla tällainen yhtälö toteutuu, kutsutaan yhtälön ratkaisuiksi tai juuriksi. \\
+(3) Yhtälö, joka ei ole koskaan tosi. Esimerkiksi yhtälö $0=1$. \\
+Tämän kurssin ja ylipäätään matematiikan kannalta selvästi tärkein yhtälötyyppi on (2). Siirrymme nyt tarkastelemaan tärkeää erikoistapausta yhtälöistä, ensimmäisen asteen yhtälöitä.
+
+\chapter{Ensimmäisen asteen yhtälö}
+Ensimmäisen asteen yhtälö on yhtälö, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.
 
 \begin{theorem}
-Yleinen lähemistymistapa muotoa $Ax+B = Cx+D$ olevien yhtälöiden ratkaisuun on: \\
-(1) Vähennä molemmilta puolilta $Cx$. Saat yhtälön $(A-C)x + B = D$. \\
-(2) Vähennä molemmilta puolita $B$. Saat yhtälön $(A-C)x = D-B$. \\
-(3) Jaa $(A-C)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{D-B}{A-C}$.
+Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä.
 \end{theorem}
 
-Esimerkki
-Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+\begin{proof}
 \begin{align*}
-7x+4 &= 4x+7 & &| \text{Vähennetään molemmilta puolilta 4x.} \\
-3x+4 &= 7 & &| \text{Vähennetään molemmilta puolilta 4.} \\
-3x &= 3 & &| \text{Jaetaan molemmat puolet kolmella eli kerrotaan $\frac{1}{3}$:lla.} \\
-x &= 1 & &| \text{Saimme yhtälön ratkaistuun muotoon. $x=1$ on siis yhtälön ratkaisu.} \\
+ax+b &= cx+d & &| \, \textbf{Vähennetään molemmilta puolilta $cx+d$.} \\
+ax+b - (cx+d) &= 0 & &|
 \end{align*}
+\end{proof}
 
+\begin{theorem}
+Yleinen lähemistymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun on: \\
+(1) Vähennä molemmilta puolilta $cx$. Saat yhtälön $(a-c)x + b = d$. \\
+(2) Vähennä molemmilta puolita $b$. Saat yhtälön $(a-c)x = d-b$. \\
+(3) Jaa $(A-C)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
+\end{theorem}
+
+Esimerkki. Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+\begin{align*}
+7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta 4x.} \\
+3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
+3x &= 3 & &| \, \text{Jaetaan molemmat puolet kolmella eli kerrotaan $\frac{1}{3}$:lla.} \\
+x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x=1$ on siis yhtälön ratkaisu.} \\
+\end{align*}
 
 \chapter{Yleinen potenssi ja potenssiyhtälö}
 \chapter{Kertaustiivistelmä}
