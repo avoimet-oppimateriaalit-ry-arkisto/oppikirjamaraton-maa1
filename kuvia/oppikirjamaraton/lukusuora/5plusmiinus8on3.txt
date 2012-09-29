@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5.8,3.9) rectangle (-5.8,4);
+\draw [line width=2pt,color=ffqqqq] (0,0)-- (5,0);
+\draw [dash pattern=on 1pt off 1pt] (8,-1)-- (8,0);
+\draw [dash pattern=on 1pt off 1pt] (13,-1)-- (13,0);
+\draw (2.3,-0.8) node[anchor=north west] {$=-3$};
+\draw [color=ffqqqq](-0.7,-1.7) node[anchor=north west] {5};
+\draw (-0.1,-0.8) node[anchor=north west] {$+$};
+\draw [color=qqqqff](0.8,-1.6) node[anchor=north west] {(-8)};
+\draw [line width=2pt,color=qqqqff] (-3,1)-- (5,1);
+\end{tikzpicture}
+\end{document}

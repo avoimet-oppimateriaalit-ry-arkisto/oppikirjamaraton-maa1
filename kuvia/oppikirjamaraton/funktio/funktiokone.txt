@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{ffccqq}{rgb}{1,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.6cm,y=0.6cm]
+\clip(-11.3,-5.3) rectangle (11,5.5);
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (-2,4) -- (1,4) -- (1,-4) -- (-2,-4) -- cycle;
+\draw [rotate around={90:(-6,0)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (-6,0) ellipse (2.2cm and 1.8cm);
+\draw [rotate around={90:(6,0)},color=ffccqq,fill=ffccqq,fill opacity=0.25] (6,0) ellipse (2.2cm and 1.8cm);
+\draw (-7,2.1) node[anchor=north west] {Ahvenfilee};
+\draw (-7,-0.8) node[anchor=north west] {AIV-rehu};
+\draw (-6.4,-2.8) node[anchor=north west] {Auto};
+\draw (-7,3.1) node[anchor=north west] {Runokirja};
+\draw (-7.3,1.1) node[anchor=north west] {Särkylääke};
+\draw (-7,-1.9) node[anchor=north west] {Televisio};
+\draw (-8,0.2) node[anchor=north west] {Ravintola-ateria};
+\draw (6.1,0.1) node[anchor=north west] {13};
+\draw (6.2,2.2) node[anchor=north west] {9};
+\draw (6,-1.9) node[anchor=north west] {23};
+\draw [line width=1.2pt,color=ffqqqq] (-5,2)-- (0,2)-- (6,0);
+\draw [line width=1.2pt,color=ffqqqq] (-5,3)-- (0,3)-- (6.1,2);
+\draw [line width=1.2pt,color=ffqqqq] (-5,1)-- (0,1)-- (6.1,2);
+\draw [line width=1.2pt,color=ffqqqq] (-5,0)-- (0,0)-- (6,0);
+\draw [line width=1.2pt,color=ffqqqq] (-5,-1)-- (0,-1)-- (6,0);
+\draw [line width=1.2pt,color=ffqqqq] (-5,-2)-- (0,-2)-- (6,-2);
+\draw [line width=1.2pt,color=ffqqqq] (-5,-3)-- (0,-3)-- (6,-2);
+\draw (4.8,1.1) node[anchor=north west] {5};
+\draw (7.1,1.2) node[anchor=north west] {8};
+\draw (6.9,-0.9) node[anchor=north west] {10};
+\draw (4.3,-0.9) node[anchor=north west] {76};
+\draw (4.9,3.1) node[anchor=north west] {108};
+\draw [->,color=ffqqqq] (0,3) -- (6,2);
+\draw [->,color=ffqqqq] (0,1) -- (6,2);
+\draw [->,color=ffqqqq] (0,2) -- (6,0);
+\draw [->,color=ffqqqq] (-0.1,0) -- (6,0);
+\draw [->,color=ffqqqq] (0,-1) -- (6,0);
+\draw [->,color=ffqqqq] (0,-2) -- (6,-2);
+\draw [->,color=ffqqqq] (0,-3) -- (6,-2);
+\draw (-6.4,-3.6) node[anchor=north west] {$A$};
+\draw (5.7,-3.5) node[anchor=north west] {$\mathbb{R}$};
+\draw [color=zzttqq] (-2,4)-- (1,4);
+\draw [color=zzttqq] (1,4)-- (1,-4);
+\draw [color=zzttqq] (1,-4)-- (-2,-4);
+\draw [color=zzttqq] (-2,-4)-- (-2,4);
+\draw (-0.7,5.3) node[anchor=north west] {$f$};
+\end{tikzpicture}
+\end{document}
