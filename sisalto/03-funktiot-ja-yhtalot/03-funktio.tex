@@ -1,7 +1,7 @@
 \chapter{Funktio}
 \laatikko{Funktio on yksi tärkeimmistä matemaattisista työkaluista ja sen ymmärtäminen on tärkeää.}
 
-Matematiikassa tutkitaan paljon suureiden välisiä riippuvuuksia. Tällaiset riippuvuudet voidaan muotoilla funktioiden avulla. Esimerkiksi tuotteen arvonlisäveroprosentti riippuu tuotteen tyypistä. Tämä riippuvuus voidaan kirjoittaa funktiona eri tuotetyyppien joukolta $A$ reaalilukujen joukolle $\mathbb{R}$, missä funktio liittää jokaiseen tuotteeseen sen arvonlisäveroprosentin.
+Matematiikassa tutkitaan paljon asioiden välisiä riippuvuuksia. Tällaiset riippuvuudet voidaan muotoilla funktioiden avulla. Esimerkiksi tuotteen arvonlisäveroprosentti riippuu tuoteryhmästä. Tämä riippuvuus voidaan kirjoittaa funktiona eri tuotteiden joukolta $A$ reaalilukujen joukolle $\mathbb{R}$, missä funktio liittää jokaiseen tuotteeseen sen arvonlisäveroprosentin.
 
 [Esimerkki, kuva arvonlisäverofunktiosta, missä \[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\},\]$f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
 
@@ -12,17 +12,25 @@ Käytäntöjä:
 \item $f(x) = y$ lausutaan: "Funktio saa arvon y pisteessä x."
 \item Funktioita voidaan kutsua myös kuvauksiksi.
 \item Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne ovat selviä asiayhteydestä. Tällä kurssilla maalijoukko on yleensä reaaliluvut.
+\item Funktion sääntöä kutsutaan usein pelkästään funktioksi.
 \end{itemize}
 
-Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arvokseen jossakin määrittelyjoukon pisteessä.
+Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arvokseen ainakin yhdessä määrittelyjoukon pisteessä.
 
-Funktio määritellään usein kaavan avulla. Voimme esimerkiksi määritellä funktion $f$ reaaliluvuilta reaaliluvuille kaavalla
+Funktion sääntö määritellään usein kaavan avulla. Voimme esimerkiksi määritellä funktion $f$ reaaliluvuilta reaaliluvuille kaavalla
 \[f(x) = x^2 + 1,\]
 eli $f$ liittää jokaiseen reaalilukuun $x$ luvun $x^2+1$. Tästä funktiosta huomaamme, että arvojoukko ei ole aina sama kuin maalijoukko. Esimerkiksi luku $0$ kuuluu funktion $f$ maalijoukkoon, mutta ei funktion $f$ arvojoukkoon, koska $x^2+1\geq 1$ neliön epänegatiivisuuden perusteella. [kuva]
 
 \esimerkki{Määritellään funktio $f$ kaavalla [kuva]
 \[f(x) = \frac{1}{x-1}.\]
-Funktiolle ei ole erikseen annettu määrittelyjoukkoa, joten se täytyy päätellä asiayhteydestä. Huomataan, että sääntö ei määrittele funktion $f$ arvoa kun $x = 1$, mutta kylläkin kaikilla $x\in\mathbb{R}\setminus\{1\}$ [vai?]. Näin ollen luonnollinen valinta määrittelyjoukoksi on $\mathbb{R}\setminus\{1\}$.
+Funktiolle ei ole erikseen annettu määrittelyjoukkoa, joten se täytyy päätellä asiayhteydestä. Huomataan, että sääntö ei määrittele funktion $f$ arvoa kun $x = 1$, mutta kylläkin kaikilla $x\in\mathbb{R}\setminus\{1\}$ [vai?]. Näin ollen luonnollinen valinta määrittelyjoukoksi on $\mathbb{R}\setminus\{1\}$. Voimme myös selvittää funktion arvojoukon kiinnitettyämme määrittelyjoukon. Valitulla määrittelyjoukolla $\mathbb{R}\setminus\{1\}$ voimme muodostaa yhtälön $f(x)=a$ jollekin reaaliluvulle a. Tutkitaan, milloin tällä yhtälöllä on ratkaisu(ja).
+\begin{align*}
+a &= \frac{1}{x-1} & &| \, \text{Oletamme, että $x \neq 1$, jolloin voimme kertoa $(x-1)$:llä puolittain.} \\
+a(x-1) &= 1 \\
+x-1 &= \frac{1}{a} \\
+x &= 1+\frac{1}{a} & &| \, \text{Huomaamme, että saamme ratkaisun kaikilla $a \neq 0$.} \\
+& & &| \, \text{Yhtälö ei ole hyvinmääritelty, kun $a = 0$.}
+\end{align*}
 }
 \begin{esimerkki}
 
