@@ -1,16 +1,23 @@
 \chapter{Murtopotenssi}
 
-Tämä on Villellä kesken!
-
 Mitä voisi tarkoittaa $2^\frac{1}{3}$ ?
 
 Potenssien laskusäätöjen mukaan $(2^4)^3 = 2^{3\cdot 4} = 2^{12}$, joten miksi ei voisi laskea $\left( 2^{\frac{1}{3}}\right)^3 = 2^{\frac{1}{3}\cdot 3} = 2^1=2$ ? Toisaalta $(\sqrt[3]{2})^3=2$, joten on luontevaa määritellä $2^{\frac{1}{3}} = \sqrt[3]{2}$. Tällanen merkintä on käytännöllinen, koska murtoluvuilla laskeminen on monesti mukavampaa kuin juurimerkinnän käyttö.
 
 \laatikko{Murtopotenssimerkintä: $a^\frac{1}{n} = \sqrt[n]{a}$, kun $a\geq 0$.}
 
-Vastaavasti voidaan määritellä, mitä tarkoittaa kun eksponenttinä on mikä tahansa murtoluku.
+Erityisesti $x^\frac{1}{2}=\sqrt{x}$.
 
-\laatikko{Murtopotenssimerkintä: $a^\frac{m}{n} = (\sqrt[n]{a})^m$, kun $a\geq 0$.}
+Tämän jälkeen tuntuisi luontevalta merkitä potenssin potenssin kaavaa käyttäen $(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.$ (Huomaa, että tämä ei ole itsestään selvää, koska potenssien laskusäännöt on toistaiseksi todistettu vain kokonaislukueksponenteille.) Tämä otetaan murtolukueksponentin määritelmäksi.
+
+\laatikko{Murtopotenssimerkintä: $a^\frac{m}{n} = (a^{\frac{1}{n}})^m = 
+(\sqrt[n]{a})^m$, kun $a\geq 0$.}
+
+Kun murtolukueksponentit määritellään tällä tavalla, kaikki potenssien
+laskusäännöt ovat sellaisenaan voimassa myös niille, esimerkiksi kaavat
+\[ a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q \]
+pätevät kaikille rationaaliluvuille. Tämän todistaminen vaatii pitkähköjä
+laskuja, joten todistukset on sijoitettu liitteeseen.
 
 {\bf Huomio määrittelyjoukosta}. Murtopotenssimerkintää käyttettäessä joudumme vaatimaan, että $a\geq 0$ myös silloin, kun $n$ on pariton. Esimerkiksi $\sqrt[3]{-1}=-1$ (koska $(-1)^3=-1$), mutta lauseketta $(-1)^\frac{1}{3}$ ei ole määritelty. Tähän on hyvä syy, sillä muuten seuraa yllättäviä ongelmia:
 
