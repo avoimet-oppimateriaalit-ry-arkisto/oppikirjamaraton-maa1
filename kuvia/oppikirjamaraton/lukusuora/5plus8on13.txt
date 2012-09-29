@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\draw[->,color=black] (-2.4,0) -- (24.6,0);
+\foreach \x in {-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-2.4,-6.1) rectangle (24.6,4.6);
+\draw [line width=2pt,color=ffqqqq] (0,0)-- (5,0);
+\draw [line width=2pt,color=qqqqff] (0,-1)-- (8,-1);
+\draw [line width=2pt,color=ffqqqq] (8,-1)-- (13,-1);
+\draw [dash pattern=on 3pt off 3pt] (8,-1)-- (8,0);
+\draw [dash pattern=on 3pt off 3pt] (13,-1)-- (13,0);
+\draw (7.4,-1.2) node[anchor=north west] {$=13$};
+\draw [color=ffqqqq](5.4,-2.1) node[anchor=north west] {5};
+\draw (6,-1.2) node[anchor=north west] {$+$};
+\draw [color=qqqqff](6.9,-2.1) node[anchor=north west] {8};
+\end{tikzpicture}
+\end{document}

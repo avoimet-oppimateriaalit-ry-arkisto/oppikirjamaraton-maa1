@@ -1,0 +1,106 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{ccqqtt}{rgb}{0.8,0,0.2}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{tttttt}{rgb}{0.2,0.2,0.2}
+\definecolor{qqzzzz}{rgb}{0,0.6,0.6}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-7,5) rectangle (-5,5);
+\fill[fill=black,fill opacity=0.1] (4.1,1) -- (5.1,1) -- (5.1,2) -- (4.1,2) -- cycle;
+\fill[color=qqzzzz,fill=qqzzzz,fill opacity=0.1] (-9,2) -- (-9,1) -- (-9.2,1.1) -- (-9.4,1.2) -- (-9.6,1.3) -- (-9.9,1.4) -- (-10,1.2) -- (-10.3,1.1) -- (-10.5,1) -- (-10.9,1) -- (-11.2,1) -- (-11.8,1) -- (-12.2,1) -- (-12,1.3) -- (-11.9,1.7) -- (-11.9,2) -- (-11.6,2) -- (-11.1,2) -- (-10.7,2) -- (-10.6,1.9) -- (-10.3,1.8) -- (-10,1.6) -- (-9.5,1.7) -- cycle;
+\fill[color=qqzzzz,fill=qqzzzz,fill opacity=0.1] (-11.9,2) -- (-11,2.5) -- (-11.1,2) -- cycle;
+\fill[color=tttttt,fill=tttttt,fill opacity=0.1] (-11.9,2) -- (-12.3,2) -- (-12.6,1.9) -- (-12.8,1.7) -- (-13,1.7) -- (-13,1.6) -- (-12.5,1.5) -- (-13,1.3) -- (-12.6,1.1) -- (-12.2,1) -- (-12,1.3) -- (-11.9,1.7) -- cycle;
+\fill[color=ccqqtt,fill=ccqqtt,fill opacity=0.3] (-3.7,3) -- (-4.2,3) -- (-3.9,3.4) -- cycle;
+\fill[fill=black,fill opacity=0.25] (-3,2) -- (-2,2) -- (-2,1) -- (-3,1) -- cycle;
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (3,1) -- (3,1.6) -- (3.6,1.6) -- (3.6,1) -- cycle;
+\draw [line width=3.6pt] (-3,4.1)-- (4,4.1);
+\draw [shift={(-3,4.1)},fill=black,fill opacity=0.5]  plot[domain=4.4:5,variable=\t]({1*3.3*cos(\t r)+0*3.3*sin(\t r)},{0*3.3*cos(\t r)+1*3.3*sin(\t r)});
+\draw [shift={(4,4.1)},fill=black,fill opacity=0.5]  plot[domain=4.4:5,variable=\t]({1*3.3*cos(\t r)+0*3.3*sin(\t r)},{0*3.3*cos(\t r)+1*3.3*sin(\t r)});
+\draw [line width=2pt,dash pattern=on 1pt off 1pt] (-4,1)-- (-3,4.1);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt] (-3,4.1)-- (-2,0.9);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt] (3,1)-- (4,4.1);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt] (4,4.1)-- (5.1,1);
+\draw (4.1,1)-- (5.1,1);
+\draw (5.1,1)-- (5.1,2);
+\draw (5.1,2)-- (4.1,2);
+\draw (4.1,2)-- (4.1,1);
+\draw (-9,1)-- (-9,2);
+\draw [shift={(-11.1,0.6)}] plot[domain=0.8:1.5,variable=\t]({1*1.5*cos(\t r)+0*1.5*sin(\t r)},{0*1.5*cos(\t r)+1*1.5*sin(\t r)});
+\draw [shift={(-10.9,2.6)}] plot[domain=4.7:5.3,variable=\t]({1*1.7*cos(\t r)+0*1.7*sin(\t r)},{0*1.7*cos(\t r)+1*1.7*sin(\t r)});
+\draw (-11,2)-- (-12.3,2);
+\draw (-11,1)-- (-12.3,1);
+\draw [shift={(-12,0.5)}] plot[domain=1.7:2.3,variable=\t]({1*1.5*cos(\t r)+0*1.5*sin(\t r)},{0*1.5*cos(\t r)+1*1.5*sin(\t r)});
+\draw [shift={(-12,2.7)}] plot[domain=4.1:4.6,variable=\t]({1*1.7*cos(\t r)+0*1.7*sin(\t r)},{0*1.7*cos(\t r)+1*1.7*sin(\t r)});
+\draw (-13,1.3)-- (-12.5,1.5);
+\draw (-12.5,1.5)-- (-13,1.6);
+\draw (-11.9,2)-- (-11,2.5);
+\draw (-11.1,2)-- (-11,2.5);
+\draw [color=qqzzzz] (-9,2)-- (-9,1);
+\draw [color=qqzzzz] (-9,1)-- (-9.2,1.1);
+\draw [color=qqzzzz] (-9.2,1.1)-- (-9.4,1.2);
+\draw [color=qqzzzz] (-9.4,1.2)-- (-9.6,1.3);
+\draw [color=qqzzzz] (-9.6,1.3)-- (-9.9,1.4);
+\draw [color=qqzzzz] (-9.9,1.4)-- (-10,1.2);
+\draw [color=qqzzzz] (-10,1.2)-- (-10.3,1.1);
+\draw [color=qqzzzz] (-10.3,1.1)-- (-10.5,1);
+\draw [color=qqzzzz] (-10.5,1)-- (-10.9,1);
+\draw [color=qqzzzz] (-10.9,1)-- (-11.2,1);
+\draw [color=qqzzzz] (-11.2,1)-- (-11.8,1);
+\draw [color=qqzzzz] (-11.8,1)-- (-12.2,1);
+\draw [color=qqzzzz] (-12.2,1)-- (-12,1.3);
+\draw [color=qqzzzz] (-12,1.3)-- (-11.9,1.7);
+\draw [color=qqzzzz] (-11.9,1.7)-- (-11.9,2);
+\draw [color=qqzzzz] (-11.9,2)-- (-11.6,2);
+\draw [color=qqzzzz] (-11.6,2)-- (-11.1,2);
+\draw [color=qqzzzz] (-11.1,2)-- (-10.7,2);
+\draw [color=qqzzzz] (-10.7,2)-- (-10.6,1.9);
+\draw [color=qqzzzz] (-10.6,1.9)-- (-10.3,1.8);
+\draw [color=qqzzzz] (-10.3,1.8)-- (-10,1.6);
+\draw [color=qqzzzz] (-10,1.6)-- (-9.5,1.7);
+\draw [color=qqzzzz] (-9.5,1.7)-- (-9,2);
+\draw [color=qqzzzz] (-11.9,2)-- (-11,2.5);
+\draw [color=qqzzzz] (-11,2.5)-- (-11.1,2);
+\draw [color=qqzzzz] (-11.1,2)-- (-11.9,2);
+\draw [color=tttttt] (-11.9,2)-- (-12.3,2);
+\draw [color=tttttt] (-12.3,2)-- (-12.6,1.9);
+\draw [color=tttttt] (-12.6,1.9)-- (-12.8,1.7);
+\draw [color=tttttt] (-12.8,1.7)-- (-13,1.7);
+\draw [color=tttttt] (-13,1.7)-- (-13,1.6);
+\draw [color=tttttt] (-13,1.6)-- (-12.5,1.5);
+\draw [color=tttttt] (-12.5,1.5)-- (-13,1.3);
+\draw [color=tttttt] (-13,1.3)-- (-12.6,1.1);
+\draw [color=tttttt] (-12.6,1.1)-- (-12.2,1);
+\draw [color=tttttt] (-12.2,1)-- (-12,1.3);
+\draw [color=tttttt] (-12,1.3)-- (-11.9,1.7);
+\draw [color=tttttt] (-11.9,1.7)-- (-11.9,2);
+\draw (-11.6,1.4)-- (-11.4,1.2)-- (-11.2,1.1)-- (-11.3,1.4);
+\draw (3.2,1.5) node[anchor=north west] {$x$};
+\draw [line width=4.4pt] (-1,0)-- (2,0);
+\draw [line width=4.4pt] (0.5,0)-- (0.5,4.1);
+\draw (-4,1)-- (-4,3.1);
+\draw [color=ccqqtt] (-3.7,3)-- (-4.2,3);
+\draw [color=ccqqtt] (-4.2,3)-- (-3.9,3.4);
+\draw [color=ccqqtt] (-3.9,3.4)-- (-3.7,3);
+\draw [rotate around={89.1:(-3.9,4.1)},color=ccqqtt,fill=ccqqtt,fill opacity=0.25] (-3.9,4.1) ellipse (0.6cm and 0.5cm);
+\draw (-4.4,4.3) node[anchor=north west] {$-1,0 \ kg$};
+\draw (-2,2)-- (-2,1);
+\draw (-2,1)-- (-3,1);
+\draw (-3,1)-- (-3,2);
+\draw [shift={(-2.5,0)},fill=black,fill opacity=0.25]  plot[domain=1.3:1.8,variable=\t]({1*2.1*cos(\t r)+0*2.1*sin(\t r)},{0*2.1*cos(\t r)+1*2.1*sin(\t r)});
+\draw (-2.9,1.6) node[anchor=north west] {$2,0 \ kg$};
+\draw (4.2,1.6) node[anchor=north west] {$1,0 \ kg$};
+\draw [color=zzttqq] (3,1)-- (3,1.6);
+\draw [color=zzttqq] (3,1.6)-- (3.6,1.6);
+\draw [color=zzttqq] (3.6,1.6)-- (3.6,1);
+\draw [color=zzttqq] (3.6,1)-- (3,1);
+\begin{scriptsize}
+\draw [color=qqqqff] (-13,1)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0) -- ++(5.0pt,-5.0pt);
+\draw[color=qqqqff] (-7,5.4) node {$G_3$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
