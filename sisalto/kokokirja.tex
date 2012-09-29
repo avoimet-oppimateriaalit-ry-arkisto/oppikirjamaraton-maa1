@@ -11,7 +11,7 @@
 % Helpottaa pdf(la)tex:in läsnäolon tarkistusta if-lauseilla
 \RequirePackage{ifpdf}
 
-\documentclass[a4paper,onecolumn,12pt,finnish,final]{boek3}
+\documentclass[a4paper,onecolumn,12pt,finnish,oneside,final]{boek3}
 
 \setcounter{secnumdepth}{7}
 
@@ -199,10 +199,10 @@
 
 \usepackage{config/oppikirjamaraton}
 
-% Siistii sisällysluetteloa
-\setcounter{tocdepth}{0}
-
 \usepackage{enumerate}
+
+\usepackage{icomma} % Jotta pilkun perään ei tule naurettavaa väliä.
+
 
 \begin{document}
 \Opensolutionfile{ans}[ans1] %Answers-pakettiin!
@@ -212,6 +212,12 @@
 \begin{titlepage}
     \input{config/kansilehti}  
 \end{titlepage}
+
+\listoftodos
+
+% Siistitään sisällysluettelo - tämä rikkoo listoftodosin joten vasta tässä.
+\setcounter{tocdepth}{0}
+
 
 \input{sisalto}
 \end{document}
