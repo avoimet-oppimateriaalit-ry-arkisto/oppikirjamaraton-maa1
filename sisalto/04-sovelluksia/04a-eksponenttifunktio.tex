@@ -2,18 +2,45 @@
 
 \laatikko{Muotoa $f(x) = a^x$ olevia funktioita kutsutaan eksponenttifunktioiksi.}
 
-Eksponenttifunktioita on kahta päätyyppiä: kasvavia ja väheneviä.
+Eksponenttifunktioita on kahta tyyppiä: kasvavia ja väheneviä.
 Kasvavilla eksponenttifunktioilla $a>1$, esimerkiksi
 
-\missingfigure{Kuva jossa joukko kuvaajia $f(x) = a^x$, joilla $a>1$.}
+\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $a>1$.}
 
 Vähenevillä eksponenttifunktioilla $0<a<1$, esimerkiksi
 
-\missingfigure{Kuva jossa joukko kuvaajia $f(x) = a^x$, joilla $0<a<1$.}
+\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $0<a<1$.}
 
 Kun $a<0$, eksponenttifunktiota ei ole määritelty, koska negatiiviselle
 kantaluvulle ei ole määritelty ei-kokonaislukupotenssia.
 
 Kun $a=0$ tai $a=1$, eksponenttifunktio pelkistyy vakiofunktioksi.
-Lisäksi $0^0$ ei ole määritelty, joten turvallisinta on vaatia, että
+Lisäksi $0^0$ ei ole määritelty, joten on turvallisinta vaatia, että
 kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
+
+Eksponenttifunktioita käytetään mallintamaan sellaista
+jatkuvaa kasvua tai vähenemistä, jossa kullakin ajanhetkellä
+funktion hetkellinen muutos on suoraan verrannollinen funktion sen
+hetkiseen arvoon. Tähän palataan myöhemmillä matematiikan kursseilla.
+
+Jos kysytään, millä $x$:n arvoilla eksponenttifunktio saavuttaa tietyn
+arvon, muodostuu \emph{eksponenttiyhtälö}. 
+
+\begin{esimerkki}
+Millä muuttujan $x$ arvoilla eksponenttifunktio $f(x) = 2^x$ saa arvon
+$f(x) = 64$?
+
+Eksponenttifunktion kantalukuna on $2$, joten kyseessä on kasvava
+eksponenttifunktio. Kokeillaan eri $x$:n arvoja: Kun $x = 3$,
+$f(x) = 2^3 = 8$, joka on pienempi kuin $64$. Ratkaisu on siis
+suurempi kuin kolme. Jatkamalla vastaavaa päättelyä löydetään ratkaisu
+$x = 6$.
+
+Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja:
+koska eksponenttifunktio kasvaa kaikkialla, ei voi olla tilannetta, jossa
+$f(x)$ saa uudelleen arvon $0$, kun $x > 6$. Toisaalta kasvavuus perustelee
+myös, miksi $f(x)$ ei voi olla $0$, kun $x < 6$.
+
+Siis ainoa ratkaisu yhtälölle on $x = 6$.
+\end{esimerkki}
+
