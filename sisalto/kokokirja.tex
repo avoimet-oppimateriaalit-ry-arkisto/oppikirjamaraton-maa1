@@ -11,7 +11,7 @@
 % Helpottaa pdf(la)tex:in läsnäolon tarkistusta if-lauseilla
 \RequirePackage{ifpdf}
 
-\documentclass[a4paper,onecolumn,12pt,finnish,final]{boek3}
+\documentclass[a4paper,onecolumn,12pt,finnish,oneside,final]{boek3}
 
 \setcounter{secnumdepth}{7}
 
@@ -168,10 +168,10 @@
 \theoremstyle{definition}
 \newtheorem{theorem}{Teoreema}
 
-% Infoboksi keltaisella taustalla
-\definecolor{olivine}{RGB}{154,185,115}
+% Infoboksi väreineen
+\definecolor{tuftsBlue}{RGB}{72,145,206}
 \usepackage{mdframed}
-\newcommand{\laatikko}[1]{\begin{mdframed}[backgroundcolor=olivine] #1 \end{mdframed}}
+\newcommand{\laatikko}[1]{\begin{mdframed}[backgroundcolor=tuftsBlue] #1 \end{mdframed}}
 
 % Esimerkeille oma komento http://tex.stackexchange.com/questions/21227/example-environment
 \newtheorem*{esimerkki}{Esimerkki} %[section]
@@ -201,6 +201,9 @@
 
 \usepackage{enumerate}
 
+\usepackage{icomma} % Jotta pilkun perään ei tule naurettavaa väliä.
+
+
 \begin{document}
 \Opensolutionfile{ans}[ans1] %Answers-pakettiin!
 
@@ -214,6 +217,7 @@
 
 % Siistitään sisällysluettelo - tämä rikkoo listoftodosin joten vasta tässä.
 \setcounter{tocdepth}{0}
+
 
 \input{sisalto}
 \end{document}

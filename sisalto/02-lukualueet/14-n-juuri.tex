@@ -1,27 +1,59 @@
-%\section{n. juuri}
-Kaikkia juuria ei kuitenkaan kannata määritellä yksitellen. Tehdään siis mahdollisimman paljon kerralla. Edeltä kuitenkin voi huomata, että kuutiojuuri on määritelty kaikille luvuille, mutta neliöjuuri vain ei-negatiivisille luvuille. Tämä toistuu myös muissa juurissa. Määritellään siis parilliset ja parittomat juuret erikseen.
 
-%on ehkä parempi esittää nämä molemma samalla eikä kuten subsections
-%sama määritelmä, mutta todetaan parillisilla vaadittavan >= 0.
-%%%RISTIRIITA ED. KANSSA
-Juurimerkinnällä $\sqrt[n]{a}=b$ (luetaan \emph{ännäs juuri aasta on bee} tarkoitetaan lukua, joka toteuttaa ehdon $b^n = a$. Jotta juuri olisi ykskäsitteinen, on parillisilla juurilla ($\sqrt{a}, \sqrt[4]{a}, \sqrt[6]{a}$\ldots) vaadittava, että $b\ge0$.
+\section{Korkeampia juuria}
+
+
+Yhtälön $x^n=a$ ratkaisujen avulla voidaan määritellä $n$:s juuri mille tahansa positiiviselle kokonaisluvulle $n$. Neliä- ja kuutiojuurten tapauksesta voidaan kuitenkin voi huomata, että kuutiojuuri on määritelty kaikille luvuille, mutta neliöjuuri vain ei-negatiivisille luvuille. Tämä toistuu myös muissa juurissa: parilliset ja parittomat juuret on määriteltävä erikseen.
+
+Juurimerkinnällä $\sqrt[n]{a}$ (luetaan \emph{$n$:s juuri} luvusta $a$) tarkoitetaan lukua, joka toteuttaa ehdon $(\sqrt[n]{a})^n = a$. Jotta juuri olisi yksikäsitteisesti määritelty asetetaan lisäksi, että parillisessa tapauksessa $n$:s juuri tarkoittaa kyseisen yhtälön epänegatiivista ratkaisua.
+%($\sqrt{a}, \sqrt[4]{a}, \sqrt[6]{a}$\ldots) vaadittava, että $b\ge0$.
 
 %\subsection{parilliset juuret}
 
-\laatikko{Luvun $a$ $n$.s juuri (luetaan \emph{ännäs juuri}) on ei-negatiivinen luku, jonka neliö on $a$. Tämä voidaan ilmaista lyhyemmin $\sqrt[n]{b^n}=b$.}
+\laatikko{Luvun $a$ $n$.s juuri (luetaan \emph{$n$:s juuri}) on epänegatiivinen luku, jonka neliö on $a$. Tämä voidaan ilmaista myös $(\sqrt[n]{a})^n=a$.}
 
-\subsection{Parittomat juuret}
-\laatikko{Luvun $a$ n.s juuri on ei-negatiivinen luku, jonka neliö on $a$. Tämä voidaan ilmaista lyhyemmin $\sqrt[n]{b^n}=b$.}
 
-Nyt on paikallaan todeta, että toista juurta $\sqrt[2]{a}$ merkitään $\sqrt{a}$.
+\laatikko{
+{\bf $n$:s juuri}
 
-\begin{tabular}{c|c}
-parillinen juuri & pariton juuri\\
-\hline
-$\sqrt[n]{a}^n=a$, $a\ge0$ & $\sqrt[n]{a}^n$, kaikilla $a$
-\end{tabular}
+Luvun $a$ $n$:s juuri on epänegatiivinen luku, jonka $n$:s potenssi on $a$. Tämä voidaan ilmaista myös $(\sqrt[n]{a})^n=a$.}
 
-Esimerkiksi $\sqrt[3]{-8}=-2$ koska $(-2)^2=-8$, mutta $\sqrt[4]{-8}$ ei ole määritelty, koska minkään luvun neljäs potenssi ei ole negatiivinen.
+Luvun toista juurta, eli neliöjuurta $\sqrt[2]{a}$ merkitään myös $\sqrt{a}$.
+
+\laatikko{
+Luvun luvun $a$ parillinen juuri on $n$:s juuri, kun $n$ on parillinen luku:
+$\sqrt[n]{a}^n=a$, $a\ge0$.
+}
+
+Kuten kuutiojuuren tapauksessa, parittomat juuret määritellään kaikille reaaliluvuille $a$.
+
+\laatikko{
+Luvun luvun $a$ pariton juuri on $n$:s juuri, kun $n$ on pariton luku:
+ $\sqrt[n]{a}^n$, kaikilla $a\in \mathrm{R}$.
+}
+
+Korkeampien juurten laskeminen tapahtuu tavallisesti laskimella.
+
+\begin{esimerkki}
+Laske.
+\begin{enumerate}[a)]
+\item $\sqrt[4]{256}$
+\item $\sqrt[5]{-243}$
+\item $\sqrt[4]{-8}$
+\end{enumerate}
+
+{\bf Ratkaisut.}
+
+a) Laskimella saadaan $\sqrt[4]{256}=4$ koska $4^2=256$.
+
+b) Laskimella $\sqrt[4]{-243}=-3$, koska $(-3)^5=-243$.
+
+c) Luvun $-8$ neljäs juuri $\sqrt[4]{-8}$ ei ole määritelty, koska minkään luvun neljäs potenssi ei ole negatiivinen.
+
+{\bf Vastaukset.}
+
+a) 4, b) -3, c) ei määritelty.
+
+\end{esimerkki}
 
 %Mitä näille kahdelle seuraavalle tehdään?
 %$\sqrt[n]{ab}=\sqrt[n]{a}\sqrt[n]{b}$
