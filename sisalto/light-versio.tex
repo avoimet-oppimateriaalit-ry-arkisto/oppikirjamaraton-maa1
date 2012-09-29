@@ -176,7 +176,7 @@
 \pdfpkresolution=1200
 \fi
 
-%\theoremstyle{definition}
+\theoremstyle{definition}
 \newtheorem{theorem}{Teoreema}
 
 % Infoboksi keltaisella taustalla
@@ -221,40 +221,8 @@
 \selectlanguage{finnish}
 
 \begin{titlepage}
-
-  \begin{center}
-    \begin{doublespace}
-      \begin{LARGE}
-        \textrm{Hellsten -- Linja-aho -- Mauno -- Mäkinen -- Piiroinen -- Sottinen \ldots} \\
-      \end{LARGE}
-      
-      \vspace{0.5cm}
-      \hrule height 2pt
-      \vspace{1cm}
-      \begin{Huge}
-        \textbf{\textrm{Avoin matikka 1}\\\ \\Kirja on työn alla!}
-      \end{Huge}
-      
-      \vfill
-      
-      \begin{huge}
-        \textrm{MAA1 -- Funktiot ja yhtälöt}
-      \end{huge}
-      \vspace{1cm}
-      \hrule height 2pt
-    \end{doublespace}
-  \end{center}
-  
-  \vfill
-  \begin{flushright}
-    \textbf{Oppikirjamaraton - tätä lukee kuin avointa kirjaa! \\
-      Sisältö on lisensoitu avoimella CC-BY-lisenssillä. \\
-    }
-  \end{flushright}
-  
+ \input{config/kansilehti}
 \end{titlepage}
-
-\tableofcontents
 
 \input{sisalto}
 \end{document}
