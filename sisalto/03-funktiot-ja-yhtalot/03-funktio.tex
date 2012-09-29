@@ -3,6 +3,7 @@
 
 Matematiikassa tutkitaan paljon asioiden välisiä riippuvuuksia. Tällaiset riippuvuudet voidaan muotoilla funktioiden avulla. Esimerkiksi tuotteen arvonlisäveroprosentti riippuu tuoteryhmästä. Tämä riippuvuus voidaan kirjoittaa funktiona eri tuotteiden joukolta $A$ reaalilukujen joukolle $\mathbb{R}$, missä funktio liittää jokaiseen tuotteeseen sen arvonlisäveroprosentin.
 
+\missingfigure{tommonen ALV-kuva, mikä alhaalla kuvataan}
 [Esimerkki, kuva arvonlisäverofunktiosta, missä \[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\},\]$f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
 
 \laatikko{Funktio $f$ joukosta $A$ joukkoon $B$ on sääntö, joka liittää $A$:n jokaiseen alkioon $x$ täsmälleen yhden $B$:n alkion, jota merkitään $f(x)$. $A$:ta kutsutaan funktion $f$ määrittelyjoukoksi ja $B$:tä funktion $f$ maalijoukoksi.}
@@ -19,7 +20,9 @@ Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arv
 
 Funktion sääntö määritellään usein kaavan avulla. Voimme esimerkiksi määritellä funktion $f$ reaaliluvuilta reaaliluvuille kaavalla
 \[f(x) = x^2 + 1,\]
-eli $f$ liittää jokaiseen reaalilukuun $x$ luvun $x^2+1$. Tästä funktiosta huomaamme, että arvojoukko ei ole aina sama kuin maalijoukko. Esimerkiksi luku $0$ kuuluu funktion $f$ maalijoukkoon, mutta ei funktion $f$ arvojoukkoon, koska $x^2+1\geq 1$ neliön epänegatiivisuuden perusteella. [kuva]
+eli $f$ liittää jokaiseen reaalilukuun $x$ luvun $x^2+1$. Tästä funktiosta huomaamme, että arvojoukko ei ole aina sama kuin maalijoukko. Esimerkiksi luku $0$ kuuluu funktion $f$ maalijoukkoon, mutta ei funktion $f$ arvojoukkoon, koska $x^2+1\geq 1$ neliön epänegatiivisuuden perusteella.
+
+\missingfigure{kuva lähtöjoukoista ja maalijoukoista}
 
 \esimerkki{Määritellään funktio $f$ kaavalla [kuva]
 \[f(x) = \frac{1}{x-1}.\]
@@ -56,11 +59,11 @@ Pituudet voivat olla vain positiivisia reaalilukuja: $x,y$
 Funktion argumentiksi eli funktion muuttujaksi kutsutaan sulkeiden sisällä olevaa osaa: esimerkiksi $f(x)$:ssä argumentti on $x$. Argumentti voi olla myös monimutkaisempi. Voimme kirjoittaa esim. $f(3x)$ tai $f(f(x))$.
 \end{esimerkki}
 
-% lisää neliöjuuren määritelmä funktiona
+\todo{lisää neliöjuuren määritelmä funktiona}
 
 \begin{tehtava}
 Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
-\begin{enumerate}
+\begin{enumerate}[a)]
 \item $f(1)$
 \item $f(2)$
 \item $f(\frac{1}{2})$
@@ -69,7 +72,7 @@ Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
 \item $f(-1)$
 \end{enumerate}
 \begin{vastaus}
-\begin{enumerate}
+\begin{enumerate}[a)]
 \item $6$
 \item $4$
 \item $2\sqrt{2}+8$
@@ -83,7 +86,7 @@ Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
 % kai vaikeahko
 \begin{tehtava}
 Millä $x$:n arvoilla yhtälö $f(f(x)) = x$ pätee, kun
-\begin{enumerate}
+\begin{enumerate}[a)]
 \item $f(x) = 1$
 \item $f(x) = x$
 \item $f(x) = x+1$
@@ -91,7 +94,7 @@ Millä $x$:n arvoilla yhtälö $f(f(x)) = x$ pätee, kun
 \item $f(x) = 2x+1$?
 \end{enumerate}
 \begin{vastaus}
-\begin{enumerate}
+\begin{enumerate}[a)]
 \item $x = 1$
 \item kaikilla $x\in\mathbb{R}$
 \item ei ratkaisuja
