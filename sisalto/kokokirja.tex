@@ -67,34 +67,7 @@
 
 \usepackage{titlesec}
 
-%\titleformat{\part}[display]
-%  {\normalfont\Huge\filright\bfseries}{\MakeUppercase{Osa\ \thepart}}{\Huge\filright\MakeUppercase}
-
-\titleformat{\part}
-  {\normalfont\filright\Huge\bfseries\rmfamily}{Osa \thepart}{1em}{}
-
-%\titleformat{\chapter}[display]
-%  {\normalfont\huge\filright\bfseries}{\MakeUppercase{\chaptertitlename\ \thechapter}}{\Huge\filright\MakeUppercase}
-
-\titleformat{\chapter}
-  {\normalfont\filright\huge\bfseries\rmfamily}{\chaptertitlename\ \thechapter}{1em}{}
-
-\titleformat{\section}
-  {\normalfont\filright\LARGE\bfseries\rmfamily}{\thesection}{1em}{}
-
-\titleformat{\subsection}
-  {\normalfont\filright\Large\bfseries\rmfamily}{\thesubsection}{1em}{}
-
-\titleformat{\subsubsection}
-  {\normalfont\filright\large\bfseries\rmfamily}{\thesubsubsection}{1em}{}
-
-\titleformat{\paragraph}[runin]
-  {\normalfont\normalsize\bfseries\rmfamily}{\theparagraph}{1em}{}
-
-\titleformat{\subparagraph}[runin]
-  {\normalfont\normalsize\bfseries\rmfamily}{\thesubparagraph}{1em}{}
-
-
+\input{config/otsikkotyylit}
 
 
 % Tukea pdf(la)texin microtypes-laajennoksille. Pakko olla
