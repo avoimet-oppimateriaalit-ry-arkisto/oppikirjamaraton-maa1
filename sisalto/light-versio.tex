@@ -184,10 +184,6 @@
 
 \usepackage{config/oppikirjamaraton}
 
-% Siistii sisällysluetteloa
-% Paitsi että rikkoo todonotesin - otanpa ois.
-%\setcounter{tocdepth}{0}
-
 \usepackage{enumerate}
 
 \begin{document}
@@ -198,6 +194,11 @@
 \begin{titlepage}
  \input{config/kansilehti}
 \end{titlepage}
+
+\listoftodos
+
+% Siistitään sisällysluettelo - tämä rikkoo listoftodosin joten vasta tässä.
+\setcounter{tocdepth}{0}
 
 \input{sisalto}
 \end{document}
