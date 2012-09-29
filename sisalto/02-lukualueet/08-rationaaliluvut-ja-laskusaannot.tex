@@ -6,30 +6,34 @@
     q=\frac{a}{b}, 
     \]
     missä $a$ ja $b$ ovat kokonaislukuja ja $b\neq 0$. Rationaalilukujen joukkoa
-    merkitään symbolilla $\mathbb{Q}$. Tällaista esitystä kutsutaan
-    \emph{murtoluvuksi}. Tässä esityksessä lukua $a$ kutsutaan \emph{osoittajaksi}
-    ja lukua $b$ \emph{nimittäjäksi}. Kaikki rationaaliluvut voidaan esittää
-    murtolukuina, mutta tämä ei ole ainoa tapa rationaalilukujen esittämiseksi. 
+    merkitään symbolilla $\mathbb{Q}$. Tällaista esitystä osamääränä $\frac{a}{b}$
+    kutsutaan \emph{murtoluvuksi}. Lukua $a$ kutsutaan murtoluvun
+    \emph{osoittajaksi} ja lukua $b$ \emph{nimittäjäksi}. Kaikki rationaaliluvut
+    voidaan esittää murtolukuina, mutta murtoluvut eivät ole ainoa tapa
+    rationaalilukujen esittämiseksi ja kaikki rationaaliluvut voidaan esittää
+    usealla eri tavalla murtolukuna.
     
     \laatikko{
-        Murtoluku on muotoa
+        Murtoluku on osamäärä
         \[
         \frac{a}{b}
         \]
-        missä $a,b\in \mathbb{Z}$ ja $a\neq 0$. Jokainen murtoluku on
+        missä $a,b\in \mathbb{Z}$ ja $a\neq 0$. Jokaisen murtoluvun arvo on
         rationaaliluku ja jokainen rationaaliluku voidaan esittää murtolukuna.
     }
 
 \section{Murtolukujen laskusäännöt}
 
-    Seuraavaksi tutkitaan laskutoimituksia murtoluvuilla. Muotoa $a/c$ ja $b/c$
-    olevien murtolukujen yhteenlaskussa lukujen osoittajat lasketaan yhteen:
+    Seuraavaksi tutkitaan laskutoimituksia murtoluvuilla. Jos murtolukujen
+    nimittäjät ovat samat, voidaan murtoluvut laskea yhteen laskemalla
+    osoittajat yhteen:
     \[
     \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}.
     \]
-    Tällaisia murtolukuja joilla on sama nimittäjä kutsutaan samannimisiksi. Jos
-    lasketaan yhteen murtolukuja joilla on eri nimittäjät, ne täytyy kertoa
-    samannimisiksi eli \emph{laventaa} ennen kuin ne voidaan laskea yhteen.
+    Murtolukuja, joiden nimittäjät ovat samat, sanotaan \emph{samannimisiksi}.
+    Jos yhteenlaskettavien murtolukujen nimittäjät eivät ole samat, murtoluvut
+    täytyy ensin \emph{laventaa} samannimisiksi ja sitten käyttää samannimisten
+    murtolukujen yhteenlaskusääntöä.
     Jos siis $a/b$ ja $c/d$ ovat murtolukuja ja $b\neq d$, lasketaan
     \[
     \frac{a}{b} + \frac{c}{d} = \frac{ad}{bd} + \frac{bc}{bd} = \frac{ad+bc}{bd}
@@ -46,7 +50,7 @@
         \]
         
         \textbf{Ratkaisu.}
-        Aluksi lavennetaan luvut saman nimisiksi ja sen jälkeen lasketaan ne yhteen:
+        Aluksi lavennetaan luvut samannimisiksi ja sen jälkeen lasketaan ne yhteen:
         \begin{eqnarray*}
             \frac{1}{2} + \frac{1}{6} + \frac{2}{6}
             &=
@@ -55,9 +59,6 @@
             \frac{3}{6} + \frac{1}{6} + \frac{2}{6}\\
             &= \frac{3+1+2}{6}\\ &= \frac{6}{6} = 1.
         \end{eqnarray*}
-        
-        \textbf{Vastaus.} $1$.
-    
     \end{esimerkki}
     
     Murtolukujen $a/b$ ja $c/d$ tulo lasketaan kertomalla lukujen osoittajat ja nimittäjät keskenään:
@@ -96,7 +97,7 @@
         \end{equation}
         Jakolasku
         \begin{equation}
-            \frac{a}{b}\Big/\frac{c}{d}   =
+            \frac{a}{b}:\frac{c}{d}   =
             \frac{a}{b}\cdot \frac{d}{c}  =
             \frac{ad}{bc}.
         \end{equation}
@@ -131,8 +132,6 @@
             \frac{6}{12}.
         \]
         Koska $6/12 < 7/12$, Vesa saa enemmän.
-        
-        \textbf{Vastaus.} Vesa saa enemmän.
     \end{esimerkki}
     
     \laatikko{
@@ -157,11 +156,6 @@
             \frac{2}{1} + \frac{1}{3} =
             \frac{3 \cdot 2}{3 \cdot 1} + \frac{1}{3} =
             \frac{6+1}{3} =
-            \frac{7}{3}.
-        \]
-        
-        \textbf{Vastaus.}
-        \[
             \frac{7}{3}.
         \]
     \end{esimerkki}
