@@ -214,6 +214,16 @@
 % Cancel-paketti supistamista ym. varten
 \usepackage{cancel}
 
+% Todo-merkintöjen tuki
+%  - ks. lisää: https://latexforhumans.wordpress.com/2009/03/13/todonotes/
+%  - Tukee seuraavia komentoja:
+%       \todo{Todo-kommentti marginaalissa}
+%       \todo[noline]{Todo-kommentti marginaalissa ilman korostusviivaa}
+%       \todo[inline]{Todo-kommentti tekstin seassa}
+%       \missingfigure{Puuttuva kuva}
+%       \listoftodos            % Todo-merkintöjen 'sisällysluettelo'
+\usepackage{todonotes}
+
 % Siistii sisällysluetteloa
 \setcounter{tocdepth}{0}
 
@@ -223,40 +233,8 @@
 \selectlanguage{finnish}
 
 \begin{titlepage}
-
-  \begin{center}
-    \begin{doublespace}
-      \begin{LARGE}
-        \textrm{Hellsten -- Linja-aho -- Mauno -- Mäkinen -- Piiroinen -- Sottinen \ldots} \\
-      \end{LARGE}
-      
-      \vspace{0.5cm}
-      \hrule height 2pt
-      \vspace{1cm}
-      \begin{Huge}
-        \textbf{\textrm{Avoin matikka 1}\\\ \\Kirja on työn alla!}
-      \end{Huge}
-      
-      \vfill
-      
-      \begin{huge}
-        \textrm{MAA1 -- Funktiot ja yhtälöt}
-      \end{huge}
-      \vspace{1cm}
-      \hrule height 2pt
-    \end{doublespace}
-  \end{center}
-  
-  \vfill
-  \begin{flushright}
-    \textbf{Oppikirjamaraton - tätä lukee kuin avointa kirjaa! \\
-      Sisältö on lisensoitu avoimella CC-BY-lisenssillä. \\
-    }
-  \end{flushright}
-  
+    \input{config/kansilehti}  
 \end{titlepage}
-
-\tableofcontents
 
 \input{sisalto}
 \end{document}
