@@ -1,12 +1,62 @@
 \chapter{Potenssisäännöt}
 
+Jos $a$ on reaaliluku ja $n$ on luonnollinen luku, potenssilla $a^n$ tarkoitetaan tuloa
+\[
+a^n = \underbrace{a\cdot \ldots \cdot a}_{n\text{ kpl}}. 
+\]
+Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}. Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, niin $a^3$ on kuution kyseisen tilavuus.
+
+\begin{esimerkki}
+Laske $2^4$.
+
+{\bf Ratkaisu.}
+Potenssissa $2^4$ luku $2$ on kantaluku ja luku $4$ on eksponentti.
+Merkinnällä $2^4$ siis tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$. Siten
+\[
+2^4=2\cdot 2\cdot 2\cdot 2=16.
+\]
+
+{\bf Vastaus.} $16$.
+\end{esimerkki}
+
+Potensseille pätevät seuraavat laskusäännöt.
+
+\laatikko{
+{\bf Potenssien laskusääntöjä}
+
+Olkoot $m$ ja $n$ kokonaislukuja ja $a$ reaaliluku.
+
+\begin{tabular}{ll}
+$a^m\cdot a^n = a^{m+n}$ & Samakantaisten potenssien tulo\\
+$\frac{a^m}{a^n} = a^{m-n}$, $a\neq 0,\,m>n$ &Samakantaisten potenssien osamäärä\\
+$(a\cdot b)^n = a^n+b^n$ & Tulon potenssi\\
+$\Big(\frac{a}{b}\Big)^n = \frac{a^n}{b^n}$, $b\neq 0$ & Osamäärän potenssi\\ 
+$(a^m)^n = a^{m\cdot n}$ & Potenssin potenssi\\
+
+\end{tabular}
+}
+
+
+\begin{esimerkki}
+%\textbf{Esimerkki 1}
+\begin{equation}
+\text{a)} (-2)^3=(-2)\cdot (-2)\cdot (-2)=-8.
+\end{equation}
+
+\begin{equation}
+\text{b)} (-2)^4=(-2)\cdot (-2)\cdot (-2)\cdot (-2)=16.
+\end{equation}
+
+\begin{equation}
+\text{c)} -2^4=-2\cdot 2\cdot 2\cdot 2=-16.
+\end{equation}
+
 Potenssilla $2^4$ tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$. Eli
 \begin{equation*}
 2^4=2\cdot 2\cdot 2\cdot 2=16.
 \end{equation*}
 Lausekkeessa $2^4$ luku 2 on \textbf{kantaluku} ja luku 4 on \textbf{eksponentti}.
-\\
-\\
+
 \begin{esimerkki}
 Potenssit luvuilla.
 
@@ -23,7 +73,6 @@ e) $\frac{2^4\cdot 2^2}{2^3}=\frac{\overbrace{2\cdot 2\cdot 2\cdot \cancel{2}}\c
 
 \section*{Potenssien laskusääntöjä}
 
-\laatikko{
 Samankantaisten potenssien kertolasku\\
 a) $a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{3 kpl}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{4 kpl}=a^{\mathbf{3+4}}=a^7$
 
@@ -38,7 +87,7 @@ d) $(ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5
 
 Osamäärän potenssi\\
 e) $\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}$
-}
+
 \section*{Negatiivinen luku ja nolla eksponenttina}
 
 Sievennetään osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla. Supistamalla yhteiset tekijät lopputulos
@@ -55,24 +104,32 @@ on erinäköinen, kuin käyttämällä potenssien laskusääntöjä
 
 Koska lähtötilanne on molemmissa tapauksissa sama, voidaan määritellä, että
 
+\begin{equation}
+
+\text{d)} 2^2\cdot 2^3=\underbrace{2\cdot 2}_{2\textrm{ kpl}}\cdot \underbrace{2\cdot 2\cdot 2}_{3\textrm{ kpl}}=2^5=32.
+\frac{1}{x^2}=x^{-2}
+x^{-2}=\frac{1}{x^2}
+\end{equation}
+
+\laatikko{Yleisesti määritellään (kun $x\neq 0$)
+\begin{equation}
+\text{e)}\frac{2^4\cdot 2^2}{2^3}=\frac{\overbrace{2\cdot 2\cdot 2\cdot \cancel{2}}\cdot \overbrace{\cancel{2}\cdot \cancel{2}}}{\cancel{2}\cdot \cancel{2}\cdot \cancel{2}}.
+x^{-n}=\frac{1}{x^n}
+\end{equation}
 \begin{equation*}
 	a^{-2}=\frac{1}{a^2}{.}
 \end{equation*}
 
-\laatikko{\textbf {Negatiivinen eksponentti} (kun $a\neq 0$).
+\laatikko{\textbf {Negatiivinen eksponentti} (kun $a\neq 0$)
 \begin{equation*}
 	a^{-n}=\frac{1}{a^n}
 \end{equation*}
 }
 
 Kun eksponenttina on nolla, on tuloksena aina luku 1.
-
-\begin{esimerkki}
-$\frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1$
-	ja vastaavasti
-$\frac{a^3}{a^3}=a^{3-3}=a^0${.}
-\end{esimerkki}
-
+Esimerkiksi
+\[\frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1,\] mutta sama lasku voidaan laskea myös toisella tavalla:
+$\frac{a^3}{a^3}=a^{3-3}=a^0$.
 
 \laatikko{\textbf{Eksponenttina nolla} (kun $a\neq 0$)
 \begin{equation*}
