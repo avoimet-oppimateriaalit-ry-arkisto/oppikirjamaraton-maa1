@@ -1,0 +1,16 @@
+\documentclass[10pt]{article}
+\usepackage{pstricks-add}
+\pagestyle{empty}
+\begin{document}
+\newrgbcolor{wwwwww}{0.4 0.4 0.4}
+\newrgbcolor{qqqqcc}{0 0 0.8}
+\psset{xunit=1.0cm,yunit=1.0cm}
+\begin{pspicture*}(-13.5,-3.6)(18.3,8.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=wwwwww](0,0)(-13.5,-3.6)(18.3,8.7)
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-13.5,-3.6)(18.3,8.7)
+\psplot[linewidth=1.2pt,linecolor=qqqqcc,plotpoints=200]{-10.0}{0.0}{-x}
+\psplot[linewidth=1.2pt,linecolor=qqqqcc,plotpoints=200]{0.0}{10.0}{x}
+\rput[tl](1.5,2.1){$\qqqqcc{f(x)=|x|, \  x \in \mathbb{R}}$}
+\end{pspicture*}
+\end{document}
