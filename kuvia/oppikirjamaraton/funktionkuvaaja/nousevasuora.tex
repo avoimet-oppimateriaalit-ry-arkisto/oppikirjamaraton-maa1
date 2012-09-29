@@ -1,0 +1,15 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{wwwwww}{rgb}{0.4,0.4,0.4}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=wwwwww,dash pattern=on 1pt off 1pt, xstep=1.0cm,ystep=1.0cm] (-5.3,3.3) grid (-5.3,3.3);
+\clip(-5.3,3.3) rectangle (-5.3,3.3);
+\draw [line width=1.2pt,color=ffqqqq] (-2,3.3) -- (-2,3.3);
+\draw [color=ffqqqq](0.5,2.8) node[anchor=north west] {$y=x+2$};
+\end{tikzpicture}
+\end{document}
