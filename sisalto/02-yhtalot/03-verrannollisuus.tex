@@ -1,15 +1,15 @@
 \chapter{Suoraan ja kääntäen verrannollisuus}
 
-Kaksi muuttujaa voivat riippua toisistaan eri tavoin. Tavallisia
+Kaksi muuttujaa voivat riippua toisistaan monin eri tavoin. Tavallisia
 riippuvuuden tyyppejä ovat suoraan ja kääntäen verrannollisuus.
 
 \laatikko{
-Kaksi muuttujaa ovat suoraan verrannolliset, jos toinen saadaan
-toisesta kertomalla se jollakin vakiolla. Tätä vakiota kutsutaan \emph{verrannollisuuskertoimeksi}.
-}
+Kaksi muuttujaa $x$ ja $f(x)$ ovat suoraan verrannolliset, jos toinen saadaan
+toisesta kertomalla se jollakin vakiolla, eli $f(x) = kx$. Vakiota $k$
+kutsutaan \emph{verrannollisuuskertoimeksi}.}
 
-Suoraan verrannollisuus voidaan havaita myös laskemalla muuttujien
-suhde ja huomaamalla, että se on vakio.
+Suoraan verrannollisuus voidaan monesti havaita laskemalla muuttujien
+suhde ja toteamalla, että se on muuttujista riippumaton vakio.
 
 \begin{esimerkki}
 Banaanien kilohinta on $2,00$ euroa. Seuraavassa taulukossa on
@@ -27,36 +27,40 @@ $4,00$ & $2,00$ & $2,00$ \\
 \hline
 \end{tabular}
 \end{center}
-Muuttujien hinta ja paino suhde on vakio $2,00$ euroa/kg, joten ostettujen
+Hinnan ja painon suhde on vakio, $2,00$ euroa/kg, joten ostettujen
 banaanien paino ja niihin käytetty rahamäärä ovat suoraan verrannolliset.
 \end{esimerkki}
 
-Suoraan verrannollisuutta voidaan kuvata esimerkiksi niin, että jos
-toinen suureista kaksinkertaistuu, niin toinenkin kaksinkertaistuu.
-Samoin jos toinen suureista puolittuu, toinenkin suure puolittuu.
+Suoraan verrannollisuutta voidaan kuvata myös niin, että jos
+toinen muuttujista kaksinkertaistuu, niin toinenkin kaksinkertaistuu.
+Samoin jos toisen muuttujan arvo puolittuu, toisenkin arvo puolittuu.
 
-Jos suoraan verrannollisista suureista piirretään kuvaaja, pisteet
+Jos suoraan verrannollisista muuttujista piirretään kuvaaja, pisteet
 asettuvat suoralle:
 
 \missingfigure{Kuva, johon piirretty vaaka-akselille käytetty rahamäärä
-ja pystyakselille banaanien paino.}
+ja pystyakselille ostettujen banaanien paino.}
 
-Muita esimerkkejä suoraan verrannollisista suureista ovat
+Muita esimerkkejä suoraan verrannollisista muuttujista ovat
 \begin{itemize}
-    \item kuljettu matka ja aika, kun kuljetaan vakionopeudella, sekä
-    \item painovoiman kappaleeseen aiheuttama voima ja kappaleen massa.
+    \item aika ja kuljettu matka, kun liikutaan vakionopeudella, tai
+    \item kappaleen massa ja painovoiman kappaleeseen aiheuttama voima.
 \end{itemize}
 
+Suoraan verrannollisuutta monimutkaisempi riippuvuus on kääntäen
+verrannollisuus.
+
 \laatikko{
-Kaksi muuttujaa ovat kääntäen verrannolliset, jos toinen saadaan toisesta
-jakamalla jokin vakio sillä.
+Muuttujat $x$ ja $f(x)$ ovat kääntäen verrannolliset, jos toinen saadaan toisesta
+jakamalla jokin vakio sillä, eli $f(x) = \frac{a}{x}$.
 }
 
-Kääntäen verrannollisuus voidaan havaita myös kertomalla suureet
-keskenään ja huomaamalla, että tulo on vakio.
+Kääntäen verrannollisuus voidaan käytännössä havaita esimerkiksi
+kertomalla muuttujat keskenään eri muuttujan arvoilla ja huomaamalla,
+että tulo on vakio.
 
 \begin{esimerkki}
-Nopeus ja matkaan tarvittava aika ovat kääntäen verrannolliset suureet.
+Nopeus ja matkaan tarvittava aika ovat kääntäen verrannolliset.
 Jos kuljettavana matkana on $80$ km, voidaan nopeudet ja matka-ajat
 kirjoittaa taulukoksi:
 \begin{center} 
@@ -74,15 +78,15 @@ Tulo on aina $80$ km, joten nopeus ja matka-aika ovat kääntäen verrannolliset
 \end{esimerkki}
 
 Kääntäen verrannollisuutta voidaan kuvata niin, että jos
-toinen suureista kaksinkertaistuu, niin toinen puolittuu.
+toinen muuttujista kaksinkertaistuu, toinen puolittuu.
 
-Jos kääntäen verrannollisista suureista piirretään kuvaaja, pisteet
+Jos kääntäen verrannollisista muuttujista piirretään kuvaaja, pisteet
 muodostavat laskevan käyrän:
 
-\missingfigure{Kuva, johon piirretty matka-aika ja nopeus (yllä olevan
-taulukon mukaisesti)}
+\missingfigure{Kuva, johon on piirretty matka-aika ja nopeus (yllä olevan
+taulukon mukaisesti).}
 
-Muita esimerkkejä kääntäen verrannollisia suureista ovat
+Muita esimerkkejä kääntäen verrannollisia muuttujista ovat
 \begin{itemize}
     \item kaivamistyön suorittamiseen kuluva aika ja työntekijöiden lukumäärä.
 \end{itemize}
@@ -91,8 +95,8 @@ Muita esimerkkejä kääntäen verrannollisia suureista ovat
 
 \begin{tehtava}
     % Lyhyt matikka 1, s. 72
-    Pohdi seuraavissa tapauksissa, kuinka toinen suure muuttuu, kun toinen suure
-    kaksinkertaistuu, kolminkertaistuu tai puolittuu. Ovatko suureet
+    Pohdi seuraavissa tapauksissa, kuinka toinen muuttuja muuttuu, kun toinen
+    kaksinkertaistuu, kolminkertaistuu tai puolittuu. Ovatko muuttujat
     suoraan verrannolliset, kääntäen verrannolliset vai eivät kumpaakaan?
     
     \begin{enumerate}
@@ -178,26 +182,5 @@ Viiden minuutin tarkkuudella $20$ min.
     
     \begin{vastaus}
         Vastaus: 642 minuuttia eli 10 h 42 min.
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-	Jättiomenan paistoaika on suoraan verrannollinen omenan massan neliöjuureen. Tiedetään, että 9 kilon omenan paistoaika on 1,5 tuntia. Miten pitkä on 4 kilon omenan paistoaika?
-    \begin{vastaus}
-        1 tunti
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-	Pellon kyntämiseen kulunut aika on kääntäen verrannollinen kyntäjien määrään. Jos kuudelta henkilöltä kuluu 7 tuntia tietyn kokoisen pellon kyntämiseen, niin kuinka kauan yhdeksältä henkilöltä kuluisi samankokoisen pellon kyntämiseen?
-    \begin{vastaus}
-        4 h 40 min
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-	Tarvittava maalin määrä on suoraan verrannollinen maalattavan seinän pinta-alaan. Emilialta kului 2,5 litran maalipurkki  loppuun, kun hän oli maalannut seinää 17,5 $m^2$. Montako 2,5 litran maalipurkkia on Emilian vielä ostettava, kun hän haluaa maalata loputkin kyseisestä seinästä, jonka kokonaispinta-ala on 102 $m^2$?
-    \begin{vastaus}
-        5 purkkia
     \end{vastaus}
 \end{tehtava}
