@@ -1,11 +1,11 @@
 \chapter{Eksponenttifunktio}
 
-\laatikko{Muotoa $f(x) = a^x$ olevia funktioita kutsutaan eksponenttifunktioiksi.}
+Potenssifunktiossa $f(x) = x^n$ muuttuja $x$ on kantalukuna. Jos muuttuja
+$x$ on sen sijaan eksponenttina, saadaan joukko funktioita, joita
+kutsutaan \emph{eksponenttifunktioiksi}.
 
-Eksponenttifunktio eroaa aiemmin esitellystä potenssifunktiosta siinä, että
-eksponenttifunktiossa muuttuja $x$ on eksponentissa, kun potenssifunktiossa
-se on kantalukuna. Tästä seuraa se, että eksponenttifunktio eroaa luonteeltaan
-oleellisesti potenssifunktiosta.
+\laatikko{Eksponenttifunktiot ovat muotoa $f(x) = a^x$, $a > 0$,
+$a \neq 1$.}
 
 Eksponenttifunktioita on kahta tyyppiä: kasvavia ja väheneviä.
 Kasvavilla eksponenttifunktioilla $a>1$, esimerkiksi
@@ -20,30 +20,33 @@ Vähenevillä eksponenttifunktioilla $0<a<1$, esimerkiksi
 \includegraphics{03-funktiot/kuvia/apotenssiinxaisompikuinnolla.pdf}
 \end{center}
 
-Kun $a<0$, eksponenttifunktiota ei ole määritelty, koska negatiiviselle
-kantaluvulle ei ole määritelty ei-kokonaislukupotenssia.
+Negatiiviselle kantaluvulle ei ole määritelty yleistä reaalilukupotenssia, 
+joten eksponenttifunktiota ei ole määritelty, kun $a < 0$. 
 
 Kun $a=0$ tai $a=1$, eksponenttifunktio pelkistyy vakiofunktioksi.
-Lisäksi $0^0$ ei ole määritelty, joten on turvallisinta vaatia, että
-kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
+Lisäksi $0^0$:a ei ole määritelty, joten vaaditaan, että
+eksponenttifunktion kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
 
-\emph{Eksponenttiyhtälö} muodostuu, kun kysytään, millä $x$:n arvoilla eksponenttifunktio saavuttaa tietyn arvon.
+%\emph{Eksponenttiyhtälö} muodostuu, kun kysytään, millä $x$:n arvoilla %eksponenttifunktio saavuttaa tietyn arvon.
 
 \begin{esimerkki}
 Millä muuttujan $x$ arvoilla eksponenttifunktio $f(x) = 2^x$ saa arvon
 $f(x) = 64$?
 
-Kirjoitetaan tehtävä yhtälöksi: $2^x = 64$.
-Eksponenttifunktion kantalukuna on $2$, joten kyseessä on kasvava
-eksponenttifunktio. Kokeillaan $x$:n eri arvoja: Kun $x = 3$,
-$f(x) = 2^3 = 8$, joka on pienempi kuin $64$. Ratkaisu on siis
-suurempi kuin kolme. Jatkamalla vastaavaa päättelyä löydetään ratkaisu
-$x = 6$.
+\textbf{Ratkaisu.}
 
-Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja:
-koska eksponenttifunktio kasvaa kaikkialla, ei voi olla tilannetta, jossa
-$f(x)$ saa uudelleen arvon $64$, kun $x > 6$. Kasvavuus perustelee
-myös, miksi $f(x)$ ei voi olla $64$, kun $x < 6$.
+Kirjoitetaan tehtävä yhtälöksi: $2^x = 64$. Kokeilemalla huomataan,
+että $x = 6$ ratkaisee yhtälön.
+%Eksponenttifunktion kantalukuna on $2$, joten kyseessä on kasvava
+%eksponenttifunktio. Kokeillaan $x$:n eri arvoja: Kun $x = 3$,
+%$f(x) = 2^3 = 8$, joka on pienempi kuin $64$. Ratkaisu on siis
+%suurempi kuin kolme. Jatkamalla vastaavaa päättelyä löydetään ratkaisu
+%$x = 6$.
+
+Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja.
+Eksponenttifunktion kantalukuna on $2$, joten eksponenttifunktio on
+kasvava. Funktio $f(x) = 2^x$ ei siis voi saada uudelleen arvoa $64$,
+kun $x > 6$. Samasta syystä $f(x)$ ei voi olla $64$, kun $x < 6$.
 
 Siis ainoa ratkaisu yhtälölle on $x = 6$.
 \end{esimerkki}
