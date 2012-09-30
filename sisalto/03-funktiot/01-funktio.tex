@@ -4,8 +4,14 @@ Matematiikassa tutkitaan paljon asioiden välisiä riippuvuuksia. Tällaiset rii
 
 \laatikko{\emph{Funktiolla} $f(x)$ tarkoitetaan \emph{sääntöä}, joka liittää \emph{muuttujaan} $x$ arvon $y=f(x)$.}
 
-\missingfigure{tommonen ALV-kuva, mikä alhaalla kuvataan}
-[Esimerkki, kuva arvonlisäverofunktiosta, missä \[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\},\]$f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
+\begin{esimerkki}
+Määritellään funktio $f$ tavaroiden joukolta $A$ reaaliluvuille joka kuvaa jokaisen tavaran sen arvonlisäveroprosentille.
+\[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\}\]
+[Selitys arvonlisäverokannoista ja $f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
+\begin{center}
+\includegraphics[width=13cm]{03-funktiot/kuvia/funktiokone-crop.pdf}
+\end{center}
+\end{esimerkki}
 
 \laatikko{Funktio $f$ joukosta $A$ joukkoon $B$ on sääntö, joka liittää $A$:n jokaiseen alkioon $x$ täsmälleen yhden $B$:n alkion, jota merkitään $f(x)$. $A$:ta kutsutaan funktion $f$ määrittelyjoukoksi ja $B$:tä funktion $f$ maalijoukoksi.}
 
@@ -16,6 +22,12 @@ Käytäntöjä:
 \item Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne ovat selviä asiayhteydestä. Tällä kurssilla maalijoukko on yleensä reaaliluvut.
 \item Funktion sääntöä kutsutaan usein pelkästään funktioksi.
 \end{itemize}
+
+\begin{esimerkki}
+Funktion argumentiksi eli funktion muuttujaksi kutsutaan sulkeiden sisällä olevaa osaa: esimerkiksi $f(x)$:ssä argumentti on $x$. Argumentti voi olla myös monimutkaisempi. Voimme kirjoittaa esim. $f(3x)$ tai $f(f(x))$.
+\end{esimerkki}
+
+\todo{lisää neliöjuuren määritelmä funktiona}
 
 Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arvokseen ainakin yhdessä määrittelyjoukon pisteessä.
 
@@ -41,26 +53,9 @@ x &= 1+\frac{1}{a} & &| \, \text{Huomaamme, että saamme ratkaisun kaikilla $a \
 jokin riippuu jostakin, esitä määrittely ja arvojoukko muodossa f:A->B
 \end{esimerkki}
 
+\todo{nollakohdan määritelmä ja löytäminen; kuvaajasta ja yhtälöstä}
+
 Funktion nimeäminen, $f(x)$ (ei?) vastaa merkinnältään $\sin(x)$:ää. jälkimmäisen tunnistaa, tuttu funktio
-
-\section{Usean muuttujan funktiot}
-
-\laatikko{Funktiolla voi olla monta muuttujaa. Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x,y)$}
-
-\begin{esimerkki}
-
-Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x,y)=xy$.
-
-Pituudet voivat olla vain positiivisia reaalilukuja: $x,y$
-
- määrittely ja arvojoukko
-\end{esimerkki}
-
-\begin{esimerkki}
-Funktion argumentiksi eli funktion muuttujaksi kutsutaan sulkeiden sisällä olevaa osaa: esimerkiksi $f(x)$:ssä argumentti on $x$. Argumentti voi olla myös monimutkaisempi. Voimme kirjoittaa esim. $f(3x)$ tai $f(f(x))$.
-\end{esimerkki}
-
-\todo{lisää neliöjuuren määritelmä funktiona}
 
 \begin{tehtava}
 Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
@@ -104,4 +99,18 @@ Millä $x$:n arvoilla yhtälö $f(f(x)) = x$ pätee, kun
 \end{enumerate}
 \end{vastaus}
 \end{tehtava}
+
+
+\section{Usean muuttujan funktiot}
+
+\laatikko{Funktiolla voi olla monta muuttujaa. Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x,y)$.}
+
+\begin{esimerkki}
+
+Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x,y)=xy$. Pituudet voivat olla vain positiivisia reaalilukuja, joten vaadimme, että $x>0$ ja $y>0$. Pinta-alaa esittää positiivinen reaaliluku, joten myös $A>0$. Kun tietyssä tapauksessa suorakulmion korkeus on 3 ja leveys 4, suorakulmion pinta-ala on $A(3,4)=3\cdot 4=12$ pinta-alayksikköä.
+
+\end{esimerkki}
+
+
+
 
