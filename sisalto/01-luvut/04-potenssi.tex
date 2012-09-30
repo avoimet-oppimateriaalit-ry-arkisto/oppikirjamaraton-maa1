@@ -4,19 +4,14 @@
     \[
         a^n = \underbrace{a\cdot \ldots \cdot a}_{n\text{ kpl}}. 
     \]
-    Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}. Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, niin $a^3$ on kyseisen kuution tilavuus.
+    Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}.
+%Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, niin $a^3$ on kyseisen kuution tilavuus.
     
-    \begin{esimerkki}
-        Laske $2^4$.
-        
-        \textbf{Ratkaisu.}
-        Potenssissa $2^4$ luku $2$ on kantaluku ja luku $4$ on eksponentti.
+    \begin{esimerkki}        
         Merkinnällä $2^4$ siis tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$. Siten
         \[
             2^4=2\cdot 2\cdot 2\cdot 2=16.
         \]
-        
-        \textbf{Vastaus.} $16$.
     \end{esimerkki}
             
     \begin{esimerkki}
@@ -34,22 +29,28 @@
         \end{enumerate}
     \end{esimerkki}
     
-\section*{Potenssien laskusääntöjä}
+\section*{Potenssien laskusääntöjen perusteluja}
     
-    Samankantaisten potenssien kertolasku\\
-    a) $a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{$3$ kpl}}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{\text{$4$ kpl}}=a^{\mathbf{3+4}}=a^7$
-    
-    Samankantaisten potenssien jakolasku\\
-    b) $\frac{a^7}{a^4}=\frac{a\cdot a\cdot a\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=a^{\mathbf{7-4}}=a^3$
-    
-    Potenssin potenssi\\
-    c) $(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=\underbrace{a\cdot a\cdot a\cdot a\cdot a\cdot a}_{\text{$2\cdot 3=6$  kpl}}=a^{\mathbf{2\cdot 3}}=a^6$
-    
-    Tulon potenssi\\
-    d) $(ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5=a^{\mathbf{1\cdot 3}}\cdot b^{\mathbf{5\cdot 3}}=a^3b^{15}$
-    
-    Osamäärän potenssi\\
-    e) $\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}$
+    Samankantaisten potenssien kertolasku
+	\[
+a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{\text{4kpl}}=a^{\mathbf{3+4}}=a^7
+    	\]
+    Samankantaisten potenssien jakolasku
+	\[
+\frac{a^7}{a^4}=\frac{a\cdot a\cdot a\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}	{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=a^{\mathbf{7-4}}=a^3
+    	\]
+%    Potenssin potenssi
+%	\[
+%(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=\underbrace{a\cdot a\cdot a\cdot a\cdot a\cdot a}_{\text{2\cdot 3=6  kpl}}=a^{\mathbf{2\cdot 3}}=a^6
+%    	\]
+    Tulon potenssi
+	\[
+(ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5=a^{\mathbf{1\cdot 3}}\cdot b^{\mathbf{5\cdot 3}}=a^3b^{15}
+	\]
+     Osamäärän potenssi
+	\[
+	\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}
+	\]
 
     Potensseille pätevät seuraavat laskusäännöt.
     
@@ -716,126 +717,5 @@ Sievennä.
 	\item $\frac{x}{4}$
 	\item $\frac{x}{y} + 1$
 	\end{enumerate}
-\end{vastaus}
-\end{tehtava}
-
-
-%%%anonyymiltä lahjoittajalta
-\todo{näiden tehtävien mielekkyys kannattaa tarkistaa sekä myös kappale, jonka alle ne laitetaan, jos pääsevät mukaan}
-
-\begin{tehtava}
-Lavenna samannimisiksi \quad
-a) $\frac{2}{3}$ ja $\frac{4}{5}$ \quad b) $\frac{5}{6}$ ja $\frac{7}{9}$ \quad \\ c) $\frac{2}{3}$ ja $\frac{7}{2}$ 
-\begin{vastaus}
-a) $\frac{10}{15}$ ja $\frac{12}{15}$ \qquad b) $\frac{15}{18}$ ja $\frac{14}{18}$ \qquad c) $\frac{4}{6}$ ja $\frac{21}{6}$
-\end{vastaus}
-\end{tehtava}
-
-
-\begin{tehtava}
-Supista \quad
-a) $\frac{15}{20}$ \qquad b) $\frac{14}{21}$ \qquad c) $\frac{12}{20}$
-\begin{vastaus}
-a) $\frac{3}{4}$ \qquad b) $\frac{2}{3}$\qquad c) $\frac{3}{5}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta sekamurtoluvuksi \quad
-%täsmällisemmin sekamurtolukumuoton, mutta pienellä piirillä ajateltiin, että tämä epätäsmällinen muotoilu parempi
-a) $\frac{15}{2}$ \qquad b) $\frac{9}{4}$ \qquad c) $\frac{23}{7}$
-\begin{vastaus}
-a) $7\frac{1}{2}$ \qquad b) $2\frac{1}{4}$ \qquad c) $3\frac{2}{7}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muunna murtoluvuksi \quad
-a) $3\frac{2}{5}$ \qquad b) $4\frac{1}{3}$ \qquad c) $2\frac{6}{7}$
-\begin{vastaus}
-a) $\frac{17}{5}$ \qquad b) $\frac{13}{12}$ \qquad c) $\frac{20}{7}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-a) $\frac{3}{11}+\frac{5}{11}$ \qquad b) $\frac{4}{5}-\frac{1}{5}$ \qquad c) $\frac{2}{3}+\frac{1}{6}$ \qquad
-d) $ \frac{11}{12}-\frac{5}{6}$
-\begin{vastaus}
-a) $\frac{8}{11}$ \qquad b) $\frac{3}{5}$ \qquad c) $\frac{5}{6}$ \qquad d) $\frac{1}{12}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-a) $1\frac{2}{9}+\frac{5}{9}$ \qquad b) $\frac{1}{3}+2\frac{1}{3}$ \qquad c) $2+\frac{5}{4}$ \qquad
-d) $ \frac{3}{2}-\frac{5}{6}$
-\begin{vastaus}
-a) $\frac{7}{9}$ \qquad b) $\frac{8}{3}$ \qquad c) $\frac{9}{4}$ \qquad d) $\frac{2}{3}$
-\end{vastaus}
-\end{tehtava}
-
-
-\begin{tehtava}
-a) $\frac{4}{9} : \frac{1}{5}$ \qquad b) $\frac{2}{7}:\frac{5}{9}$ \qquad c) $\frac{2}{3}:\frac{4}{3}$
-\begin{vastaus}
-a) $\frac{20}{9}$ \qquad b) $\frac{18}{35}$ \qquad c) $\frac{1}{2}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-a) $\frac{2}{3} : \frac{7}{11}$ \qquad b) $\frac{4}{3}:(\frac{-13}{4})$ \qquad c) $\frac{7}{8}:4$
-\begin{vastaus}
-a) $1\frac{1}{21}$ \qquad b) $-\frac{16}{39}$ \qquad c) $\frac{7}{32}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-a) $\frac{5}{8}\cdot(\frac{3}{5}+\frac{2}{5})$ \qquad b) $\frac{1}{3}+\frac{1}{4}\cdot\frac{6}{5}$
-\begin{vastaus}
-a) $\frac{5}{8}$ \qquad b) $\frac{19}{30}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-a) $\dfrac{\frac{1}{2}:\frac{3}{2}}{\frac{3}{2}+\frac{1}{3}}$ \qquad b) $\dfrac{\frac{2}{3}+\frac{3}{4}}{\frac{5}{6}-\frac{7}{12}}$.
-\begin{vastaus}
-a) $\frac{2}{11}$ \qquad b) $5\frac{2}{3}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Laske murtolukujen $\frac{5}{6}$ ja $-\frac{2}{15}$ \\ a) summa \qquad b) erotus \qquad c) tulo \qquad d) osamäärä.
-\begin{vastaus}
-a) $\frac{7}{10}$ \qquad b) $\frac{29}{30}$ \qquad c) $-\frac{1}{9}$ \qquad d) $-6\frac{1}{4}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Laske lausekkeen $\frac{x}{2-3x}$ arvo, kun $x$ on \\ a) 4 \qquad b) $-\frac{1}{2}$ \qquad c) $\frac{7}{10}$.
-\begin{vastaus}
-a) $-\frac{2}{5}$ \qquad b) $-\frac{1}{7}$ \qquad c) $-7$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Laske lausekkeen $\frac{x+y}{2x-y}$ arvo, kun \\ a) $x=\frac{1}{2}$ ja $y= \frac{1}{4}$ \qquad b) $x=\frac{1}{4}$ ja $y= -\frac{3}{8}$ \qquad.
-\begin{vastaus}
-a) $1$ \qquad b) $-\frac{1}{7}$
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Fibonaccin luvut 0, 1, 1, 2, 3, 5, 8, 13, 21, $\ldots$ määritellään seuraavasti: Kaksi ensimmäistä
-Fibonaccin lukua ovat 0 ja 1, ja siitä seuraavat saadaan kahden
-edellisen summana: 
-\[ 0+1=1, \quad 1+1=2, \quad 1+2 = 3, \quad 2+3=5, \quad 
-\textrm{ja niin edelleen.} \]
-Tutki, miten Fibonaccin luvut liittyvät lukuihin
-\[ \frac{1}{1+1}, \quad \frac{1}{1+\frac{1}{1+1}}, \quad
-\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}, \quad 
-\frac{1}{1+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}}, \quad \ldots\]
-\begin{vastaus}
-Luvut ovat sievennettynä peräkkäisten Fibonaccin
-lukujen osamääriä:
-\[\frac{1}{2}, \ \frac{2}{3}, \ \frac{3}{5}, \frac{5}{8} \ldots  \]
 \end{vastaus}
 \end{tehtava}
