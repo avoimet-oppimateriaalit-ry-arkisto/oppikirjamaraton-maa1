@@ -123,14 +123,10 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
 
 \section{Jakolasku}
 
-    Jakolaskua sanotaan kertolaskun käänteistoimitukseksi, koska se tekee tekee saman toimituksen kuin kertolasku, mutta vastakkaiseen suuntaan.
-    
-    Esimerkiksi $100:5\cdot 5=100$ ja $792\cdot 132:132=792$.
-    
-    Kun ensin kerrotaan jollain ja sitten jaetaan samalla luvulla, päädytään takaisin samaan, mistä lähdettiin.  Jakolaskujen merkkisäännöt on sovittu niin, että tämä ominaisuus säilyy. Ne ovat siis samat kuin kertolaskujen merkkisäännöt.
+        Kun ensin kerrotaan jollain ja sitten jaetaan samalla luvulla, päädytään takaisin samaan, mistä lähdettiin.  Jakolaskujen merkkisäännöt on sovittu niin, että tämä ominaisuus säilyy. Ne ovat siis samat kuin kertolaskujen merkkisäännöt.
     
     Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna $-3$:lla on $-12$. Kertolaskun merkkisäännöistä nähdään helposti, että tämän luvun täytyy olla $+4$ eli $4$. Niinpä on sovittu, että $(-12):(-3)=12:3=4$.
-
+    
 \section{Yhteenveto}
 
 \laatikko{
@@ -141,19 +137,66 @@ Laskusääntöjä
 \item $-a:(-b)=a: b=a:b$
 \end{itemize}
 }
-   
-\section*{Tehtäviä}
+    
+    \section{Jaollisuus ja tekijöihinjako}
 
-    \begin{tehtava}
+   
+    \laatikko{
+    Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$. Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
+    }
+    
+    \begin{esimerkki}
+    \begin{enumerate}[a)]
+    \item Luku $-12$ on jaollinen luvulla $3$:lla, sillä $-12 = 3 \cdot (-4)$.
+    \item $-12$ ei ole jaollinen $5$:llä, sillä ei ole kokonaislukua, joka kerrottuna viidellä olisi $12$.
+    \end{enumerate}
+    \end{esimerkki}
+    
+    \missingfigure{Kuva, jossa on suorakaide, joka on jaettu 3x4 osaan.}
+    
+    Yllä jaollisuus määritellään kertolaskun avulla. Jaollisuuden voi määritellä myös jakolaskun avulla niin, että $a$ on jaollinen $b$:llä, mikäli $a:b$ on kokonaisluku. Esimerkiksi $12$ on jaollinen $3$:lla, koska $12:3 = 4$, joka on kokonaisluku.
+    %Tämä määritelmä vaatii kuitenkin, että $b \neq 0$, joten sitä ei voida pitää yleispätevänä määritelmänä jaollisuudelle. Se on kuitenkin monesti yksinkertaisempi tapa ajatella.
+   
+    
+    Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi $7=7 \cdot 1=1 \cdot 7$, joten $7$ on jaollinen $1$:llä ja $37$:llä.
+    
+    \laatikko{
+    \emph{Alkuluku} on ykköstä suurempi luku, joka on jaollinen ainoastaan luvulla $1$ ja itsellään.
+    }
+    
+    Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja. 
+    
+    \laatikko{
+    \textbf{Aritmetiikan peruslause}
+    
+    Jokainen ykköstä suurempi kokonaisluku voidaan esittää yksikäsitteisesti alkulukujen tulona.
+    }
+    
+    \todo{maininta siitä, todistetaanko aritmetiikan peruslause vai ei}
+    
+    Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Kokeilemalla havaitaan, että 2, 3, ja 7 ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona - mahdollista kertolaskujärjestyksen vaihtoa lukuunottamatta.
+    
+    %Kun luku $84$ esitetään muodossa $2\cdot 2\cdot 3\cdot 7$ on tapana sanoa, että se on \emph{jaettu alkutekijöihin}. Alkutekjät esitetään yleensä kasvavassa numerojärjestyksessä. Jos sama luku esiintyy tekijöissä useampaan kertaan, on se yleensä yleensä tapana merkitä potenssina. Tällöin luku $84$ voitaisiin kirjoittaa tekijöihin jaettuna $2^2\cdot 3\cdot 7$ ja luku $96$ muodossa $2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 3=2^5\cdot 3$.
+    
+    %Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes tulossa on jäljellä vain alkulukuja.
+    
+    %\begin{esimerkki}
+    %Luvun $96$ alkutekijät voi löytää vaikkapa seuraavanlaisella ketjulla: $96 = 2 \cdot 48 = 2 \cdot (2 \cdot 24) = 2 \cdot 2 \cdot (6 \cdot 4) = 2 \cdot 2 \cdot (2 \cdot 3) \cdot (2 \cdot 2)$. Nyt jäljellä on vain alkulukuja ja saatu tulo voidaan kirjoittaa lyhennettynä $96 = 2^5 \cdot 3$.
+    %\end{esimerkki}
+    
+    \section*{Tehtäviä}
+    
+    
+        \begin{tehtava}
         Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli celciusasteita tai euroja.)
 
 
         \begin{enumerate}[a)]
-            \item Pakkasta on aluksi $-10^{\circ}$C ja sitten se lisääntyy kaksi (pakkas)astetta.
-            \item Pakkasta on aluksi $-20^{\circ}$C ja sitten se hellittää (vähentyy) kolme (pakkas)astetta.
-            \item Lämpötila on aluksi $17^{\circ}$C ja sitten se vähentyy viisi astetta.
-            \item Lämpötila on aluksi $5^{\circ}$C ja sitten se kasvaa kuusi astetta.
-            \item Mies on velkaa $30 000$ \euro mafialle ja kuolee. Hänen kolme
+            \item Pakkasta on aluksi $-10 ^{\circ}$C, ja sitten se lisääntyy kahdella pakkasasteella.
+            \item Pakkasta on aluksi $-20 ^{\circ}$C, ja sitten se hellittää (vähentyy) kolme (pakkas)astetta.
+            \item Lämpötila on aluksi $17 ^{\circ}$C, ja sitten se vähentyy viisi astetta.
+            \item Lämpötila on aluksi $5 ^{\circ}$C, ja sitten se kasvaa kuusi astetta.
+            \item Mies on mafialle $30 000$ euroa velkaa ja menehtyy. Hänen kolme
                 poikaansa jakavat velan tasan keskenään. Kuinka paljon kukin on
                 velkaa mafialle? Merkitse velkaa negatiivisella luvulla.
         \end{enumerate}
@@ -218,54 +261,7 @@ Laskusääntöjä
             \end{enumerate}
         \end{vastaus}
     \end{tehtava}
-    
-    \section{Jaollisuus ja tekijöihinjako}
-    
-    \laatikko{
-    Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$. Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
-    }
-    
-    \begin{esimerkki}
-    \begin{enumerate}[a)]
-    \item Luku $-12$ on jaollinen luvulla $3$:lla, sillä $-12 = 3 \cdot (-4)$.
-    \item $-12$ ei ole jaollinen $5$:llä, sillä ei ole kokonaislukua, joka kerrottuna viidellä olisi $12$.
-    \end{enumerate}
-    \end{esimerkki}
-    
-    \missingfigure{Kuva, jossa on suorakaide, joka on jaettu 3x4 osaan.}
-    
-    Yllä jaollisuus määritellään kertolaskun avulla. Jaollisuuden voi määritellä myös jakolaskun avulla niin, että $a$ on jaollinen $b$:llä, mikäli $a:b$ on kokonaisluku. Esimerkiksi $12$ on jaollinen $3$:lla, koska $12:3 = 4$, joka on kokonaisluku.
-    %Tämä määritelmä vaatii kuitenkin, että $b \neq 0$, joten sitä ei voida pitää yleispätevänä määritelmänä jaollisuudelle. Se on kuitenkin monesti yksinkertaisempi tapa ajatella.
-   
-    
-    Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi $7=7 \cdot 1=1 \cdot 7$, joten $7$ on jaollinen $1$:llä ja $37$:llä.
-    
-    \laatikko{
-    \emph{Alkuluku} on ykköstä suurempi luku, joka on jaollinen ainoastaan luvulla $1$ ja itsellään.
-    }
-    
-    Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja. 
-    
-    \laatikko{
-    \textbf{Aritmetiikan peruslause}
-    
-    Jokainen ykköstä suurempi kokonaisluku voidaan esittää yksikäsitteisesti alkulukujen tulona.
-    }
-    
-    \todo{maininta siitä, todistetaanko aritmetiikan peruslause vai ei}
-    
-    Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Kokeilemalla havaitaan, että 2, 3, ja 7 ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona - mahdollista kertolaskujärjestyksen vaihtoa lukuunottamatta.
-    
-    %Kun luku $84$ esitetään muodossa $2\cdot 2\cdot 3\cdot 7$ on tapana sanoa, että se on \emph{jaettu alkutekijöihin}. Alkutekjät esitetään yleensä kasvavassa numerojärjestyksessä. Jos sama luku esiintyy tekijöissä useampaan kertaan, on se yleensä yleensä tapana merkitä potenssina. Tällöin luku $84$ voitaisiin kirjoittaa tekijöihin jaettuna $2^2\cdot 3\cdot 7$ ja luku $96$ muodossa $2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 3=2^5\cdot 3$.
-    
-    %Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes tulossa on jäljellä vain alkulukuja.
-    
-    %\begin{esimerkki}
-    %Luvun $96$ alkutekijät voi löytää vaikkapa seuraavanlaisella ketjulla: $96 = 2 \cdot 48 = 2 \cdot (2 \cdot 24) = 2 \cdot 2 \cdot (6 \cdot 4) = 2 \cdot 2 \cdot (2 \cdot 3) \cdot (2 \cdot 2)$. Nyt jäljellä on vain alkulukuja ja saatu tulo voidaan kirjoittaa lyhennettynä $96 = 2^5 \cdot 3$.
-    %\end{esimerkki}
-    
-    \section*{Tehtäviä}
-    
+
     \begin{tehtava}
     Mitkä seuraavista luvuista ovat jaollisia luvulla $4$? Jos luku $a$ on jaollinen luvulla $4$, kerro, millä kokonaisluvulla $b$ pätee $a = 4 \cdot b$.\\
     a) 1 \quad b) 12  \quad c) 13 \quad d) 2 \quad e) -20 \quad f) 0
@@ -297,6 +293,7 @@ Laskusääntöjä
     \end{enumerate}
     \end{vastaus}
     \end{tehtava}
+    
     
     \begin{tehtava}
     Jaa seuraavat luvut alkutekijöihin.\\
