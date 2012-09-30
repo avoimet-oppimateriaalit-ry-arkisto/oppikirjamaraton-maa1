@@ -137,7 +137,17 @@
         \end{equation*}
     }
     
+    \section{laskujärjestys}
     
+    \laatikko{
+        \begin{enumerate}
+            \item Sulut
+            \item Potenssilaskut
+            \item Kerto- ja jakolaskut vasemmalta oikealle
+            \item Yhteen- ja jakolaskut vasemmalta oikealle
+        \end{enumerate}
+    }
+   
     
     % Tehtävät ovat tarkoitettu todella heikoille
     %Näitä lienee liikaa. Karsitaanko vai siirretäänkö muualle?
@@ -517,3 +527,252 @@
             d) $\frac{10\ 000}{b^6}$
         \end{vastaus}
     \end{tehtava}
+
+\section{Murtolausekkeiden sieventäminen}
+
+\laatikko{
+Jos murtoluvun osoittajassa tai nimittäjässä on summa, jonka osilla on yhteinen tekijä, sen voi ottaa \emph{yhteiseksi tekijäksi} sulkujen eteen. Jos osoittajassa ja nimittäjässä on sen jälkeen sama kerroin, sen voi jakaa pois molemmista eli \emph{supistaa} pois.
+\begin{equation}
+\frac{ac+bc}{c} = \frac{ \cancel{c} (a+b)}{\cancel{c}} = a+b
+\end{equation}
+
+
+Joskus murtolauseke sieventyy, jos sen esittääkin kahden murtoluvun summana.
+\begin{equation}
+\frac{ca+b}{c} = \frac{ca}{c} + \frac{b}{c} = a + \frac{b}{c}
+\end{equation}
+}
+
+Kun jakaa kolme erikokoista nallekarkkipussia ($a$, $b$ ja $c$) tasan kolmen ihmisen kesken, on sama, laittaako kaikki ensin samaan kulhoon ja jakaa ne sitten ($\frac{a+b+c}{3}$) vai jakaako jokaisen pussin erikseen ($ \frac{a}{3} + \frac{b}{3} + \frac{c}{3}$).
+
+Jos taas samat kolme henkilöä jakavat keskenään pussin tikkareita ($6$ kpl) ja yhden pussin nallekarkkeja ($n$ kpl), niin saadaan seuraavanlainen lasku: $ \frac{6\text{ tikkaria}+n\text{ nallekarkkia}}{3} = \frac{6\text{ tikkaria}}{3} + \frac{n\text{ nallekarkkia}}{3} = \frac{\cancel{3} \cdot 2\text{ tikkaria}}{\cancel{3}} + \frac{n\text{ nallekarkkia}}{3} = 2\text{ tikkaria} + \frac{n\text{ nallekarkkia}}{3}$. Toisin sanoen, kukin saa kaksi tikkaria ja kuinka paljon ikinä onkaan kolmasosa kaikista nallekarkeista.
+
+\laatikko{
+Samantyyppiset asiat voidaan laskea yhteen tai \emph{ryhmitellä}.
+\begin{equation}
+ax^2 + bx + cx^2 + dy + ex = (a+c)x^2 + (b+e)x + dy
+\end{equation}
+}
+
+\begin{esimerkki}
+
+$ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdot 3} + \frac{3 \cdot 3}{2 \cdot 3} = \frac{1}{6} + \frac{9}{6} = \frac{10}{6} = \frac{\cancel{2} \cdot 5}{\cancel{2} \cdot 3} = \frac{5}{3}$
+
+\end{esimerkki}
+
+\begin{tehtava}
+% Ryhmittely
+Sievennä
+	\begin{enumerate}[a)]
+	\item $2x^2+3x+5x^2$
+	\item $x^2+3x^3+x^2+x^3+2x^2$
+	\item $ax^2+bx+cx$
+	\item $ax^3+bx+cy^3+dx+ey^3+fx^3$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $7x^2+3x$
+	\item $4(x^2+x^3)$ tai $4x^2+4x^3$
+	\item $ax^2+(b+c)x$ tai $ax^2+bx+cx$
+	\item $(a+f)x^3+(b+d)x+(c+e)y^3$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Yksi termi osoittajassa
+Sievennä
+	\begin{enumerate}[a)]
+	\item $\frac{2x^3}{x}$
+	\item $\frac{3x^3y^2}{xy}$
+	\item $\frac{x^2yz}{xy^2}$
+	\item $\frac{6xy^3z^2}{2xz}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $2x^2$
+	\item $\frac{x}{y}$
+	\item $\frac{xz}{y}$
+	\item $3y^3z$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Useampia termejä osoittajassa
+Sievennä
+	\begin{enumerate}[a)]
+	\item $\frac{2x^5+3x^3}{x^2}$
+	\item $\frac{6x^2+8y}{2x^2}$
+	\item $\frac{3x-2x^2y^3}{xy}$
+	\item $\frac{2x^2+3xy^2z-4xz}{2xy^2z}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $2x^3+3x$
+	\item $3+4 \frac{y}{x^2}$
+	\item $\frac{3}{y} - 2xy^2$
+	\item $\frac{x}{y^2z} + \frac{3}{2} + \frac{2}{y^2}$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Useampia termejä
+Sievennä.
+	\begin{enumerate}[a)]
+	\item $ \frac{1-x}{3} + \frac{x-2}{6}$
+	\item $ \frac{5x-1}{3} - \frac{2x+5}{2}$
+	\item $\frac{4x^2+3x}{x} + \frac{5x^3y-2x^2y}{x^2y}$
+	\item $\frac{7x+5y}{y} - \frac{3x-2y}{x}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $ -\frac{x}{6}$
+	\item $ \frac{2}{3} x - \frac{17}{6}$
+	\item $9x+1$
+	\item $\frac{7x}{y} + \frac{2y}{x} +2$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Tuloja
+Sievennä.
+	\begin{enumerate}[a)]
+	\item $\frac{x}{6y} \cdot \frac{3y}{2}$
+	\item $x \cdot \frac{x+y}{xy}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $\frac{x}{4}$
+	\item $\frac{x}{y} + 1$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+
+%%%anonyymiltä lahjoittajalta
+\todo{näiden tehtävien mielekkyys kannattaa tarkistaa sekä myös kappale, jonka alle ne laitetaan, jos pääsevät mukaan}
+
+\begin{tehtava}
+Lavenna samannimisiksi \quad
+a) $\frac{2}{3}$ ja $\frac{4}{5}$ \quad b) $\frac{5}{6}$ ja $\frac{7}{9}$ \quad \\ c) $\frac{2}{3}$ ja $\frac{7}{2}$ 
+\begin{vastaus}
+a) $\frac{10}{15}$ ja $\frac{12}{15}$ \qquad b) $\frac{15}{18}$ ja $\frac{14}{18}$ \qquad c) $\frac{4}{6}$ ja $\frac{21}{6}$
+\end{vastaus}
+\end{tehtava}
+
+
+\begin{tehtava}
+Supista \quad
+a) $\frac{15}{20}$ \qquad b) $\frac{14}{21}$ \qquad c) $\frac{12}{20}$
+\begin{vastaus}
+a) $\frac{3}{4}$ \qquad b) $\frac{2}{3}$\qquad c) $\frac{3}{5}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Muuta sekamurtoluvuksi \quad
+%täsmällisemmin sekamurtolukumuoton, mutta pienellä piirillä ajateltiin, että tämä epätäsmällinen muotoilu parempi
+a) $\frac{15}{2}$ \qquad b) $\frac{9}{4}$ \qquad c) $\frac{23}{7}$
+\begin{vastaus}
+a) $7\frac{1}{2}$ \qquad b) $2\frac{1}{4}$ \qquad c) $3\frac{2}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Muunna murtoluvuksi \quad
+a) $3\frac{2}{5}$ \qquad b) $4\frac{1}{3}$ \qquad c) $2\frac{6}{7}$
+\begin{vastaus}
+a) $\frac{17}{5}$ \qquad b) $\frac{13}{12}$ \qquad c) $\frac{20}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{3}{11}+\frac{5}{11}$ \qquad b) $\frac{4}{5}-\frac{1}{5}$ \qquad c) $\frac{2}{3}+\frac{1}{6}$ \qquad
+d) $ \frac{11}{12}-\frac{5}{6}$
+\begin{vastaus}
+a) $\frac{8}{11}$ \qquad b) $\frac{3}{5}$ \qquad c) $\frac{5}{6}$ \qquad d) $\frac{1}{12}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $1\frac{2}{9}+\frac{5}{9}$ \qquad b) $\frac{1}{3}+2\frac{1}{3}$ \qquad c) $2+\frac{5}{4}$ \qquad
+d) $ \frac{3}{2}-\frac{5}{6}$
+\begin{vastaus}
+a) $\frac{7}{9}$ \qquad b) $\frac{8}{3}$ \qquad c) $\frac{9}{4}$ \qquad d) $\frac{2}{3}$
+\end{vastaus}
+\end{tehtava}
+
+
+\begin{tehtava}
+a) $\frac{4}{9} : \frac{1}{5}$ \qquad b) $\frac{2}{7}:\frac{5}{9}$ \qquad c) $\frac{2}{3}:\frac{4}{3}$
+\begin{vastaus}
+a) $\frac{20}{9}$ \qquad b) $\frac{18}{35}$ \qquad c) $\frac{1}{2}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{2}{3} : \frac{7}{11}$ \qquad b) $\frac{4}{3}:(\frac{-13}{4})$ \qquad c) $\frac{7}{8}:4$
+\begin{vastaus}
+a) $1\frac{1}{21}$ \qquad b) $-\frac{16}{39}$ \qquad c) $\frac{7}{32}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{5}{8}\cdot(\frac{3}{5}+\frac{2}{5})$ \qquad b) $\frac{1}{3}+\frac{1}{4}\cdot\frac{6}{5}$
+\begin{vastaus}
+a) $\frac{5}{8}$ \qquad b) $\frac{19}{30}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\dfrac{\frac{1}{2}:\frac{3}{2}}{\frac{3}{2}+\frac{1}{3}}$ \qquad b) $\dfrac{\frac{2}{3}+\frac{3}{4}}{\frac{5}{6}-\frac{7}{12}}$.
+\begin{vastaus}
+a) $\frac{2}{11}$ \qquad b) $5\frac{2}{3}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske murtolukujen $\frac{5}{6}$ ja $-\frac{2}{15}$ \\ a) summa \qquad b) erotus \qquad c) tulo \qquad d) osamäärä.
+\begin{vastaus}
+a) $\frac{7}{10}$ \qquad b) $\frac{29}{30}$ \qquad c) $-\frac{1}{9}$ \qquad d) $-6\frac{1}{4}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske lausekkeen $\frac{x}{2-3x}$ arvo, kun $x$ on \\ a) 4 \qquad b) $-\frac{1}{2}$ \qquad c) $\frac{7}{10}$.
+\begin{vastaus}
+a) $-\frac{2}{5}$ \qquad b) $-\frac{1}{7}$ \qquad c) $-7$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske lausekkeen $\frac{x+y}{2x-y}$ arvo, kun \\ a) $x=\frac{1}{2}$ ja $y= \frac{1}{4}$ \qquad b) $x=\frac{1}{4}$ ja $y= -\frac{3}{8}$ \qquad.
+\begin{vastaus}
+a) $1$ \qquad b) $-\frac{1}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Fibonaccin luvut 0, 1, 1, 2, 3, 5, 8, 13, 21, $\ldots$ määritellään seuraavasti: Kaksi ensimmäistä
+Fibonaccin lukua ovat 0 ja 1, ja siitä seuraavat saadaan kahden
+edellisen summana: 
+\[ 0+1=1, \quad 1+1=2, \quad 1+2 = 3, \quad 2+3=5, \quad 
+\textrm{ja niin edelleen.} \]
+Tutki, miten Fibonaccin luvut liittyvät lukuihin
+\[ \frac{1}{1+1}, \quad \frac{1}{1+\frac{1}{1+1}}, \quad
+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}, \quad 
+\frac{1}{1+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}}, \quad \ldots\]
+\begin{vastaus}
+Luvut ovat sievennettynä peräkkäisten Fibonaccin
+lukujen osamääriä:
+\[\frac{1}{2}, \ \frac{2}{3}, \ \frac{3}{5}, \frac{5}{8} \ldots  \]
+\end{vastaus}
+\end{tehtava}
