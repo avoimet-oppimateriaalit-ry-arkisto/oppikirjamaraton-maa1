@@ -1,0 +1,841 @@
+\chapter{Potenssi}
+    
+    Jos $a$ on reaaliluku ja $n$ on positiivinen kokonaisluku, potenssilla $a^n$ tarkoitetaan tuloa
+    \[
+        a^n = \underbrace{a\cdot \ldots \cdot a}_{n\text{ kpl}}. 
+    \]
+    Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}. Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, niin $a^3$ on kyseisen kuution tilavuus.
+    
+    \begin{esimerkki}
+        Laske $2^4$.
+        
+        \textbf{Ratkaisu.}
+        Potenssissa $2^4$ luku $2$ on kantaluku ja luku $4$ on eksponentti.
+        Merkinnällä $2^4$ siis tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$. Siten
+        \[
+            2^4=2\cdot 2\cdot 2\cdot 2=16.
+        \]
+        
+        \textbf{Vastaus.} $16$.
+    \end{esimerkki}
+            
+    \begin{esimerkki}
+        Potenssit luvuilla.
+        \begin{enumerate}[a)]
+            \item $(-2)^3 = (-2)\cdot (-2)\cdot (-2) = -8$
+            \item $(-2)^4 = (-2)\cdot (-2)\cdot (-2)\cdot (-2) = 16$
+            \item $-2^4   = -(2^4) = -(2\cdot 2\cdot 2\cdot 2) = -16$
+            \item $2^2\cdot 2^3 =
+                \underbrace{2\cdot 2}_{\text{$2$ kpl}}\cdot \underbrace{2\cdot
+                2\cdot 2}_{\text{$3$ kpl}} = \underbrace{2\cdot 2}_{\text{$5$ kpl}}=2^5 = 32$
+            \item $\frac{2^4\cdot 2^2}{2^3} =
+                \frac{2\cdot 2\cdot 2\cdot \cancel{2} \cdot \cancel{2}\cdot
+                \cancel{2}}{\cancel{2}\cdot \cancel{2}\cdot \cancel{2}} = 2^3 = 8$
+        \end{enumerate}
+    \end{esimerkki}
+    
+\section*{Potenssien laskusääntöjä}
+    
+    Samankantaisten potenssien kertolasku\\
+    a) $a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{$3$ kpl}}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{\text{$4$ kpl}}=a^{\mathbf{3+4}}=a^7$
+    
+    Samankantaisten potenssien jakolasku\\
+    b) $\frac{a^7}{a^4}=\frac{a\cdot a\cdot a\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=a^{\mathbf{7-4}}=a^3$
+    
+    Potenssin potenssi\\
+    c) $(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=\underbrace{a\cdot a\cdot a\cdot a\cdot a\cdot a}_{\text{$2\cdot 3=6$  kpl}}=a^{\mathbf{2\cdot 3}}=a^6$
+    
+    Tulon potenssi\\
+    d) $(ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5=a^{\mathbf{1\cdot 3}}\cdot b^{\mathbf{5\cdot 3}}=a^3b^{15}$
+    
+    Osamäärän potenssi\\
+    e) $\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}$
+
+    Potensseille pätevät seuraavat laskusäännöt.
+    
+    \laatikko{
+        \textbf{Potenssien laskusääntöjä}
+    
+        Olkoot $m$ ja $n$ kokonaislukuja ja $a$ reaaliluku.
+        
+        \begin{tabular}{ll}
+            $a^m\cdot a^n            = a^{m+n}$ & Samakantaisten potenssien tulo\\
+            $\frac{a^m}{a^n}         = a^{m-n}$, $a\neq 0,\,m>n$ &Samakantaisten potenssien osamäärä\\
+            $(a\cdot b)^n            = a^n\cdot b^n$ & Tulon potenssi\\
+            $\Big(\frac{a}{b}\Big)^n = \frac{a^n}{b^n}$, $b\neq 0$ & Osamäärän potenssi\\ 
+            $(a^m)^n                 = a^{m\cdot n}$ & Potenssin potenssi\\
+        \end{tabular}
+    }
+    
+\section*{Negatiivinen luku ja nolla eksponenttina}
+    
+    Sievennetään osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla. Supistamalla yhteiset tekijät lopputulos
+    
+    \begin{equation*}
+        \frac{a^3}{a^5} =
+        \frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{a\cdot a\cdot
+        \cancel{a}\cdot \cancel{a}\cdot \cancel{a}} = 
+        \frac{1}{a\cdot a}=\boldsymbol{\frac{1}{a^2}}
+    \end{equation*}
+    
+    on erinäköinen, kuin käyttämällä potenssien laskusääntöjä
+    
+    \begin{equation*}
+        \frac{a^3}{a^5} = a^{3-5}=\boldsymbol {a^{-2}}{.}
+    \end{equation*}
+    
+    Koska lähtötilanne on molemmissa tapauksissa sama, voidaan määritellä, että
+    
+    \begin{equation*}
+        a^{-2} = \frac{1}{a^2}
+    \end{equation*}
+    
+    \laatikko{
+        Yleisesti määritellään (kun $x\neq 0$)
+        \begin{equation*}
+            x^{-n} = \frac{1}{x^n}
+        \end{equation*}
+    }
+    
+    \laatikko{
+        \textbf {Negatiivinen eksponentti} (kun $a\neq 0$)
+        \begin{equation*}
+        	a^{-n} = \frac{1}{a^n}
+        \end{equation*}
+    }
+    
+    Kun eksponenttina on nolla, on tuloksena aina luku $1$ kaikilla nollasta poikkeavilla kantaluvuilla. 
+    Esimerkiksi
+    \[
+        \frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1,
+    \]
+    mutta sama lasku voidaan laskea myös toisella tavalla: $\frac{a^3}{a^3}=a^{3-3}=a^0$.
+
+Merkintää $0^0$ ei ole määritelty.
+    
+    \laatikko{
+        \textbf{Eksponenttina nolla} (kun $a\neq 0$)
+        \begin{equation*}
+            a^{0}=1
+        \end{equation*}
+    }
+    
+    \section{laskujärjestys}
+    
+    \laatikko{
+        \begin{enumerate}
+            \item Sulut
+            \item Potenssilaskut
+            \item Kerto- ja jakolaskut vasemmalta oikealle
+            \item Yhteen- ja jakolaskut vasemmalta oikealle
+        \end{enumerate}
+    }
+   
+    %perustehtäviä
+	Sievennä.
+    \begin{tehtava}%perteht
+        %Sievennä
+		\begin{enumerate}
+        	\item $2^3 $ 
+        	\item $aaaa$ 
+        	\item $a^3a^2$ 
+        	\item $0^4$
+		\end{enumerate}        
+        \begin{vastaus}
+        \begin{enumerate}
+            \item $8$ 
+            \item $a^4$ 
+            \item $a^5$ 
+            \item $0$
+        \end{enumerate}
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}%perteht
+        %Sievennä
+        \begin{enumerate}
+        	\item $a^2a^5 $ 
+        	\item $\frac{a^5}{a^3}$ 
+        	\item $(a^3)^2$ 
+        	\item $12^0$
+		\end{enumerate}        
+        \begin{vastaus}
+        \begin{enumerate}
+            \item $a^7$ 
+            \item $a^2$ 
+            \item $a^6$ 
+            \item $1$
+        \end{enumerate}
+        \end{vastaus}
+    \end{tehtava}    
+    
+    %soveltavia tehtäviä
+        
+    \begin{tehtava}%sovteht
+        %Sievennä
+        \begin{enumerate}
+        	\item $a^2(-a^4) $ 
+        	\item $(ab^2)^0$ 
+        	\item $(3a)^3$ 
+        	\item $(a^5b^3)^3$
+		\end{enumerate}        
+        \begin{vastaus}
+        \begin{enumerate}
+            \item $-a^6$ 
+            \item $1$ 
+            \item $27a^3$ 
+            \item $a^{15}b^9$
+        \end{enumerate}
+        \end{vastaus}
+    \end{tehtava} 
+    
+    \begin{tehtava}%sovteht
+        %Sievennä
+        \begin{enumerate}
+        	\item $\frac{2^7}{2^9}$ 
+        	\item $\frac{a^3}{a}$ 
+        	\item $\left(\frac{1}{3}\right)^2$ 
+        	\item $\left(\frac{a^{-2}}{ab^4}\right)^4$
+		\end{enumerate}        
+        \begin{vastaus}
+        \begin{enumerate}
+            \item $\frac{1}{4}$ 
+            \item $a^2$ 
+            \item $\frac{1}{9} $ 
+            \item $ \left(\frac{1}{a^{12}b^{16}}\right)$ tai $a^{-12}b^{-16}$
+        \end{enumerate}
+        \end{vastaus}
+    \end{tehtava}     
+            
+        
+        
+        
+    %sekalaisia tehtäviä (tehtäväpankki)
+    
+    %Tehtävät ovat tarkoitettu todella heikoille
+    %Näitä lienee liikaa. Karsitaanko vai siirretäänkö muualle?
+    %Tarvitaan myös haastavia tehtäviä.
+    Sievennä.
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a\cdot a\cdot a$ \quad
+        b) $a\cdot a\cdot a\cdot b\cdot b\cdot b\cdot b$ \quad
+        c) $a\cdot b\cdot a\cdot b\cdot a\cdot b\cdot a$
+        
+        \begin{vastaus}
+            a) $a^3$ \qquad
+            b) $a^3b^4$ \qquad
+            c) $a^4b^3$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^2\cdot a^3$ \qquad
+        b) $a^3a^2$ \qquad
+        c) $a^2 a$ \qquad
+        d) $a a^2 a$ \qquad
+        e) $a^2a^1a^3$
+        
+        \begin{vastaus}
+            a) $a^5$ \qquad
+            b) $a^5$ \qquad
+            c) $a^3$ \qquad
+            d) $a^4$ \qquad
+            e) $a^6$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^0$ \qquad
+        b) $a^0a^0$ \qquad
+        c) $a a^1$ \qquad
+        d) $aa^0$ \qquad
+        e) $a^0a^1$
+        
+        \begin{vastaus}
+            a) $1$ \quad ($a\neq0$, koska $0^0$ ei ole määritelty) \qquad
+            b) $1$ \qquad
+            c) $a$ \qquad
+            d) $a^2$ \qquad
+            e) $a$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^1 a a^2$ \qquad
+        b) $aaaa$ \qquad
+        c) $a^3ba^2$ \qquad
+        d) $aba^0ba^1$
+        
+        \begin{vastaus}
+            a) $ a^4$ \qquad
+            b) $a^4$ \qquad
+            c) $a^5b$ \qquad
+            d) $a^2b^2$
+        \end{vastaus}
+    \end{tehtava}
+    % teht 5
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(-2)\cdot(-2)\cdot(-2)$ \qquad
+        b) $(-1)\cdot(-1)\cdot(-1)\cdot(-1)$
+        
+        \begin{vastaus}
+            a) $ -8$ \qquad
+            b) $1$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(-a)\cdot(-a)$ \qquad
+        b) $(-a)\cdot(-a)\cdot(-b)$ \qquad
+        c) $(-a^2)\cdot(-a^2)$
+
+        \begin{vastaus}
+            a) $a^2$ \qquad
+            b) $-a^2b$ \qquad
+            c) $a^4$
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $-a\cdot(-a)$ \qquad
+        b) $-a\cdot(-a)\cdot(-b)$ \qquad
+        c) $-a^2\cdot(-a^2)$
+    
+        \begin{vastaus}
+            a) $a^2$ \qquad
+            b) $-a^2b$ \qquad
+            c) $a^4$
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $-a^3\cdot(-a^2)$ \qquad
+        b) $a\cdot(-a)\cdot(-b)$ \qquad
+        c) $a^2\cdot(-a^2)$
+        
+        \begin{vastaus}
+            a) $a^5$ \qquad
+            b) $a^2b$ \qquad
+            c) $-a^4$
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $2^3\cdot2^3$ \qquad
+        b) $4^3$ \qquad
+        c) $(2^2)^3$ \qquad
+        d) $2^{2+2+2}$
+
+        \begin{vastaus}
+            a) $64$ \qquad
+            b) $64$ \qquad
+            c) $64$ \qquad
+            d) $64$
+        \end{vastaus}
+    \end{tehtava}
+
+    %teht. 10
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $0^3\cdot0^3\cdot0^3$ \qquad
+        b) $3^1$ \qquad
+        c) $2^{2+3}$ \qquad
+        d) $2^{6-4}$ \qquad
+        e) $5^0$
+
+        \begin{vastaus}
+            a) $1$ \qquad
+            b) $3$ \qquad
+            c) $32$ \qquad
+            d) $4$ \qquad
+            e) $1$
+        \end{vastaus}
+    \end{tehtava}
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(a^3)^1$ \qquad
+        b) $(a^6)^2$ \qquad
+        c) $(a^2)^4$ \qquad 
+        d) $(a^1)^3$ \qquad
+        e) $(a^0)^5$
+
+        \begin{vastaus}
+            a) $a^3$ \qquad
+            b) $a^{12}$ \qquad
+            c) $a^8$ \qquad
+            d) $a^3$ \qquad
+            e) $1$
+        \end{vastaus}
+    \end{tehtava}
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^3\cdot a^2\cdot a^5$ \qquad
+        b) $(a^3)^2$ \qquad
+        c) $(a^2a^3)^4$ \qquad
+        d) $a^{7-2}$
+
+        \begin{vastaus}
+            a) $a^{10}$ \qquad
+            b) $a^6$ \qquad
+            c) $a^{20}$ \qquad
+            d) $a^5$
+        \end{vastaus}
+    \end{tehtava}
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(1\cdot a)^3$ \qquad
+        b) $(a\cdot 2)^2$ \qquad
+        c) $(-2abc)^3$ \qquad
+        d) $(3a)^4$
+
+        \begin{vastaus}
+            a) $a^3$ \qquad
+            b) $4a^2$ \qquad
+            c) $-8a^3b^3c^3$ \qquad
+            d) $91a^4$
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^3\cdot b^2\cdot a^5$ \qquad
+        b) $(-ab^3)^2$ \qquad
+        c) $(a^5a^4)^3$ \qquad
+        d) $b(ab)^2$
+
+        \begin{vastaus}
+            a) $a^8b^2$ \qquad
+            b) $a^2b^6$ \qquad
+            c) $a^{15}b^{12}$ \qquad
+            d) $a^2b^3$
+        \end{vastaus}
+    \end{tehtava}
+
+    %teht.15
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $b^3(ab^0)^2$ \qquad
+        b) $(ab^3)^0$ \qquad
+        c) $(aa^4)^3a^2$ \qquad
+        d) $a^3(b^2a)^5$
+
+        \begin{vastaus}
+            a) $a^2b^3$ \qquad
+            b) $1$ \qquad
+            c) $a^{17}$ \qquad
+            d) $a^8b^{10}$
+        \end{vastaus}
+    \end{tehtava}
+
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(1^3\cdot 2^2)^2$ \qquad
+        b) $(1^2\cdot 2^3)^2$ \qquad
+        c) $(2^2a^4)^2$ \qquad
+        d) $b(3b)^3$
+
+        \begin{vastaus}
+            a) $16$ \qquad
+            b) $64$ \qquad
+            c) $16a^8$ \qquad
+            d) $27b^4$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $(a^3b^2)^2$ \qquad
+        b) $a(a^2b^3)^4$ \qquad
+        c) $(b^2a^4)^5$ \qquad
+        d) $b(2ab^2)^3$
+        
+        \begin{vastaus}
+            a) $a^6b^4$ \qquad
+            b) $a^9b^{12}$ \qquad
+            c) $a^{20}b^{10}$ \qquad
+            d) $8a^3b^7$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $\frac{2^3}{2^2}$ \qquad
+        b) $\frac{2^4}{2^2}$ \qquad
+        c) $\frac{2^3}{2^1}$ \qquad
+        d) $\frac{2^3}{2^0}$ \qquad
+        e) $\frac{2^3}{2^4}$ \qquad
+        f) $\frac{2^3}{2^5}$
+        
+        \begin{vastaus}
+            a) $2$ \qquad
+            b) $4$ \qquad
+            c) $4$ \qquad
+            d) $8$ \qquad
+            e) $\frac{1}{2}$ \qquad
+            f) $\frac{1}{4}$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $\frac{a^3}{a^2}$ \qquad
+        b) $\frac{a^4}{a^2}$ \qquad
+        c) $\frac{a^3}{a^1}$ \qquad
+        d) $\frac{a^3}{a^0}$ \qquad
+        e) $\frac{a^3}{a^4}$ \qquad
+        f) $\frac{a^3}{a^5}$
+        
+        \begin{vastaus}
+            a) $a$ \qquad
+            b) $a^2$ \qquad
+            c) $a^2$ \qquad
+            d) $a^3$ \qquad
+            e) $a^{-1} = \frac{1}{a}$ \qquad
+            f) $a^{-2} = \frac{1}{a^2}$
+        \end{vastaus}
+    \end{tehtava}
+    
+    %teht. 20
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $\frac{a^2b^2}{ab}$ \qquad
+        b) $\frac{a^2b}{a^2}$ \qquad
+        c) $\frac{a^3}{a^3}$ \qquad
+        d) $\frac{1}{a^0}$ \qquad
+        e) $\frac{ab^3}{-b^4}$
+        
+        \begin{vastaus}
+            a) $ab$ \qquad
+            b) $b$ \qquad
+            c) $1$ \qquad
+            d) $1$ \qquad
+            e) $-\frac{a}{b}$
+        \end{vastaus}
+    \end{tehtava}
+    
+    Sievennä ja kirjoita potenssiksi, jonka eksponentti on positiivinen.
+    
+    \begin{tehtava}
+        %Sievennä \quad
+        a) $a^{-3}$ \qquad
+        b) $\frac{a}{a^3}$ \qquad
+        c) $a^{-2}\cdot a^5$ \qquad
+        d) $\frac{b}{a^4}b^{-4}$ \qquad
+        e) $\frac{a^3}{a^{-5}}$
+        
+        \begin{vastaus}
+            a) $\frac{1}{a^3}$ \qquad
+            b) $\frac{1}{a^2}$ \qquad
+            c) $a^3$ \qquad
+            d) $\frac{}{a^4b^3}$ \qquad
+            e) $a^8$
+        \end{vastaus}
+    \end{tehtava}
+    
+    Esitä ilman sulkuja ja sievennä.
+    
+    \begin{tehtava}
+        %Esitä ilman sulkuja ja sievennä \quad
+        a) $(\frac{1}{2})^2$ \qquad
+        b) $(\frac{1}{3})^3$ \qquad
+        c) $(\frac{a}{b})^4$ \qquad
+        d) $(\frac{a^2}{b^3})^2$ \qquad
+        e) $\left(\frac{a^2}{ab^2}\right)^2$
+        
+        \begin{vastaus}
+            a) $\frac{1}{4}$ \qquad
+            b) $\frac{1}{27}$ \qquad
+            c) $\frac{a^4}{b^4}$ \qquad
+            d) $\frac{a^4}{b^6}$ \qquad
+            e) $\frac{a^2}{b^4}$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Esitä ilman sulkuja ja sievennä \quad
+        a) $(\frac{1}{2})\cdot(\frac{1}{2})$ \qquad
+        b) $(-\frac{ab^2}{a^2b})^3$ \qquad
+        c) $(-a^4b^4)^2$ \qquad
+        d) $\left((\frac{a}{b})^4\right)^2$
+        
+        \begin{vastaus}
+            a) $\frac{1}{4}$ \qquad
+            b) $-\frac{b^3}{a^3}$ \qquad
+            c) $a^8b^8$ \qquad
+            d) $\frac{a^8}{b^8}$
+        \end{vastaus}
+    \end{tehtava}
+    
+    \begin{tehtava}
+        %Esitä ilman sulkuja ja sievennä \quad
+        a) $\frac{6a^9}{3a^2}$ \qquad
+        b) $(\frac{a^2b^{-2}}{a^2b})^{-3}$ \qquad
+        c) $\frac{5a^2}{-15a}$ \qquad
+        d) $\left(-(\frac{10^3}{100b})^2 b^{-1} \right )^2$
+        
+        \begin{vastaus}
+            a) $2a^7$ \qquad
+            b) $b^9$ \qquad
+            c) $-\frac{1}{3}a = -\frac{a}{3}$ \qquad
+            d) $\frac{10\ 000}{b^6}$
+        \end{vastaus}
+    \end{tehtava}
+
+\section{Murtolausekkeiden sieventäminen}
+
+\laatikko{
+Jos murtoluvun osoittajassa tai nimittäjässä on summa, jonka osilla on yhteinen tekijä, sen voi ottaa \emph{yhteiseksi tekijäksi} sulkujen eteen. Jos osoittajassa ja nimittäjässä on sen jälkeen sama kerroin, sen voi jakaa pois molemmista eli \emph{supistaa} pois.
+\begin{equation}
+\frac{ac+bc}{c} = \frac{ \cancel{c} (a+b)}{\cancel{c}} = a+b
+\end{equation}
+
+
+Joskus murtolauseke sieventyy, jos sen esittääkin kahden murtoluvun summana.
+\begin{equation}
+\frac{ca+b}{c} = \frac{ca}{c} + \frac{b}{c} = a + \frac{b}{c}
+\end{equation}
+}
+
+Kun jakaa kolme erikokoista nallekarkkipussia ($a$, $b$ ja $c$) tasan kolmen ihmisen kesken, on sama, laittaako kaikki ensin samaan kulhoon ja jakaa ne sitten ($\frac{a+b+c}{3}$) vai jakaako jokaisen pussin erikseen ($ \frac{a}{3} + \frac{b}{3} + \frac{c}{3}$).
+
+Jos taas samat kolme henkilöä jakavat keskenään pussin tikkareita ($6$ kpl) ja yhden pussin nallekarkkeja ($n$ kpl), niin saadaan seuraavanlainen lasku: $ \frac{6\text{ tikkaria}+n\text{ nallekarkkia}}{3} = \frac{6\text{ tikkaria}}{3} + \frac{n\text{ nallekarkkia}}{3} = \frac{\cancel{3} \cdot 2\text{ tikkaria}}{\cancel{3}} + \frac{n\text{ nallekarkkia}}{3} = 2\text{ tikkaria} + \frac{n\text{ nallekarkkia}}{3}$. Toisin sanoen, kukin saa kaksi tikkaria ja kuinka paljon ikinä onkaan kolmasosa kaikista nallekarkeista.
+
+\laatikko{
+Samantyyppiset asiat voidaan laskea yhteen tai \emph{ryhmitellä}.
+\begin{equation}
+ax^2 + bx + cx^2 + dy + ex = (a+c)x^2 + (b+e)x + dy
+\end{equation}
+}
+
+\begin{esimerkki}
+
+$ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdot 3} + \frac{3 \cdot 3}{2 \cdot 3} = \frac{1}{6} + \frac{9}{6} = \frac{10}{6} = \frac{\cancel{2} \cdot 5}{\cancel{2} \cdot 3} = \frac{5}{3}$
+
+\end{esimerkki}
+
+\begin{tehtava}
+% Ryhmittely
+Sievennä
+	\begin{enumerate}[a)]
+	\item $2x^2+3x+5x^2$
+	\item $x^2+3x^3+x^2+x^3+2x^2$
+	\item $ax^2+bx+cx$
+	\item $ax^3+bx+cy^3+dx+ey^3+fx^3$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $7x^2+3x$
+	\item $4(x^2+x^3)$ tai $4x^2+4x^3$
+	\item $ax^2+(b+c)x$ tai $ax^2+bx+cx$
+	\item $(a+f)x^3+(b+d)x+(c+e)y^3$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Yksi termi osoittajassa
+Sievennä
+	\begin{enumerate}[a)]
+	\item $\frac{2x^3}{x}$
+	\item $\frac{3x^3y^2}{xy}$
+	\item $\frac{x^2yz}{xy^2}$
+	\item $\frac{6xy^3z^2}{2xz}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $2x^2$
+	\item $\frac{x}{y}$
+	\item $\frac{xz}{y}$
+	\item $3y^3z$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Useampia termejä osoittajassa
+Sievennä
+	\begin{enumerate}[a)]
+	\item $\frac{2x^5+3x^3}{x^2}$
+	\item $\frac{6x^2+8y}{2x^2}$
+	\item $\frac{3x-2x^2y^3}{xy}$
+	\item $\frac{2x^2+3xy^2z-4xz}{2xy^2z}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $2x^3+3x$
+	\item $3+4 \frac{y}{x^2}$
+	\item $\frac{3}{y} - 2xy^2$
+	\item $\frac{x}{y^2z} + \frac{3}{2} + \frac{2}{y^2}$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Useampia termejä
+Sievennä.
+	\begin{enumerate}[a)]
+	\item $ \frac{1-x}{3} + \frac{x-2}{6}$
+	\item $ \frac{5x-1}{3} - \frac{2x+5}{2}$
+	\item $\frac{4x^2+3x}{x} + \frac{5x^3y-2x^2y}{x^2y}$
+	\item $\frac{7x+5y}{y} - \frac{3x-2y}{x}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $ -\frac{x}{6}$
+	\item $ \frac{2}{3} x - \frac{17}{6}$
+	\item $9x+1$
+	\item $\frac{7x}{y} + \frac{2y}{x} +2$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+% Tuloja
+Sievennä.
+	\begin{enumerate}[a)]
+	\item $\frac{x}{6y} \cdot \frac{3y}{2}$
+	\item $x \cdot \frac{x+y}{xy}$
+	\end{enumerate}
+
+\begin{vastaus}
+	\begin{enumerate}[a)]
+	\item $\frac{x}{4}$
+	\item $\frac{x}{y} + 1$
+	\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+
+%%%anonyymiltä lahjoittajalta
+\todo{näiden tehtävien mielekkyys kannattaa tarkistaa sekä myös kappale, jonka alle ne laitetaan, jos pääsevät mukaan}
+
+\begin{tehtava}
+Lavenna samannimisiksi \quad
+a) $\frac{2}{3}$ ja $\frac{4}{5}$ \quad b) $\frac{5}{6}$ ja $\frac{7}{9}$ \quad \\ c) $\frac{2}{3}$ ja $\frac{7}{2}$ 
+\begin{vastaus}
+a) $\frac{10}{15}$ ja $\frac{12}{15}$ \qquad b) $\frac{15}{18}$ ja $\frac{14}{18}$ \qquad c) $\frac{4}{6}$ ja $\frac{21}{6}$
+\end{vastaus}
+\end{tehtava}
+
+
+\begin{tehtava}
+Supista \quad
+a) $\frac{15}{20}$ \qquad b) $\frac{14}{21}$ \qquad c) $\frac{12}{20}$
+\begin{vastaus}
+a) $\frac{3}{4}$ \qquad b) $\frac{2}{3}$\qquad c) $\frac{3}{5}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Muuta sekamurtoluvuksi \quad
+%täsmällisemmin sekamurtolukumuoton, mutta pienellä piirillä ajateltiin, että tämä epätäsmällinen muotoilu parempi
+a) $\frac{15}{2}$ \qquad b) $\frac{9}{4}$ \qquad c) $\frac{23}{7}$
+\begin{vastaus}
+a) $7\frac{1}{2}$ \qquad b) $2\frac{1}{4}$ \qquad c) $3\frac{2}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Muunna murtoluvuksi \quad
+a) $3\frac{2}{5}$ \qquad b) $4\frac{1}{3}$ \qquad c) $2\frac{6}{7}$
+\begin{vastaus}
+a) $\frac{17}{5}$ \qquad b) $\frac{13}{12}$ \qquad c) $\frac{20}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{3}{11}+\frac{5}{11}$ \qquad b) $\frac{4}{5}-\frac{1}{5}$ \qquad c) $\frac{2}{3}+\frac{1}{6}$ \qquad
+d) $ \frac{11}{12}-\frac{5}{6}$
+\begin{vastaus}
+a) $\frac{8}{11}$ \qquad b) $\frac{3}{5}$ \qquad c) $\frac{5}{6}$ \qquad d) $\frac{1}{12}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $1\frac{2}{9}+\frac{5}{9}$ \qquad b) $\frac{1}{3}+2\frac{1}{3}$ \qquad c) $2+\frac{5}{4}$ \qquad
+d) $ \frac{3}{2}-\frac{5}{6}$
+\begin{vastaus}
+a) $\frac{7}{9}$ \qquad b) $\frac{8}{3}$ \qquad c) $\frac{9}{4}$ \qquad d) $\frac{2}{3}$
+\end{vastaus}
+\end{tehtava}
+
+
+\begin{tehtava}
+a) $\frac{4}{9} : \frac{1}{5}$ \qquad b) $\frac{2}{7}:\frac{5}{9}$ \qquad c) $\frac{2}{3}:\frac{4}{3}$
+\begin{vastaus}
+a) $\frac{20}{9}$ \qquad b) $\frac{18}{35}$ \qquad c) $\frac{1}{2}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{2}{3} : \frac{7}{11}$ \qquad b) $\frac{4}{3}:(\frac{-13}{4})$ \qquad c) $\frac{7}{8}:4$
+\begin{vastaus}
+a) $1\frac{1}{21}$ \qquad b) $-\frac{16}{39}$ \qquad c) $\frac{7}{32}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\frac{5}{8}\cdot(\frac{3}{5}+\frac{2}{5})$ \qquad b) $\frac{1}{3}+\frac{1}{4}\cdot\frac{6}{5}$
+\begin{vastaus}
+a) $\frac{5}{8}$ \qquad b) $\frac{19}{30}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\dfrac{\frac{1}{2}:\frac{3}{2}}{\frac{3}{2}+\frac{1}{3}}$ \qquad b) $\dfrac{\frac{2}{3}+\frac{3}{4}}{\frac{5}{6}-\frac{7}{12}}$.
+\begin{vastaus}
+a) $\frac{2}{11}$ \qquad b) $5\frac{2}{3}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske murtolukujen $\frac{5}{6}$ ja $-\frac{2}{15}$ \\ a) summa \qquad b) erotus \qquad c) tulo \qquad d) osamäärä.
+\begin{vastaus}
+a) $\frac{7}{10}$ \qquad b) $\frac{29}{30}$ \qquad c) $-\frac{1}{9}$ \qquad d) $-6\frac{1}{4}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske lausekkeen $\frac{x}{2-3x}$ arvo, kun $x$ on \\ a) 4 \qquad b) $-\frac{1}{2}$ \qquad c) $\frac{7}{10}$.
+\begin{vastaus}
+a) $-\frac{2}{5}$ \qquad b) $-\frac{1}{7}$ \qquad c) $-7$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Laske lausekkeen $\frac{x+y}{2x-y}$ arvo, kun \\ a) $x=\frac{1}{2}$ ja $y= \frac{1}{4}$ \qquad b) $x=\frac{1}{4}$ ja $y= -\frac{3}{8}$ \qquad.
+\begin{vastaus}
+a) $1$ \qquad b) $-\frac{1}{7}$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Fibonaccin luvut 0, 1, 1, 2, 3, 5, 8, 13, 21, $\ldots$ määritellään seuraavasti: Kaksi ensimmäistä
+Fibonaccin lukua ovat 0 ja 1, ja siitä seuraavat saadaan kahden
+edellisen summana: 
+\[ 0+1=1, \quad 1+1=2, \quad 1+2 = 3, \quad 2+3=5, \quad 
+\textrm{ja niin edelleen.} \]
+Tutki, miten Fibonaccin luvut liittyvät lukuihin
+\[ \frac{1}{1+1}, \quad \frac{1}{1+\frac{1}{1+1}}, \quad
+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}, \quad 
+\frac{1}{1+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}}}, \quad \ldots\]
+\begin{vastaus}
+Luvut ovat sievennettynä peräkkäisten Fibonaccin
+lukujen osamääriä:
+\[\frac{1}{2}, \ \frac{2}{3}, \ \frac{3}{5}, \frac{5}{8} \ldots  \]
+\end{vastaus}
+\end{tehtava}

@@ -184,8 +184,15 @@
 \Newassociation{vastaus}{Vastaus}{ans}
 \newtheorem{tehtava}{Tehtävä}
 
+
 % Cancel-paketti supistamista ym. varten
 \usepackage{cancel}
+
+% Monipalstainen sisältö esim. lyhyille tehtäville
+% Käyttö: \begin{multicols}{n}
+%              ...
+%         \end{multicols}
+\usepackage{multicol}
 
 % Todo-merkintöjen tuki
 %  - ks. lisää: https://latexforhumans.wordpress.com/2009/03/13/todonotes/
@@ -203,6 +210,9 @@
 
 \usepackage{icomma} % Jotta pilkun perään ei tule naurettavaa väliä.
 
+% Jotta mikro-etuliitteen saisi pystyyn: $\upmu$
+\usepackage{upgreek}
+
 \begin{document}
 \Opensolutionfile{ans}[ans1] %Answers-pakettiin!
 
@@ -216,6 +226,9 @@
 
 % Siistitään sisällysluettelo - tämä rikkoo listoftodosin joten vasta tässä.
 \setcounter{tocdepth}{0}
+
+% Esipuheesta "Luku 0" ja numerointi siitä eteenpäin
+\setcounter{chapter}{-1}
 
 \input{sisalto}
 \end{document}

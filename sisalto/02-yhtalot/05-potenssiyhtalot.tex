@@ -1,0 +1,121 @@
+\chapter{Potenssiyhtälöt}
+
+\laatikko{\emph{Potenssiyhtälö} on yhtälö, joka on esitettävissä muodossa 
+$
+x^n=a
+$,
+jossa positiivinen kokonaisluku $n$ on potenssiyhtälön \emph{aste}.}
+
+Potenssiyhtälöt esiintyvät esimerkiksi, kun lasketaan koron korkoa, sekä pinta-ala- ja tilavuuslaskuissa.
+
+\begin{esimerkki}
+\begin{enumerate}
+\item[(a)]
+Yhtälö $27x^9=7$ on potenssiyhtälö, sillä jakamalla puolittain luvulla $27$
+voimme kirjoittaa sen muodossa $x^9 = \frac{7}{27}$.
+\item[(b)]
+Yhtälö $2x^{4}-7=3$ on potenssiyhtälö. Nimittäin
+\begin{eqnarray*}
+2x^{4} -7 &=& 3 \\
+2x^{4} &=& 3+7 \\
+x^{4} &=& \frac{10}{2} \\
+x^{4} &=& 5.
+\end{eqnarray*}
+\item[(c)]
+Yhtälö $x^{\frac{3}{2}}=42$ ei ole potenssiyhtälö, sillä $\frac{3}{2}$ ei ole kokonaisluku. (Se voidaan kuitenkin kirjoittaa potenssiyhtälönä uuden muuttujan $z=x^{\frac{1}{2}}=\sqrt{x}$ suhteen: saamme potenssiyhtälön $z^3 = 42$.)
+\item[(d)]
+Yhtälö $x^{-2}=44$ ei ole potenssiyhtälö, sillä $-2$ ei ole positiivinen kokonaisluku. (Se voidaan kuitenkin kirjoittaa potenssiyhtälönä uuden tuntemattoman $z=x^{-1}=\frac{1}{x}$ suhteen: saamme potenssiyhtälön $z^2 = 44$.)
+\end{enumerate}
+\end{esimerkki}
+
+\laatikko{\emph{Potenssiyhtälön ratkaisu}:
+\begin{itemize}
+\item
+jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{pariton}, on sillä tasan yksi ratkaisu:
+$$
+x = a^{\frac{1}{n}}.
+$$
+\item
+Jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{parillinen} ja $a\ge 0$, on sillä kaksi ratkaisua:
+$$
+x = \pm a^{\frac{1}{n}}.
+$$
+\item
+Jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{parillinen} ja $a< 0$, ei potenssiyhtälöllä ole ratkaisuja.
+\end{itemize}}
+
+\begin{esimerkki}
+\begin{enumerate}
+\item[(a)]
+Potenssiyhtälön $x^3 = 100$ ratkaisu on $x=100^{\frac{1}{3}}=4{,}6416...$.
+\item[(b)]
+Potenssiyhtälöllä $x^4=50$ on kaksi ratkaisua $x=50^{\frac{1}{4}}=2{,}6591...$ ja $x=-50^{\frac{1}{4}}=-2{,}6591...$.
+\item[(c)] 
+Potenssiyhtälöllä $x^6 = -1$ ei ole ratkaisua, sillä $x^4 = (x^3)^2 \ge 0$ kaikille $x$.
+\end{enumerate}
+\end{esimerkki}
+
+\missingfigure{Edellisen esimerkin graafiset ratkaisut $y=x^3$, $x^4$, ja $y=x^6$.}
+
+
+\begin{esimerkki}
+Suursijoittaja Nalle Mursulla $5\ 000$ euroa ylimääräistä rahaa, jonka hän aikoo sijoittaa $30$ vuodeksi.  Nalle Mursu haluaa sijoittamansa pääoman kasvavan $100\ 000$ euroksi $30$ vuodessa.  Kuinka suuren vuotuisen korkokannan Nalle Mursu tarvitsee sijoitukselleen?
+
+\emph{Ratkaisu}:  Olkoon vuotuinen korkokanta $r$. \emph{Korkoa korolle -periaatten} nojalla $5\ 000$ euron sijoitus kasvaa $30$ vuodessa summaksi $5\ 000\cdot(1+r)^{30}$.  Merkitsemällä $x=1+r$ päädymme yhtälöön $5 000\cdot x^{30} = 100\ 000$.  Jakamalla puolittain luvulla $5\ 000$ päädymme potenssiyhtälöön 
+$$
+x^{30} = 20\ 000,
+$$ 
+jonka ratkaisu on $x=20\ 000^{\frac{1}{30}} = 1{,}39...$. Siten suursijoittaja Nalle Mursun vaatima korkokanta sijoituksellee on noin $r=1-x=1-1{,}39=0{,}39=39\%.$
+\end{esimerkki}
+
+Potenssifunktiot ovat tapa katsoa potenssiyhtälöitä.
+
+\laatikko{\emph{Potenssifunktio} on funktio, jossa muuttuja $x$ korotetaan potenssiin $n$. Potenssifunktion lauseke siis on
+$$
+f(x) = x^n.
+$$
+}
+
+Potenssiyhtälöä $x^n=a$ voidaan nyt tarkastella tarkastelemalla funktiota $f(x)=x^n$ ja sen kuvaajaa $y=f(x)$. Tällöin siis $y=a$, eli $y$-akseli vastaa $a$:n arvoja.
+
+\missingfigure{Funktioiden  $f(x)={x}^3$ ja $g(x)=x^4$ kuvaajat.}
+
+\laatikko{
+\begin{itemize}
+\item
+Olkoon $n$ \emph{pariton}. Tällöin potenssifunktio $f(x)=x^n$ on kaikkialla aidosti kasvava ja jatkuva. Tästä seuraa, että yhtälöllä $y=f(x)$ on aina tasan yksi ratkaisu kaikilla $y$.    
+\item
+Olkoon $n$ \emph{parillinen}. Tällöin potenssifunktio $f(x)=x^n$ on positiivinen, symmetrinen, jatkuva ja aidosti kasvava, kun $x$ on positiivinen.  Positiivisuudesta seuraa, että yhtälöllä $y=f(x)$ ei ole ratkaisuja, jos $y$ on negatiivinen. Symmetriasta $f(x)=f(-x)$ seuraa, että jos $x$ on ratkaisu, niin myös $-x$ on ratkaisu.  
+\end{itemize}
+}
+
+\sivulaatikko{Tehtäviä puuttuu.  Muuten minun puolestani luku voisi olla valmis. -Tommi Sottinen}
+
+\begin{tehtava}
+Ratkaise potenssiyhtälöt
+\begin{enumerate}
+\item $x^3 = 81.$
+\item $x^5 = 10.$
+\item $x^2 = 4.$
+\item $x^4 = 1.$
+\end{enumerate}
+\end{tehtava}
+
+\begin{tehtava}
+Ratkaise potenssiyhtälöt
+\begin{enumerate}
+\item $x^4 - 8 = 0.$
+\item $2x^3 + 7 = 0.$
+\item $\frac{x^2}{4} - \frac{5}{2} = 1.$
+\item $1{,}51 x^4 - 1{,}2 = 7{,}5.$
+\end{enumerate}
+\end{tehtava}
+
+\begin{tehtava}
+Jumalkuningas Tauno Alpakka rakennuttaa itselleen kuution muotoista hautapalatsia.  Palatsin tulee olla $5\ 000\ \mathrm{m}^3$. 
+\begin{enumerate}
+\item Kuinka korkea palatsista tulee?
+\item Palatsi päällystetään $10\ \mathrm{cm}$ paksuisella kultakerroksella.  Kuinka monta kiloa kultaa tarvitaan? (Kullan tiheys on $19{,}23\cdot 10^3\ \mathrm{ kg}/\mathrm{m}^3$.)
+\end{enumerate}
+\end{tehtava}
+
