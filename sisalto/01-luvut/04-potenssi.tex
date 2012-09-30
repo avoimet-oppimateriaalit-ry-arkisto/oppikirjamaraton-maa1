@@ -110,50 +110,30 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
 
 Merkintää $0^0$ ei ole määritelty.    
 
-\section{Murtolausekkeiden sieventäminen}
-
-\laatikko{
-Jos murtoluvun osoittajassa tai nimittäjässä on summa, jonka osilla on yhteinen tekijä, sen voi ottaa \emph{yhteiseksi tekijäksi} sulkujen eteen. Jos osoittajassa ja nimittäjässä on sen jälkeen sama kerroin, sen voi jakaa pois molemmista eli \emph{supistaa} pois.
-\begin{equation}
-\frac{ac+bc}{c} = \frac{ \cancel{c} (a+b)}{\cancel{c}} = a+b
-\end{equation}
-
-
-Joskus murtolauseke sieventyy, jos sen esittääkin kahden murtoluvun summana.
-\begin{equation}
-\frac{ca+b}{c} = \frac{ca}{c} + \frac{b}{c} = a + \frac{b}{c}
-\end{equation}
-}
-
-Kun jakaa kolme erikokoista nallekarkkipussia ($a$, $b$ ja $c$) tasan kolmen ihmisen kesken, on sama, laittaako kaikki ensin samaan kulhoon ja jakaa ne sitten ($\frac{a+b+c}{3}$) vai jakaako jokaisen pussin erikseen ($ \frac{a}{3} + \frac{b}{3} + \frac{c}{3}$).
-
-Jos taas samat kolme henkilöä jakavat keskenään pussin tikkareita ($6$ kpl) ja yhden pussin nallekarkkeja ($n$ kpl), niin saadaan seuraavanlainen lasku: $ \frac{6\text{ tikkaria}+n\text{ nallekarkkia}}{3} = \frac{6\text{ tikkaria}}{3} + \frac{n\text{ nallekarkkia}}{3} = \frac{\cancel{3} \cdot 2\text{ tikkaria}}{\cancel{3}} + \frac{n\text{ nallekarkkia}}{3} = 2\text{ tikkaria} + \frac{n\text{ nallekarkkia}}{3}$. Toisin sanoen, kukin saa kaksi tikkaria ja kuinka paljon ikinä onkaan kolmasosa kaikista nallekarkeista.
-
-\laatikko{
-Samantyyppiset asiat voidaan laskea yhteen tai \emph{ryhmitellä}.
-\begin{equation}
-ax^2 + bx + cx^2 + dy + ex = (a+c)x^2 + (b+e)x + dy
-\end{equation}
-}
-
-\begin{esimerkki}
-
-$ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdot 3} + \frac{3 \cdot 3}{2 \cdot 3} = \frac{1}{6} + \frac{9}{6} = \frac{10}{6} = \frac{\cancel{2} \cdot 5}{\cancel{2} \cdot 3} = \frac{5}{3}$
-
-\end{esimerkki}
+%    \section{Laskujärjestys}
+%    
+%    \laatikko{
+%        \begin{enumerate}
+%            \item Sulut
+%            \item Potenssilaskut
+%            \item Kerto- ja jakolaskut vasemmalta oikealle
+%            \item Yhteen- ja jakolaskut vasemmalta oikealle
+%        \end{enumerate}
+%    }
+%   
 
     %perustehtäviä
 	Sievennä.
     \begin{tehtava}%perteht
         %Sievennä
-		\begin{enumerate}
+		\begin{enumerate}[a)]
         	\item $2^3 $ 
         	\item $aaaa$ 
         	\item $a^3a^2$ 
         	\item $0^4$
 		\end{enumerate}        
         \begin{vastaus}
-        \begin{enumerate}
+        \begin{enumerate}[a)]
             \item $8$ 
             \item $a^4$ 
             \item $a^5$ 
@@ -164,14 +144,14 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
 
     \begin{tehtava}%perteht
         %Sievennä
-        \begin{enumerate}
+        \begin{enumerate}[a)]
         	\item $a^2a^5 $ 
         	\item $\frac{a^5}{a^3}$ 
         	\item $(a^3)^2$ 
         	\item $12^0$
 		\end{enumerate}        
         \begin{vastaus}
-        \begin{enumerate}
+        \begin{enumerate}[a)]
             \item $a^7$ 
             \item $a^2$ 
             \item $a^6$ 
@@ -184,14 +164,14 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
         
     \begin{tehtava}%sovteht
         %Sievennä
-        \begin{enumerate}
+        \begin{enumerate}[a)]
         	\item $a^2(-a^4) $ 
         	\item $(ab^2)^0$ 
         	\item $(3a)^3$ 
         	\item $(a^5b^3)^3$
 		\end{enumerate}        
         \begin{vastaus}
-        \begin{enumerate}
+        \begin{enumerate}[a)]
             \item $-a^6$ 
             \item $1$ 
             \item $27a^3$ 
@@ -202,14 +182,14 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
     
     \begin{tehtava}%sovteht
         %Sievennä
-        \begin{enumerate}
+        \begin{enumerate}[a)]
         	\item $\frac{2^7}{2^9}$ 
         	\item $\frac{a^3}{a}$ 
         	\item $\left(\frac{1}{3}\right)^2$ 
         	\item $\left(\frac{a^{-2}}{ab^4}\right)^4$
 		\end{enumerate}        
         \begin{vastaus}
-        \begin{enumerate}
+        \begin{enumerate}[a)]
             \item $\frac{1}{4}$ 
             \item $a^2$ 
             \item $\frac{1}{9} $ 
@@ -221,11 +201,7 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
         
         
         
-    %sekalaisia tehtäviä (tehtäväpankki)
-    
-    %Tehtävät ovat tarkoitettu todella heikoille
-    %Näitä lienee liikaa. Karsitaanko vai siirretäänkö muualle?
-    %Tarvitaan myös haastavia tehtäviä.
+ 
     Sievennä.
     \begin{tehtava}
         %Sievennä \quad
