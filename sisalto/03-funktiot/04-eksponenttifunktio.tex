@@ -1,54 +1,48 @@
 \chapter{Eksponenttifunktio}
 
-\chapter{Eksponenttifunktio}
-
 Potenssifunktiossa $f(x) = x^n$ muuttuja $x$ on kantalukuna. Jos muuttuja
-$x$ on sen sijaan eksponenttina, saadaan oleellisesti erilainen joukko
-funktioita.
+$x$ on sen sijaan eksponenttina, saadaan joukko funktioita, joita
+kutsutaan \emph{eksponenttifunktioiksi}.
 
-\laatikko{Muotoa $f(x) = a^x$, $a > 0$, $a \neq 1$ olevia
-funktioita kutsutaan eksponenttifunktioiksi.}
+\laatikko{Eksponenttifunktiot ovat muotoa $f(x) = a^x$, $a > 0$,
+$a \neq 1$ olevia funktioita.}
 
 Eksponenttifunktioita on kahta tyyppiä: kasvavia ja väheneviä.
 Kasvavilla eksponenttifunktioilla $a>1$, esimerkiksi
 
-\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $a>1$.}
+\begin{center}
+\includegraphics{03-funktiot/kuvia/apotenssiinxaisompikuinyksi.pdf}
+\end{center}
 
 Vähenevillä eksponenttifunktioilla $0<a<1$, esimerkiksi
 
-\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $0<a<1$.}
+\begin{center}
+\includegraphics{03-funktiot/kuvia/apotenssiinxaisompikuinnolla.pdf}
+\end{center}
 
-Kun $a<0$, eksponenttifunktiota ei ole määritelty, koska negatiiviselle
-kantaluvulle ei ole määritelty yleistä potenssia, jossa eksponentti
-on reaaliluku, joten funktion arvoa ei voida laskea millä hyvänsä
-muuttujan $x$ arvolla.
+Negatiiviselle kantaluvulle ei ole määritelty yleistä reaalilukupotenssia, 
+joten eksponenttifunktiota ei ole määritelty, kun $a < 0$. 
 
 Kun $a=0$ tai $a=1$, eksponenttifunktio pelkistyy vakiofunktioksi.
-Lisäksi $0^0$ ei ole määritelty, joten on turvallisinta vaatia, että
-kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
+Lisäksi $0^0$:a ei ole määritelty, joten vaaditaan, että
+eksponenttifunktion kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
 
-\emph{Eksponenttiyhtälö} muodostuu, kun kysytään, millä $x$:n arvoilla eksponenttifunktio saavuttaa tietyn arvon.
+%\emph{Eksponenttiyhtälö} muodostuu, kun kysytään, millä $x$:n arvoilla %eksponenttifunktio saavuttaa tietyn arvon.
 
 \begin{esimerkki}
 Millä muuttujan $x$ arvoilla eksponenttifunktio $f(x) = 2^x$ saa arvon
 $f(x) = 64$?
 
 \textbf{Ratkaisu.}
-
 Kirjoitetaan tehtävä yhtälöksi: $2^x = 64$. Kokeilemalla huomataan,
 että $x = 6$ ratkaisee yhtälön.
-%Eksponenttifunktion kantalukuna on $2$, joten kyseessä on kasvava
-%eksponenttifunktio. Kokeillaan $x$:n eri arvoja: Kun $x = 3$,
-%$f(x) = 2^3 = 8$, joka on pienempi kuin $64$. Ratkaisu on siis
-%suurempi kuin kolme. Jatkamalla vastaavaa päättelyä löydetään ratkaisu
-%$x = 6$.
 
-Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja:
-koska eksponenttifunktio kasvaa kaikkialla, ei voi olla tilannetta, jossa
-$f(x)$ saa uudelleen arvon $64$, kun $x > 6$. Kasvavuus perustelee
-myös, miksi $f(x)$ ei voi olla $64$, kun $x < 6$.
+Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja.
+Eksponenttifunktion kantalukuna on $2$, joten eksponenttifunktio on
+kasvava. Funktio $f(x) = 2^x$ ei siis voi saada uudelleen arvoa $64$,
+kun $x > 6$. Samasta syystä $f(x)$ ei voi olla $64$, kun $x < 6$.
 
-Siis ainoa ratkaisu yhtälölle on $x = 6$.
+Ainoa ratkaisu yhtälölle on siis $x = 6$.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -56,15 +50,16 @@ Millä muuttujan $x$ arvoilla eksponenttifunktio
 $f(x) = \left( \frac{1}{2} \right)^{x}$ saa arvon
 $f(x) = 1/5$?
 
+\textbf{Ratkaisu.}
 Edellisen esimerkin tavoin kokeillaan $x$:n eri arvoja. Havaitaan,
 että kun $x = 2$, funktio saa arvon $f(x) = \frac{1}{4}$, ja
 kun $x = 3$, on $f(x) = \frac{1}{8}$. Ratkaisu on siis välillä
 $2 < x < 3$.
 
-Haarukointia voidaan jatkaa esimerkiksi $x$:n arvolla $x = 2,5$,
-jolloin päästään lähemmäs ratkaisua. Yhtälön ratkaisu on kuitenkin
-irrationaalinen, joten sen desimaalikehitelmä on äärettömän pitkä ja
-jaksoton. Tarkkaa ratkaisua ei siis saada tällä menetelmällä.
+Ratkaisun etsimistä voidaan jatkaa kokeilemalla esimerkiksi
+arvoa $x = 2,5$. Näin päästään lähemmäksi ratkaisua, mutta
+yhtälön ratkaisu on irrationaalinen, joten sen desimaalikehitelmä
+on äärettömän pitkä ja jaksoton. Tarkkaa ratkaisua ei siis saada tällä menetelmällä.
 
 Yleisen eksponenttiyhtälön tarkkaan ratkaisemiseen palataan myöhemmillä
 matematiikan kursseilla.
@@ -86,16 +81,29 @@ täsmällisesti myöhemmillä matematiikan kursseilla.
 Soluviljelmässä olevien \emph{Escherichia coli} -bakteerien
 määrää voidaan kuvata eksponentiaalisella mallilla: ajanhetkellä
 $t = 0$ bakteerien lukumäärä on $1$, ja kullakin aika-askeleella
-bakteerien lukumäärä tuplaantuu. Tämä voidaan
-kirjoittaa malliksi
+bakteerien lukumäärä tuplaantuu. Malli voidaan kirjoittaa
 \[
-f(t) = 2^t, t \ge 0
+f(t) = 2^t, t \ge 0,
 \]
-Huomaa, että yllä olevassa esimerkissä funktion $f(t)$ arvot ovat
-mielekkäitä vain, kun $t$ on kokonaisluku, koska
-muussa tapauksessa bakteerien määrä saa ei-kokonaislukuarvon.
-Yleensä tätä ei pidetä ongelmallisena, vaan funktiota voidaan käsitellä
-ikään kuin bakteerien määrä olisi jatkuvasti kasvava suure.
+jossa $f(t)$ on bakteerien lukumäärä ajanhetkellä $t$.
+\sivulaatikko{
+Huomaa, että tässä esimerkissä funktion $f(t)$ arvot voivat
+olla myös rationaalisia tai irrationaalisia, vaikka bakteerien
+määrä on kokonaisluku. Yleensä tätä ei pidetä ongelmallisena,
+vaan funktiota voidaan käsitellä, ikään kuin bakteerien määrä
+olisi jatkuvasti kasvava suure.
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+Radioaktiivisessa hajoamisessa atomiydinten lukumäärää kuvataan
+eksponentiaalisella mallilla. Jos ydinten määrä ajanhetkellä
+$t = 0$ on $f(t) = k$, malli voidaan kirjoittaa
+\[
+f(t) = k \cdot \left( \frac{1}{2} \right)^t, t \ge 0,
+\]
+jossa $f(t)$ on atomiydinten lukumäärä ajanhetkellä $t$. Atomiydinten
+lukumäärä siis puolittuu kullakin aika-askeleella.
 \end{esimerkki}
 
 \section*{Tehtäviä}
@@ -142,33 +150,44 @@ Ratkaisu on lukujen $2$ ja $3$ välissä.
 
 
 \begin{tehtava}
-Millä ajanhetkellä bakteerien lukumäärä ylittää sadan?
+Olkoon $f(t) = 20 \cdot 2^t$ bakteerien lukumäärä soluviljelmässä
+ajanhetkellä $t$. Millä ajanhetkellä bakteerien lukumäärä on tasan 160?
 \begin{vastaus}
-Ajanhetkellä $t = 7$.
+Ajanhetkellä $t = 3$.
 \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava}
-Millainen funktio kuvaa bakteerien kasvua, jos bakteerien lukumäärä
-ajanhetkellä $t = 0$ on $f(t) = 10$?
+Miten muokkaisit edellisen tehtävän funktiota, jos bakteerien lukumääräksi
+halutaan 5 ajanhetkellä $t = 0$?
 \begin{vastaus}
-$f(t) = 10 \cdot 2^t$
+$f(t) = 5 \cdot 2^t$
 \end{vastaus}
 \end{tehtava}
 
-\begin{esimerkki}
-Radioaktiivisessa hajoamisessa atomiydinten lukumäärää voidaan
-kuvata eksponentiaalisella mallilla. Jos ydinten määrä ajanhetkellä
-$t = 0$ on $f(t) = k$, voidaan kirjoittaa malli
-\[
-f(t) = k \cdot \left( \frac{1}{2} \right)^t
-\]
-Mallissa oletetaan, että ydinten lukumäärä puolittuu kullakin ajanhetkellä.
-\end{esimerkki}
-
+<<<<<<< HEAD
+<<<<<<< HEAD
 \begin{tehtava}
 Millä ajanhetkellä atomiydinten määrä on alle $1/200$ alkuperäisestä?
 \begin{vastaus}
 Ajanhetkellä $t = 8$.
 \end{vastaus}
 \end{tehtava}
+=======
+=======
+\begin{tehtava}
+(YO 1877 4) Vuosikymmenen 1860-70 kuluessa lisääntyi Helsingin väkiluku puolella vuoden 1860 väkiluvulla. Jos väkiluvun lisäys tapahtuisi seuraavinakin vuosikymmeninä samassa suhteessa, paljonko väkeä Helsingissä olisi 1890, kun siellä 1860 oli 21700 asukasta? 
+	\begin{vastaus}
+	73200 (pyöristämättä 73237,5)
+	\end{vastaus}
+\end{tehtava}
+
+>>>>>>> 7c5c1d22d931a4b27e061db48c29e58e47c14b6f
+% % tähän parempi tehtävä atomiytimistä
+%\begin{tehtava}
+%Millä ajanhetkellä atomiydinten määrä on alle $1/200$ alkuperäisestä?
+%\begin{vastaus}
+%Ajanhetkellä $t = 8$.
+%\end{vastaus}
+%\end{tehtava}
+>>>>>>> d0160fefda2f1c3f838c19aa819755638c96872d

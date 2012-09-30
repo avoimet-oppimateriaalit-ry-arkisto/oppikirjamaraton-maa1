@@ -11,7 +11,11 @@ $y=f(x)$, joka liittää jokaiseen määrittelyjoukon $A$:n alkioon $x$ aina sam
 \begin{esimerkki}
 Määritellään funktio $f$ tavaroiden joukolta $A$ reaaliluvuille joka kuvaa jokaisen tavaran sen arvonlisäveroprosentille.
 \[A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja}, \text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\}\]
-[Selitys arvonlisäverokannoista ja $f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$, $f(\text{särkylääke}) = 9$, $f(\text{televisio}) = 23$]
+
+/todo{Ei kovin oleellinen; tarvitaanko selitys alvista?}
+%$f(\text{ahvenfilee}) = 13$, $f(\text{AIV-rehu}) = 13$, $f(\text{auto}) = 23$, $f(\text{runokirja}) = 9$, $f(\text{ravintola-ateria}) = 13$,
+Esimerkiksi $f(\text{särkylääke}) = 9$ ja $f(\text{televisio}) = 23$.
+
 \begin{center}
 \includegraphics[width=13cm]{03-funktiot/kuvia/funktiokone.pdf}
 \end{center}
@@ -21,7 +25,7 @@ Määritellään funktio $f$ tavaroiden joukolta $A$ reaaliluvuille joka kuvaa j
 
 Käytäntöjä:
 \begin{itemize}
-\item $f(x) = y$ lausutaan: "Funktio saa arvon $y$ pisteessä $x$."
+\item $f(x) = y$ lausutaan: ''Funktio saa arvon $y$ pisteessä $x$''.
 \item Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne ovat selviä asiayhteydestä. Tällä kurssilla maalijoukko on yleensä reaaliluvut.
 \item Funktion sääntöä kutsutaan usein pelkästään funktioksi.
 \item Joskus funktio samaistetaan sen kuvaajan kanssa.  Siis sääntö $y=f(x)$ samaistetaan $xy$-koordinaatison käyrää.
@@ -63,7 +67,9 @@ eli $f$ liittää jokaiseen reaalilukuun $x$ luvun $x^2+1$. Tästä funktiosta h
 
 \esimerkki{Määritellään funktio $f$ kaavalla [kuva]
 \[f(x) = \frac{1}{x-1}.\]
-Funktiolle ei ole erikseen annettu määrittelyjoukkoa, joten se täytyy päätellä asiayhteydestä. Huomataan, että sääntö ei määrittele funktion $f$ arvoa kun $x = 1$, mutta kylläkin kaikilla $x\in\mathbb{R}\setminus\{1\}$ [vai?]. Näin ollen luonnollinen valinta määrittelyjoukoksi on $\mathbb{R}\setminus\{1\}$. Voimme myös selvittää funktion arvojoukon kiinnitettyämme määrittelyjoukon. Valitulla määrittelyjoukolla $\mathbb{R}\setminus\{1\}$ voimme muodostaa yhtälön $f(x)=a$ jollekin reaaliluvulle a. Tutkitaan, milloin tällä yhtälöllä on ratkaisu(ja).
+Funktiolle ei ole erikseen annettu määrittelyjoukkoa, joten se täytyy päätellä asiayhteydestä. Huomataan, että sääntö ei määrittele funktion $f$ arvoa kun $x = 1$.
+%, mutta kylläkin kaikilla $x\in\mathbb{R}\setminus\{1\}$ [vai?].
+ Näin ollen luonnollinen valinta määrittelyjoukoksi kaikki muut luvut kuin 1. Kun funktion määrittelyjoukko on kiinnitetty, voidaan selvittää funktion arvojoukko. Valitulla määrittelyjoukolla $\mathbb{R}\setminus\{1\}$ voimme muodostaa yhtälön $f(x)=a$ jollekin reaaliluvulle a. Tutkitaan, milloin tällä yhtälöllä on ratkaisu(ja).
 \begin{align*}
 a &= \frac{1}{x-1} & &| \, \text{Oletamme, että $x \neq 1$, jolloin voimme kertoa $(x-1)$:llä puolittain.} \\
 a(x-1) &= 1 \\
@@ -72,23 +78,25 @@ x &= 1+\frac{1}{a} & &| \, \text{Huomaamme, että saamme ratkaisun kaikilla $a \
 & & &| \, \text{Yhtälö ei ole hyvinmääritelty, kun $a = 0$.}
 \end{align*}
 }
-\begin{esimerkki}
 
-jokin riippuu jostakin, esitä määrittely ja arvojoukko muodossa f:A->B
-\end{esimerkki}
+Funktiota joukolta $A$ joukkoon $B$ merkitään $f:A\to B$.
 
 \todo{nollakohdan määritelmä ja löytäminen; kuvaajasta ja yhtälöstä}
 
-Funktion nimeäminen, $f(x)$ (ei?) vastaa merkinnältään $\sin(x)$:ää. jälkimmäisen tunnistaa, tuttu funktio
+\todo{ei oleellinen: pitäisikö funktioiden nimeämisestä kertoa? Ei?}
+%Funktion nimetään usein $f(x)$. Tutut funktiot ei vastaa merkinnältään $\sin(x)$:ää. jälkimmäisen tunnistaa, matemaatikoille tuttu funktio ja on siksi ladotu pystyillä kirjaimilla.
 
 
 
 \section{Usean muuttujan funktiot}
 
-\laatikko{Funktiolla voi olla monta muuttujaa. Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x,y)$.}
+Funktiolla voi olla monta muuttujaa. 
+
+\laatikko{Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x, y)$.}
 
 \begin{esimerkki}
-Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x,y)=xy$. Pituudet voivat olla vain positiivisia reaalilukuja, joten vaadimme, että $x>0$ ja $y>0$. Pinta-alaa esittää positiivinen reaaliluku, joten myös $A>0$. Kun tietyssä tapauksessa suorakulmion korkeus on 3 ja leveys 4, suorakulmion pinta-ala on $A(3,4)=3\cdot 4=12$ pinta-alayksikköä.
+Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x, y)=xy$. Pituudet voivat olla vain positiivisia reaalilukuja, joten vaadimme, että $x>0$ ja $y>0$. Pinta-alaa esittää positiivinen reaaliluku, joten myös $A>0$. Jos suorakulmion korkeus on 3 ja leveys 4, niin suorakulmion pinta-ala on $A(3, 4)=3\cdot 4=12$.
+% pinta-alayksikköä.
 \end{esimerkki}
 
 \section*{Tehtäviä}
