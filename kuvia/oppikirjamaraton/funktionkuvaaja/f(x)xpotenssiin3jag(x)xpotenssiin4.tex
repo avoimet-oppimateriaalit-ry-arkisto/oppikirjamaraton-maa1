@@ -1,0 +1,25 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{wwwwww}{rgb}{0.4,0.4,0.4}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=wwwwww,dash pattern=on 2pt off 2pt, xstep=1.0cm,ystep=1.0cm] (-8.9,-4.3) grid (13.8,4.9);
+\draw[->,color=black] (-8.9,0) -- (13.8,0);
+\foreach \x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0,-4.3) -- (0,4.9);
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-8.9,-4.3) rectangle (13.8,4.9);
+\draw[line width=1.2pt,color=qqqqff, smooth,samples=100,domain=-8.893930781100252:13.833750900287308] plot(\x,{(\x)^3});
+\draw[line width=1.2pt,color=ffqqqq, smooth,samples=100,domain=-8.893930781100252:13.833750900287308] plot(\x,{(\x)^4});
+\draw [color=qqqqff](-4.4,-1.4) node[anchor=north west] {$f(x)=x^3$};
+\draw [color=ffqqqq](-4.4,3) node[anchor=north west] {$g(x)=x^4$};
+\end{tikzpicture}
+\end{document}

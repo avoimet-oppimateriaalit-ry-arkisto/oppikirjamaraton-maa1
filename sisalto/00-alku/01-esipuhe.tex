@@ -1,0 +1,175 @@
+
+\chapter{Esipuhe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  /usr/share/doc/texlive-fonts-extra-doc/fonts/arev/mathtesty.tex
+
+% mathtesty.tex, by Stephen Hartke 20050522
+% based on mathtestx.tex in the mathptmx package
+% and symbols.tex by David Carlisle
+
+Matematiikka tarjoaa työkaluja asioiden jäsentämiseen, päättelyyn ja mallintamiseen. Alasta riippuen käsittelemme matematiikassa erilaisia \textbf{objekteja}: Geometriassa tarkastelemme tasokuvioita ja kolmiulotteisia rakenteita. Algebra tutkii lukujen ja funktioiden ominaisuuksia. Todennäköisyyslaskenta arvioi erilaisten tapausten ja tilanteiden mahdollisuuksia ja riskejä. Matemaattinen analyysi (kurssit 7,8 ja 10) tutkii funktioita ja niiden muuttumista.
+
+Jokaiseen tarkastelukohteeseen liitetään myös niille ominaisia \textbf{operaatioita}. Tämä kurssi käsittelee lähinnä lukuja ja niiden operaatioita, joita \textbf{laskutoimituksiksi} kutsutaan. Kirjan ensimmäisessä osassa käsittelemme luvun käsitteen, yleisimmät lukutyypit ja lukujen tavallisimman laskutoimitukset.
+
+Lukion opetussuunnitelman (vm 2003) mukaan pitkän matematiikan ensimmäisen kurssin tavoitteena on, että opiskelija 
+\begin{itemize}
+\item vahvistaa yhtälön ratkaisemisen ja prosenttilaskennan taitojaan,
+\item syventää verrannollisuuden, neliöjuuren ja potenssin käsitteiden ymmärtämistään,
+\item tottuu käyttämään neliöjuuren ja potenssin laskusääntöjä,
+\item syventää funktiokäsitteen ymmärtämistään tutkimalla potenssi- ja eksponenttifunktioita,
+\item ja oppii ratkaisemaan potenssiyhtälöitä.
+\end{itemize}
+Kurssin keskeisin sisältö opetussuunnitelmissa on:
+\begin{itemize}
+\item potenssifunktio
+\item potenssiyhtälön ratkaiseminen
+\item juuret ja murtopotenssi
+\item eksponenttifunktio.
+\end{itemize}
+
+\section*{Sananen kirjasta}
+
+Tämä kirja on syntynyt noin kahdenkymmenen hengen työn tuloksena pitkänä viikonloppuna 28.--30.9.2012. Tulos on nyt kädessäsi. Kirjan \LaTeX-lähdekoodi on saatavilla Githubissa osoitteessa \url{https://github.com/linjaaho/oppikirjamaraton-maa1}.
+
+\section*{Tekijöiden kommentit}
+
+\todo{Miten olisi lyhyt kommentti tai lainaus jokaiselta tekijältä? Jotain yleviä mietteitä kirjasta, rohkaisevia tai nasevia kommentteja lukijalle, alku- tai loppukevennyksiä tai jotain randomia}
+
+\begin{flalign*}
+    &\textbf{Siiri Anttonen} & &\; \text{kommentti} &\\
+    &\textbf{Janne Cederberg} & &\; \text{kommentti} &\\
+	&\textbf{Lauri Hellsten} & &\, \text{kommentti}  &\\
+	&\textbf{Niko Ilomäki} & &\, \text{kommentti}  &\\
+	&\textbf{Tero Keinänen} & &\, \text{kommentti}  &\\
+	&\textbf{Vesa Linja-aho} & &\, \text{kommentti}  &\\
+	&\textbf{Ossi Mauno} & &\, \text{kommentti}  &\\
+	&\textbf{Joonas Mäkinen} & &\, \text{kommentti}  &\\
+	&\textbf{Matti Pajunen} & &\, \text{kommentti}  &\\
+	&\textbf{Pekka Peura} & &\, \text{kommentti}  &\\
+	&\textbf{Annika Piiroinen} & &\, \text{kommentti}  &\\
+	&\textbf{Kaisa Pohjonen} & &\, \text{kommentti}  &\\
+	&\textbf{Antti Rasila} & &\, \text{kommentti}  &\\
+	&\textbf{Johanna Rämö} & &\, \text{kommentti}  &\\
+	&\textbf{Juha Sointu} & &\, \text{kommentti}  &\\
+	&\textbf{Tommi Sottinen} & &\, \text{kommentti}  &\\
+	&\textbf{Jarno Talponen} & &\, \text{kommentti}  &\\
+	&\textbf{Topi Talvitie} & &\, \text{kommentti}  &\\
+	&\textbf{Sampo Tiensuu} & &\, \text{kommentti}  &\\
+	&\textbf{Ville Tilvis} & &\, \text{Tämä kirja paranee vanhetessaan...}  &
+\end{flalign*}
+
+%vanha kommenttipohja
+%
+%\begin{tabular}{cc} 
+%	\begin{tabular}{c}
+%	 \textbf{Lauri Hellsten}
+%	\\ 
+%	kommentti1 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Niko Ilomäki}
+%	\\ 
+%	Michael Corleonea mukaillen "Make 'em an offer they can't refuse!" Olen varma, että Suomen lukiolaiset ottavat ilmaisen oppikirjan innolla vastaan. \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Tero Keinänen}
+%	\\ 
+%	kommentti3 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Vesa Linja-aho}
+%	\\ 
+%	kommentti4 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Ossi Mauno}
+%	\\ 
+%	kommentti1 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Joonas Mäkinen}
+%	\\ 
+%	kommentti2 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Matti Pajunen}
+%	\\ 
+%	kommentti3 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Pekka Peura}
+%	\\ 
+%	kommentti4 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Annika Piiroinen}
+%	\\ 
+%	kommentti1 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Kaisa Pohjonen}
+%	\\ 
+%	kommentti2 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Antti Rasila}
+%	\\ 
+%	kommentti3 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Johanna Rämö}
+%	\\ 
+%	kommentti4 \end{tabular}		
+%	\\
+%	\begin{tabular}{c}
+%	 \textbf{Juha Sointu}
+%	\\ 
+%	kommentti1 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Tommi Sottinen}
+%	\\ 
+%	kommentti2 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Jarno Talponen}
+%	\\ 
+%	kommentti3 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Topi Talvitie}
+%	\\ 
+%	kommentti4 \end{tabular}
+%\\
+%	\begin{tabular}{c}
+%	 \textbf{Sampo Tiensuu}
+%	\\ 
+%	kommentti3 \end{tabular}
+%&
+%	\begin{tabular}{c}
+%	 \textbf{Ville Tilvis}
+%	\\ 
+%	kommentti4 \end{tabular}
+%	
+%	  
+%\end{tabular} 
+
+\section*{Kiitämme}
+\begin{itemize}
+\item Metropolia AMK
+\item Tekniikan akateemisten liitto TEK
+\item Senja Larsen
+\item Kebab Pizza Service
+\item Juhapekka "Naula"\ Tolvanen
+\item Onnibus
+\item Arto Piironen
+\item Kaikki tärkeät tyypit joiden nimi unohtui mainita
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% /usr/share/doc/texlive-doc-en/fonts/free-math-font-survey/source/textfragment.tex
+
+%%% Local Variables: 
+%%% mode: latex
+%%% End: 

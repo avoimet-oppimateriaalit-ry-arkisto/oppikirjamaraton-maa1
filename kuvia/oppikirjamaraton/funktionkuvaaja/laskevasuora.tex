@@ -1,0 +1,22 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{wwwwww}{rgb}{0.4,0.4,0.4}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=wwwwww,dash pattern=on 2pt off 2pt, xstep=1.0cm,ystep=1.0cm] (-10.6,-4.9) grid (16.4,6.1);
+\draw[->,color=black] (-10.6,0) -- (16.4,0);
+\foreach \x in {-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0,-4.9) -- (0,6.1);
+\foreach \y in {-4,-3,-2,-1,1,2,3,4,5,6}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-10.6,-4.9) rectangle (16.4,6.1);
+\draw [line width=1.2pt,color=qqqqff,domain=-10.6:16.4] plot(\x,{(--1-1.5*\x)/1});
+\draw [color=qqqqff](0.3,2.9) node[anchor=north west] {$y=-\frac{1}{2}x+1$};
+\end{tikzpicture}
+\end{document}

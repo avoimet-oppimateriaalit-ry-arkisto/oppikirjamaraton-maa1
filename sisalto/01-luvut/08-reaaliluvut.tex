@@ -1,0 +1,155 @@
+\chapter{Reaaliluvut}
+
+Jo antiikin aikoina huomattiin, että kaikki luvut eivät ole rationaalilukuja, eli kaikkia lukuja ei voi esittää kokonaislukujen suhteena. Tällaisia lukuja kutsutaan \emph{irrationaaliluvuiksi}.
+
+Esimerkiksi $\sqrt{2}$ on irrationaaliluku. (Tämä todistetaan
+luvun lopussa.) Toinen tuttu irrationaaliluku on $\pi$.
+
+Rationaaliluvut eivät siis täytä lukusuoraa kokonaan, vaikka
+rationaalilukuja onkin lukusuoralla tiheässä.
+
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=6.0cm,y=6.0cm]
+\draw[->,color=black] (1.2,0) -- (3.3,0);
+\foreach \x in {1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3,3.1,3.2,3.3}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\clip(1.2,-0.1) rectangle (3.3,0.3);
+\draw (0.5,2.1) node[anchor=north west] {$\sqrt[]{2}$};
+\draw (2.8,2.4) node[anchor=north west] {$\pi$};
+\draw [->] (1.2,0) -- (3.3,0);
+\draw [->,line width=2pt,color=ffqqqq] (1.414,0.1) -- (1.414,0);
+\draw [->,line width=2pt,color=ffqqqq] (pi,0.1) -- (pi,0);
+\draw [color=ffqqqq](1.4,0.2) node[anchor=north west] {$\sqrt[]{2}$};
+\draw [color=ffqqqq](3.1,0.2) node[anchor=north west] {$\pi$};
+\end{tikzpicture}
+
+Kun rationaalilukuihin otetaan mukaan irrationaaliluvut, saadaan reaalilukujen joukko $\mathbb{R}$. Kaikki rationaalilukuja koskevat
+laskusäännöt pätevät myös reaaliluvuille.
+
+Siinä missä rationaalilukujen desimaaliesitykset ovat päättyviä tai jaksollisia (tästä puhuttiin luvussa \ref{rationaaliluvut}), ovat
+irrationaalilukujen desimaaliesitykset päättymättömiä ja
+jaksottomia. Esimerkiksi luvun
+\[\sqrt{2} = 1,414213562373095048801688724209\ldots\]
+desimaaliesityksessä on toistaan muistuttavia kohtia
+(tässäkin pätkässä 88 esiintyy kahdesti), mutta desimaalit eivät koskaan ''ala alusta''.
+
+Reaalilukujen ominaisuuksien tarkka todistaminen on yllättävän
+monimutkaista, ja se on tapana sivuuttaa lukiossa. Jatkossa
+tyydymme toteamaan ilman todistusta, että rationaalilukujen
+ominaisuudet yleistyvät myös reaaliluvuille.
+Emme siis pysähdy pohtimaan, mitä esimerkiksi
+$\pi^2$ täsmälleen tarkoittaa.
+Voimme silti laskea kyseiselle luvulle likiarvon
+halutulla tarkkuudella,
+\[ \pi^2 =9,86960440\ldots \].
+Lisää reaalilukujen ominaisuuksista liitteessä \ref{aksioomat}.
+
+Reaalilukujen myötä kaikki lukiossa käytettävät lukujoukot on nyt esitelty.
+Ne on lueteltu seuraavassa:
+\begin{center}\begin{tabular}{l|c|l}
+Joukko & Symboli & Mitä ne ovat\\
+\hline
+Luonnolliset luvut & $\mathbb{N}$ &
+Luvut 0, 1, 2, 3, $\ldots$ \\
+Kokonaisluvut & $\mathbb{Z}$ & Luvut $\ldots$ -2, -1, 0, 1, 2 $\ldots$ \\
+Rationaaliluvut & $\mathbb{Q}$ & Luvut, jotka voidaan esittää
+murtolukuina \\
+Reaaliluvut & $\mathbb{R}$ & Kaikki lukusuoran luvut
+\end{tabular} \end{center} 
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\clip(-7.4,-8.8) rectangle (16.8,8.6);
+\draw [rotate around={0.5:(2.2,0)}] (2.2,0) ellipse (1.1cm and 0.9cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2cm and 1.6cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2.9cm and 2.6cm);
+\draw (2,1.5) node[anchor=north west] {$\mathbb{N}$};
+\draw (4.3,2.7) node[anchor=north west] {$\mathbb{Z}$};
+\draw (5.8,3.9) node[anchor=north west] {$\mathbb{Q}$};
+\draw (7.1,-4.2) node[anchor=north west] {{\scriptsize Irrationaaliluvut}}; %TODO: rotate
+\draw (8.4,6.2) node[anchor=north west] {$\mathbb{R}$};
+\draw [rotate around={0.5:(4.4,0)}] (4.4,0) ellipse (5cm and 4.2cm);
+\draw [rotate around={18.2:(7.9,-5.4)}] (7.9,-5.4) ellipse (2.7cm and 0.6cm);
+\draw (0.8,1.6) node[anchor=north west] {$1$};
+\draw (1,-0.4) node[anchor=north west] {$5$};
+\draw (2.4,-0.2) node[anchor=north west] {$101$};
+\draw (4.8,0.7) node[anchor=north west] {$-5$};
+\draw (1.2,-1.7) node[anchor=north west] {$0$};
+\draw (1.2,3.1) node[anchor=north west] {$-14$};
+\draw (4.1,-1) node[anchor=north west] {$75$};
+\draw (4.2,-2.4) node[anchor=north west] {$\frac{1}{3}$};
+\draw (7.3,1.4) node[anchor=north west] {$\frac{5}{2}$};
+\draw (-1.4,0.9) node[anchor=north west] {$-3$};
+\draw (0.4,-3.1) node[anchor=north west] {$-4$};
+\draw (2.4,4.7) node[anchor=north west] {$3$};
+\draw (-1.3,4.1) node[anchor=north west] {$\frac{5}{7}$};
+\draw (-2.3,-1) node[anchor=north west] {$4$};
+\draw (4.5,-5.6) node[anchor=north west] {$\pi$};
+\draw (10.7,-3) node[anchor=north west] {$\sqrt[]{2}$};
+\draw (6,-4.7) node[anchor=north west] {$-\frac{\pi}{2}$};
+\draw (9.8,1.6) node[anchor=north west] {$\frac{5}{2}$};
+\draw (11.1,4) node[anchor=north west] {$\frac{1}{3}$};
+\draw (4.4,7.3) node[anchor=north west] {$3$};
+\draw (-0.1,-5.3) node[anchor=north west] {$0$};
+\draw (-4.9,1.5) node[anchor=north west] {$-5$};
+\draw (11.8,-0.9) node[anchor=north west] {$-\frac{\pi}{2}$};
+\draw (-0.6,6.8) node[anchor=north west] {$75$};
+\draw (-3.7,-3) node[anchor=north west] {$-3$};
+\end{tikzpicture}
+
+
+Lukualueita voidaan vielä tästäkin laajentaa. Seuraava laajennus olisi \emph{kompleksilukujen joukko} $\mathbb{C}$. Kompleksilukujen joukosta löytyy reaalilukujen lisäksi
+esimerkiksi imaginaariyksikkö $i = \sqrt{-1}$.
+%, jolle pätee $i^2=-1$. Minkään
+%reaaliluvun neliö ei ole negatiivinen.
+Kompleksiluvut eivät nykyään kuulu lukion oppimäärään, mutta
+niitä tarvitaan muun muassa insinöörialoilla yliopistossa ja ammattikorkeakoulussa. Esimerkiksi vaihtosähköpiirien analyysissä, signaalinkäsittelyssä ja säätötekniikassa käytetään runsaasti kompleksilukuja. 
+
+\section{lausekkeiden sieventäminen}
+
+Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin.
+
+Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella eri tavalla. Esimerkiksi merkinnät $42$, $-(-42)$, $6\cdot 7$ ja $(50-29)\cdot 2$ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikale kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
+
+\laatikko{
+Yhteenlaskut voi laskea missä järjestyksessä tahansa
+
+$a+b=b+a$ (vaihdantalaki)
+
+$a+(b+c)=(a+b)+c=a+b+c$ (liitäntälaki)
+}
+
+Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3+5)$.
+
+Nämä säännöt voi yhdistää yleiseksi säännöksi, jonka mukaan laskujärjestystä voi vaihtaa ihan miten vain niin kauan kuin lausekkeessa on pelkkää yhteenlaskua.
+
+Tämän säännön voi yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan käänteisluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
+
+\laatikko{
+Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasi, kun ajattelee miinusmerkin liikkuvan kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
+}
+
+Esim. $5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$
+
+Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
+
+\laatikko{
+Kertolaskut voi laskea missä järjestyksessä tahansa
+
+$a\cdot b=b\cdot a$ (vaihdantalaki)
+
+$a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$ (liitäntälaki)
+}
+
+Jakolaskun voi ajatella käänteisluvulla kertomisena, eli
+
+\laatikko{
+Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun käänteisluvulla kertomisena.
+}
+
+Esim. $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
+
+$a\cdot b:b=a$
+
+$a:b\cdot b=a$
+
+$a:b\cdot b=a$

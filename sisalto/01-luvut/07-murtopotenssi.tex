@@ -1,0 +1,169 @@
+\chapter{Murtopotenssi}
+
+Seuraavaksi tutkitaan potenssin käsitteen laajentamista tilanteeseen, jossa eksponenttina on murtoluku.
+Esmerkiksi voidaan pohtian, mitä tarkoittaa merkintä $2^\frac{1}{3}$? Potenssien laskusäätöjen mukaan. Potenssin laskusääntöjen perusteella
+\[
+(2^{m})^n = 2^{mn},\textrm{ kun }m,n\in \mathbb{Z}.
+\]
+Siten on luonnollista ajatella, että murtopotenssille $2^\frac{1}{3}$ pätee
+\[
+(2^\frac{1}{3})^3 = 2^\frac{3}{3} = 2^1=2.
+\]
+Koska luvun $2$ kuutiojuuri toteuttaa yhtälön $(\sqrt[3]{2})^3=2$, täytyy siis asettaa $2^\frac{1}{3}=\sqrt[3]{2}$. Yleisemmin asetetaan $a^\frac{1}{n} =\sqrt[n]{a}$, kun $n$ on positiivinen kokonaisluku ja $a\ge 0$.
+
+Potenssin potenssin kaavaa on luotevaa myös ajatella käyttäen, että esimerkiksi
+\[
+(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.
+\]
+Yleisemmin otetaan murtopotenssin $a^\frac{m}{n}$ määritelmäksi
+\[
+a^\frac{m}{n} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m,
+\]
+kun $m$ ja $n$ ovat kokonaislukuja ja $n>0$. 
+
+\laatikko{{\bf Murtopotenssimerkinnät}
+\[
+a^\frac{1}{n} = \sqrt[n]{a},\textrm{ kun }a\geq 0. 
+\]
+Erityisesti $a^\frac{1}{2}=\sqrt{a}$.
+\[
+a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a\geq 0.
+\]
+}
+
+%\laatikko{Murtopotenssimerkintä: }
+
+Kun murtolukueksponentit määritellään näin, kaikki aikaisemmat potenssien
+laskusäännöt ovat sellaisenaan voimassa myös niille. Esimerkiksi kaavat
+\[ a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q \]
+pätevät kaikille rationaaliluvuille $p$ ja $q$.  Näinden kaavojen odistukset on esitetty liitteessä \ref{pot_todistukset}.
+
+{\bf Huomautus määrittelyjoukosta}. Murtopotenssimerkintää käyttettäessä vaaditaan, että $a\geq 0$ myös silloin, kun $n$ on pariton. Syy tähän on seuraava. Esimerkiksi $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta $(-1)^\frac{1}{3}$ ole tällöin määritelty. Murtopotenssimerkinnän määrittelyst tällöin voi seurata yllättäviä ongelmia:
+\[
+ -1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6}
+= ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1. 
+\]
+Luvun $\frac{1}{3}$ lavennus muotoon $\frac{2}{6}$ on ongelman ydin, mutta murtolukujen lavennussäännöistä lopuminen olisi mysö hankalaa. Siksi sovitaan, ettei murtopotenssimerkintää käytetä, jos kantaluku on negatiivinen.
+
+\begin{esimerkki}
+Muuta lausekkeet $\sqrt[5]{3}$ ja $(\sqrt[4]{a})^7$ murtopotenssimuotoon.
+
+{\bf Ratkaisu.}
+
+$\sqrt[5]{3} = 3^\frac{1}{5}$, \\
+$(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
+\end{esimerkki}
+
+\begin{esimerkki}
+Sievennä lauseke $8^\frac{2}{3}$.
+
+{\bf Ratkaisu.}
+ $8^\frac{2}{3} = (\sqrt[3]{8})^2 = 2^2 = 4.$
+\end{esimerkki}
+
+\section*{Tehtäviä}
+
+Muuta lausekkeet murtopotenssimuotoon:
+
+\begin{tehtava}
+a) $\sqrt[3]{a}$ \qquad
+b) $\sqrt[6]{a}$ \qquad
+c) $\sqrt[n]{a}$ 
+\begin{vastaus}	
+a) $a^\frac{1}{3}$ \qquad
+b) $a^\frac{1}{6}$ \qquad
+c) $a^\frac{1}{n}$ \qquad
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $(\sqrt[3]{b})^6$ \qquad
+b) $(\sqrt[6]{b^3})$ \qquad
+c) $(\sqrt[5]{b})^2$ \qquad
+d) $(\sqrt[16]{ö^4})$
+\begin{vastaus}	
+a) $b^2$ \qquad
+b) $b^\frac{1}{2}$ \qquad
+c) $b^\frac{2}{5}$ \qquad
+d) $ö^\frac{1}{4}$
+\end{vastaus}
+\end{tehtava}
+
+Sievennä:
+\begin{tehtava}
+a) $x^\frac{1}{5}$ \qquad
+b) $x^\frac{4}{3}$ \qquad
+c) $x^\frac{8}{4}$ \qquad
+d) $x^\frac{25}{100}$ \qquad
+\begin{vastaus}	
+a) $(\sqrt[5]{x})$ \qquad
+b) $(\sqrt[3]{x})^4$ \qquad
+b) $x^2$ \qquad
+d) $(\sqrt[4]{x})$ 
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $9^\frac{1}{2}$ \qquad
+b) $8^\frac{1}{3}$ \qquad
+c) $4^\frac{3}{2}$ \qquad
+d) $81^\frac{3}{4}$ \qquad
+\begin{vastaus}	
+a) $3$ \qquad
+b) $2$ \qquad
+b) $8$ \qquad
+d) $27$ 
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $x^{-\frac{1}{3}}$ \qquad
+b) $x^\frac{5}{-2}$ \qquad
+c) $x^{3 \frac{1}{2}}$ \qquad
+d) $x^{2 \frac{-4}{-7}}$ \qquad
+\begin{vastaus}	
+a) $\frac{1}{\sqrt[3]{x}}$ \qquad
+b) $\frac{1}{\sqrt{x^5}}$ \qquad
+b) $\sqrt{x^3}$ \qquad
+d) $\sqrt[7]{x^8}$ 
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $4^\frac{3}{4}$ \qquad
+b) $2^\frac{5}{1}$ \qquad
+c) $16^\frac{2}{3}$ \qquad
+d) $5^\frac{5}{3}$ \qquad
+\begin{vastaus}	
+a) $2\sqrt{2}$ \qquad
+b) $32$ \qquad
+b) $(\sqrt[3]{16})^2$ \qquad
+d) $5(\sqrt[3]{5})^2$ 
+\end{vastaus}
+\end{tehtava}
+
+Muuta murtopotenssimuotoon:
+
+\begin{tehtava}
+a) $\sqrt{\sqrt{k}}$ \qquad
+b) $\sqrt[3]{\sqrt[4]{k}}$ \qquad
+c) $\sqrt{m\sqrt{m}}$ \qquad
+d) $(\sqrt[5]{m\sqrt[7]{m}})$ \qquad
+\begin{vastaus}	
+a) $k^\frac{1}{4}$ \qquad
+b) $k^\frac{1}{12}$ \qquad
+b) $m^\frac{3}{4}$ \qquad
+d) $m^\frac{8}{35}$ 
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+a) $\sqrt[3]{\sqrt[3]{\alpha}^2}$ \qquad
+b) $\sqrt[5]{q^2\sqrt{q}}$ \qquad
+c) $(\sqrt{å^4\sqrt{å}})^3$ \qquad
+\begin{vastaus}	
+a) $\alpha^\frac{2}{9}$ \qquad
+b) $q^\frac{1}{2}$ \qquad
+c) $å^\frac{27}{4}$
+\end{vastaus}
+\end{tehtava}

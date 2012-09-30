@@ -1,0 +1,137 @@
+\chapter{Ensimmäisen asteen yhtälö}
+
+\laatikko{
+Ensimmäisen asteen yhtälöksi kutsutaan yhtälöä, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.
+}
+
+Yhtälötyypin nimi tulee siitä, että korkein potenssi, johon tuntematon $x$
+yhtälössä korotetaan, on $1$.
+
+\begin{esimerkki}
+Muun muassa seuraavat yhtälöt ovat ensimmäisen asteen yhtälöitä:
+\begin{enumerate}[a)]
+\item $2x = 4$
+\item $5x+3 = 0$
+\item $x+2 = 3x-4$
+\end{enumerate}
+\end{esimerkki}
+
+\laatikko{
+Ensimmäisen asteen yhtälö ratkaistaan siirtämällä ensin tuntemattoman $x$ sisältävät termit yhtälön vasemmalle puolelle ja vakiotermit oikealle puolelle. Tämän jälkeen yhtälö jaetaan puolittain tuntemattoman $x$ kertoimella.
+}
+
+\begin{esimerkki}
+Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+\begin{align*}
+7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta 4x.} \\
+3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
+3x &= 3 & &| \, \text{Jaetaan molemmat puolet kolmella eli kerrotaan yhtälö
+puolittain $\frac{1}{3}$:lla.} \\
+x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x = 1$ on siis yhtälön ratkaisu.} \\
+\end{align*}
+\end{esimerkki}
+
+Ensimmäisen asteen yhtälöllä on aina täsmälleen yksi ratkaisu.
+
+\begin{theorem}
+Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä.
+\end{theorem}
+
+\begin{proof}
+\begin{align*}
+ax+b &= cx+d & &| \, \textbf{Vähennetään molemmilta puolilta $cx+d$.} \\
+ax+b - (cx+d) &= 0 & &| \, \textbf{Järjestellään termejä uudelleen.} \\
+ax - cx + b - d &= 0 & &| \, \textbf{Otetaan yhteinen tekijä.} \\
+(a-c)x + (b-d) &= 0 & &| \, \textbf{Tämä on määritelmän mukainen ensimmäisen asteen yhtälö, koska $a \neq c$.}
+\end{align*}
+\end{proof}
+
+\begin{esimerkki}
+Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun: \\
+(1) Vähennä molemmilta puolilta $cx$. Saat yhtälön $(a-c)x + b = d$. \\
+(2) Vähennä molemmilta puolita $b$. Saat yhtälön $(a-c)x = d-b$. \\
+(3) Jaa $(a-c)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
+\end{esimerkki}
+
+\section*{Tehtäviä}
+
+\begin{tehtava}
+Mitä yhtälölle $ax+b = 0$ tapahtuu, jos kerroin $a$ saa arvon nolla?
+Onko yhtälöllä ratkaisuja?
+\begin{vastaus}
+Jos $b = 0$, yhtälö toteutuu kaikilla $x$:n arvoilla. Jos $b \neq 0$, yhtälö
+ei toteudu millään $x$:n arvolla. Periaatteessa kyseessä ei kuitenkaan
+enää ole ensimmäisen asteen yhtälö, mikäli $a = 0$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+%
+Ratkaise:
+\begin{enumerate}[a)]
+\item $x + 4 = 5$
+\item $1 - x = -3$
+\item $7x = 35$
+\item $-2x = 4$
+\item $10 - 2x = x$
+\item $9x + 4 = 6 - x$
+\item $\frac{2x}{5} = 4$
+\item $\frac{x}{3} + 1 = \frac{5}{6} - x$
+\end{enumerate}
+\begin{vastaus}
+\begin{enumerate}[a)]
+\item $x=1$
+\item $x=4$
+\item $x=35/7$
+\item $x=-2$
+\item $x=10/3$
+\item $x=1/5$
+\item $x=10$
+\item $x=-1/8$
+\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Ratkaise kysytty tuntematon yhtälöstä
+\begin{enumerate}[a)]
+\item $F=ma$, $m=?$ (Voima on massa kerrottuna kiihtyvyydellä.)
+\item $p=\frac{F}{A}$, $F=?$ (Paine on voima jaettuna alalla.)
+\item $A=\pi r^2$, $r=?$ (Ympyrän pinta-ala on pii kerrottuna säteen neliöllä.)
+\item $V=\frac{1}{3} \pi r^2 h$, $h=?$ (Kartion tilavuus on piin kolmasosa
+kerrottuna säteen neliöllä ja kartion korkeudella.)
+\end{enumerate}
+\begin{vastaus}
+\begin{enumerate}[a)]
+\item $m=\frac{F}{a}$
+\item $F=p A$
+\item $r=\sqrt{\frac{A}{\pi}}$
+\item $h=\frac{V}{ \frac{1}{3} \pi r^2 h}$
+\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Kännykkäliittymän kuukausittainen perusmaksu on 2,90 euroa. Lisäksi jokainen puheminuutti ja tekstiviesti maksaa 0,69 senttiä. Pekan kännykkälasku kuukauden
+ajalta oli 27,05 euroa.
+
+\begin{enumerate}[a)]
+	\item Kuinka monta puheminuuttia/tekstiviestiä Pekka käytti kuukauden aikana?
+	\item Pekka lähetti kaksi tekstiviestiä jokaista viittä puheminuuttia kohden. Kuinka monta tekstiviestiä Pekka lähetti?
+\end{enumerate}
+
+	\begin{vastaus}
+		\begin{enumerate}[a)]
+			\item 350 puheminuuttia/tekstiviestiä
+			\item 100 tekstiviestiä
+		\end{enumerate}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Sadevesikeräin näyttää vesipatsaan korkeuden millimetreinä. Eräänä aamuna
+keräimessä oli 5 mm vettä. Seuraavana aamuna samaan aikaan keräimessä oli 23 mm vettä. Muodosta yhtälö ja selvitä, kuinka paljon vettä oli keskimäärin satanut kuluneen vuorokauden aikana tunnissa.
+	\begin{vastaus}
+	$0,75$ mm/tunti
+	\end{vastaus}
+\end{tehtava}

@@ -1,0 +1,163 @@
+\chapter{Eksponenttifunktio}
+
+\laatikko{Muotoa $f(x) = a^x$ olevia funktioita kutsutaan eksponenttifunktioiksi.}
+
+Eksponenttifunktio eroaa aiemmin esitellystä potenssifunktiosta siinä, että
+eksponenttifunktiossa muuttuja $x$ on eksponentissa, kun potenssifunktiossa
+se on kantalukuna. Tästä seuraa se, että eksponenttifunktio eroaa luonteeltaan
+oleellisesti potenssifunktiosta.
+
+Eksponenttifunktioita on kahta tyyppiä: kasvavia ja väheneviä.
+Kasvavilla eksponenttifunktioilla $a>1$, esimerkiksi
+
+\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $a>1$.}
+
+Vähenevillä eksponenttifunktioilla $0<a<1$, esimerkiksi
+
+\missingfigure{Kuva, jossa joukko kuvaajia $f(x) = a^x$, joille $0<a<1$.}
+
+Kun $a<0$, eksponenttifunktiota ei ole määritelty, koska negatiiviselle
+kantaluvulle ei ole määritelty ei-kokonaislukupotenssia.
+
+Kun $a=0$ tai $a=1$, eksponenttifunktio pelkistyy vakiofunktioksi.
+Lisäksi $0^0$ ei ole määritelty, joten on turvallisinta vaatia, että
+kantaluvulle $a$ pätee $a>0$ ja $a \neq 1$.
+
+\emph{Eksponenttiyhtälö} muodostuu, kun kysytään, millä $x$:n arvoilla eksponenttifunktio saavuttaa tietyn arvon.
+
+\begin{esimerkki}
+Millä muuttujan $x$ arvoilla eksponenttifunktio $f(x) = 2^x$ saa arvon
+$f(x) = 64$?
+
+Kirjoitetaan tehtävä yhtälöksi: $2^x = 64$.
+Eksponenttifunktion kantalukuna on $2$, joten kyseessä on kasvava
+eksponenttifunktio. Kokeillaan $x$:n eri arvoja: Kun $x = 3$,
+$f(x) = 2^3 = 8$, joka on pienempi kuin $64$. Ratkaisu on siis
+suurempi kuin kolme. Jatkamalla vastaavaa päättelyä löydetään ratkaisu
+$x = 6$.
+
+Varmistutaan vielä siitä, että yhtälöllä ei ole muita ratkaisuja:
+koska eksponenttifunktio kasvaa kaikkialla, ei voi olla tilannetta, jossa
+$f(x)$ saa uudelleen arvon $64$, kun $x > 6$. Kasvavuus perustelee
+myös, miksi $f(x)$ ei voi olla $64$, kun $x < 6$.
+
+Siis ainoa ratkaisu yhtälölle on $x = 6$.
+\end{esimerkki}
+
+\begin{esimerkki}
+Millä muuttujan $x$ arvoilla eksponenttifunktio
+$f(x) = \left( \frac{1}{2} \right)^{x}$ saa arvon
+$f(x) = 1/5$?
+
+Edellisen esimerkin tavoin kokeillaan $x$:n eri arvoja. Havaitaan,
+että kun $x = 2$, funktio saa arvon $f(x) = \frac{1}{4}$, ja
+kun $x = 3$, on $f(x) = \frac{1}{8}$. Ratkaisu on siis välillä
+$2 < x < 3$.
+
+Haarukointia voidaan jatkaa esimerkiksi $x$:n arvolla $x = 2,5$,
+jolloin päästään lähemmäs ratkaisua. Yhtälön ratkaisu on kuitenkin
+irrationaalinen, joten sen desimaalikehitelmä on äärettömän pitkä ja
+jaksoton. Tarkkaa ratkaisua ei siis saada tällä menetelmällä.
+
+Yleisen eksponenttiyhtälön tarkkaan ratkaisemiseen palataan myöhemmillä
+matematiikan kursseilla.
+\end{esimerkki}
+
+\begin{tehtava}
+Olkoon $f(x) = 4^x$. Laske
+\begin{enumerate}[a)]
+\item $f(0)$
+\item $f(3)$
+\item $f(\frac{1}{2})$
+\end{enumerate}
+\begin{vastaus}
+\begin{enumerate}[a)]
+\item $1$
+\item $64$
+\item $2$
+\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Olkoon $f(x) = 10^x$. Millä $x$:n arvoilla
+\begin{enumerate}[a)]
+\item $f(x) = 1000$
+\item $f(x) = \frac{1}{100}$
+\item $f(x) = -1$?
+\end{enumerate}
+\begin{vastaus}
+\begin{enumerate}[a)]
+\item $3$
+\item $6$
+\item Ei ratkaisua.
+\end{enumerate}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Minkä kahden kokonaisluvun välissä yhtälön
+$10^x = 500$ ratkaisu on?
+\begin{vastaus}
+Ratkaisu on lukujen $2$ ja $3$ välissä.
+\end{vastaus}
+\end{tehtava}
+
+\section{Eksponentiaalinen malli}
+
+Kun eksponenttifunktiota käytetään kuvaamaan jotakin reaalimaailman
+ilmiötä, siitä käytetään nimeä \emph{eksponentiaalinen malli}.
+
+Eksponentiaalinen malli on eräs yleisimmin käytetyistä matemaattisista
+malleista. Sillä kuvataan sellaista kasvua tai vähenemistä, jossa
+kullakin ajanhetkellä funktion hetkellinen muutos on suoraan
+verrannollinen funktion sen hetkiseen arvoon. Tämä muotoillaan
+täsmällisesti myöhemmillä matematiikan kursseilla.
+
+\begin{esimerkki}
+Soluviljelmässä olevien \emph{Escherichia coli} -bakteerien
+määrää voidaan kuvata eksponentiaalisella mallilla: ajanhetkellä
+$t = 0$ bakteerien lukumäärä on $1$, ja kullakin aika-askeleella
+bakteerien lukumäärä tuplaantuu. Tämä voidaan
+kirjoittaa malliksi
+\[
+f(t) = 2^t, t \ge 0
+\]
+Huomaa, että yllä olevassa esimerkissä funktion $f(t)$ arvot ovat
+mielekkäitä vain, kun $t$ on kokonaisluku, koska
+muussa tapauksessa bakteerien määrä saa ei-kokonaislukuarvon.
+Yleensä tätä ei pidetä ongelmallisena, vaan funktiota voidaan käsitellä
+ikään kuin bakteerien määrä olisi jatkuvasti kasvava suure.
+\end{esimerkki}
+
+\begin{tehtava}
+Millä ajanhetkellä bakteerien lukumäärä ylittää sadan?
+\begin{vastaus}
+Ajanhetkellä $t = 7$.
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Millainen funktio kuvaa bakteerien kasvua, jos bakteerien lukumäärä
+ajanhetkellä $t = 0$ on $f(t) = 10$?
+\begin{vastaus}
+$f(t) = 10 \cdot 2^t$
+\end{vastaus}
+\end{tehtava}
+
+\begin{esimerkki}
+Radioaktiivisessa hajoamisessa atomiydinten lukumäärää voidaan
+kuvata eksponentiaalisella mallilla. Jos ydinten määrä ajanhetkellä
+$t = 0$ on $f(t) = k$, voidaan kirjoittaa malli
+\[
+f(t) = k \cdot \left( \frac{1}{2} \right)^t
+\]
+Mallissa oletetaan, että ydinten lukumäärä puolittuu kullakin ajanhetkellä.
+\end{esimerkki}
+
+\begin{tehtava}
+Millä ajanhetkellä atomiydinten määrä on alle $1/200$ alkuperäisestä?
+\begin{vastaus}
+Ajanhetkellä $t = 8$.
+\end{vastaus}
+\end{tehtava}

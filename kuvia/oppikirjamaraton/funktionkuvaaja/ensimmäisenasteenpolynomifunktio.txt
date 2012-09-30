@@ -1,0 +1,16 @@
+\documentclass[10pt]{article}
+\usepackage{pstricks-add}
+\pagestyle{empty}
+\begin{document}
+\newrgbcolor{wwwwww}{0.4 0.4 0.4}
+\newrgbcolor{qqqqcc}{0 0 0.8}
+\newrgbcolor{qqttcc}{0 0.2 0.8}
+\psset{xunit=1.0cm,yunit=1.0cm}
+\begin{pspicture*}(-13.5,-3.6)(18.3,8.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=wwwwww](0,0)(-13.5,-3.6)(18.3,8.7)
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-13.5,-3.6)(18.3,8.7)
+\rput[tl](0,2){$\qqqqcc{f(x)=1.5x +2, \ x\in \mathbb{R}}$}
+\psplot[linewidth=1.2pt,linecolor=qqttcc,plotpoints=200]{-13.455983477773609}{18.292515627554796}{1.5*x+2}
+\end{pspicture*}
+\end{document}

@@ -1,0 +1,110 @@
+\chapter{Yhtälö}
+
+\laatikko{
+\emph{Yhtälö} on kahden lausekkeen merkitty yhtäsuuruus.
+}
+
+\begin{esimerkki}
+Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan
+yhtälö $5x+\sqrt{x} = 7x+7$.
+\end{esimerkki}
+
+\laatikko{
+Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että \emph{yhtälö pätee}.
+}
+
+\begin{esimerkki}
+\begin{enumerate}[a)]
+\item Yhtälö $3x + 2 = 0$ pätee, kun $x = - \frac{2}{3}$.
+\item Yhtälö $5 = 3$ ei päde.
+\end{enumerate}
+\end{esimerkki}
+
+Monissa käytännön tilanteissa jokin asia voidaan laskea kahdella eri tavalla.
+Nämä laskutavat voidaan kirjoittaa lausekkeiksi, ja merkitsemällä lausekkeet yhtäsuuriksi saadaan yhtälö.
+
+\begin{esimerkki}
+Kuvassa oleva orsivaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia. Kuinka paljon vaakakupissa on lakritsia?
+\todo{kahden kilon siika -esimerkin ratkaisu}
+\missingfigure{Kuva kaloista vaa'assa}
+
+\textbf{Ratkaisu.}
+
+Merkitään lakritsin määrää tuntemattomalla $x$. Mallinnetaan tilannetta seuraavalla yhtälöllä:
+
+\begin{equation}
+2\,\text{kg} = \frac{1}{2}\,\text{kg} + x
+\end{equation}
+
+Ratkaistaan yhtälö vähentämällä molemmilta puolilta puoli kiloa.
+
+\todo{korjaa alignit tässä kohdassa!}
+%\begin{align*}
+$2\text{ kg} = \frac{1}{2}\text{ kg} + x | -\frac{1}{2}\text{ kg}$ \\
+$2\text{ kg} - \frac{1}{2}\text{ kg} = \frac{1}{2}\text{ kg} + x - \frac{1}{2}\text{ kg}$ | \text{yksikön kg voi ottaa yhteiseksi tekijäksi} \\
+$(2-\frac{1}{2})\text{ kg} = (\frac{1}{2} - \frac{1}{2})\text{ kg} + x$ \\
+$(\frac{4}{2} - \frac{1}{2})\text{ kg} = 0 \cdot \text{ kg} + x$ \\
+$ \frac{4-1}{2} \cdot \text{ kg} = 0 + x$ \\
+$ \frac{3}{2} \text{ kg} = x$ \\
+%\end{align*}
+
+\textbf{Vastaus.}
+
+Lakua on $\frac{3}{2}$ kg $= 1 \frac{1}{2}$ kg $= 1,5$ kg.
+\end{esimerkki}
+
+\todo{lisää yhtäöesimerkkejä}
+
+
+\laatikko{
+\begin{itemize}
+\item Yhtälössä esiintyy yleensä \emph{tuntemattomia} eli symboleja, joiden arvoa ei tiedetä. Jos tuntemattomia on vain yksi, sitä merkitään yleensä kirjaimella $x$.
+\item Niitä tuntemattoman $x$ arvoja, joilla yhtälö pätee, kutsutaan yhtälön \emph{ratkaisuiksi}.
+\item Yhtälön ratkaisemisella tarkoitetaan kaikkien yhtälön ratkaisujen selvittämistä.
+\end{itemize}
+}
+
+\todo{joku ihan kehari esimerkki tuntemattomista}
+
+\laatikko{
+Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä se tarkoittaa sitä, että niitä muokkaa siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällaisia sallittuja muunnoksia ovat esimerkiksi:
+\begin{itemize}
+\item Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku. Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.
+\item Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla luvulla.
+Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$
+saadaan yhtälö $x = 2$.
+\end{itemize}
+}
+
+Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
+
+Yhtälöt ratkeavat siten, että niitä muokataan, kunnes vastauksen voi lukea siitä suoraan, esim $x=3$.
+%Koska jokaisessa muokkausjonon yhtälössä ratkaisut ovat samat, näin saadaan %alkuperäisen yhtälön ratkaisut.
+
+%%esimerkki tulee 1. asteen yhtälön yhteydessä
+
+\laatikko{
+Yhtälöt voidaan totuusarvonsa perusteella jakaa kolmeen tyyppiin:
+\begin{enumerate}
+\item Yhtälö, joka on aina tosi. Esimerkiksi yhtälöt $8=8$ ja $x=x$.
+\item Yhtälö, joka on joskus tosi. Esimerkiksi yhtälö $x+4=7$ on tosi, kun $x=3$,
+ja epätosi muulloin.
+\item Yhtälö, joka ei ole koskaan tosi. Esimerkiksi yhtälö $0=1$.
+\end{enumerate}
+}
+
+\laatikko{Yleisiä yhtälönratkaisuperiaatteita:
+
+\begin{itemize}
+\item Kerro tuntematonta sisältävät lausekkeet pois nimittäjistä.
+\item Yhdistä useat murtolausekkeet yhdeksi laventamalla.
+\item Yhdistä tuntemattomat.
+\item Kumoa juuret korottamalla yhtälö puolittain sopivaan potenssiin.
+\item Sulkuja ei välttämättä aina kannata kertoa auki.
+\item Yhtälö on ratkaistu vasta, kun jäljellä on enää vain yksi kappale tuntematonta suuretta, ja se sijaitsee yksin omalla puolellaan yhtälöä.
+
+
+\end{itemize}
+}
+
+Tärkein näistä yhtälötyypeistä on 2. Siirrymme nyt tarkastelemaan yhtälöiden keskeistä erikoistapausta, ensimmäisen asteen yhtälöitä.
