@@ -297,13 +297,21 @@ $a(b+c) = ab+ac$ (osittelulaki)
 
 Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan yhdistää koskemaan myös toisin päin olevaa kertolaskun ja yhteenlaskun yhdistelmää, useamman luvun yhteenlaskua, vähennyslaskua ja jakolaskua:
 
-$(b+c)a = a(b+c) = ab+ac = ba+ca$ (sovellettu vaihdantalakia)
+\laatikko{
+\begin{itemize}
+\item $(b+c)a = a(b+c) = ab+ac = ba+ca$ (Sovellettu vaihdantalakia)
+\item $a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad$ (Sovellettu liitäntälkia)
+\item $a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$ (Sovellettu vähennyslakun määritelmää vastaluvun avulla)
+\item $(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a$ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla. Tämä ominaisuus esitellään myöhemmin rationaalilukujen yhteydessä.)
+\end{itemize}
+}
 
-$a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad$ (sovellettu liitäntälkia)
+Esimerkiksi seuraava laskutoimitus on helppo laske osittelulain avulla: $2574\cdot 542-2574\cdot 541 = 2574\cdot (542-541) = 2574\cdot 1 = 2574$
 
-$a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$ (sovellettu vähennyslakun määritelmää vastaluvun avulla)
+Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
+    
 
-$(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a$
+\section*{Tehtäviä}
 
 \begin{tehtava}
 Sievennä: \\
@@ -312,10 +320,7 @@ $(2ab+4b^2-8b^3c):(a+2b-4b^2c)$
 	$2b$
 	\end{vastaus}
 \end{tehtava}
-    
-
-    \section*{Tehtäviä}
-    
+   
     
         \begin{tehtava}
         Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli celciusasteita tai euroja.)
