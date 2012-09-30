@@ -29,32 +29,39 @@ Nolla määritellään tässä luonnolliseksi luvuksi, mutta tästä ei ole yhte
 Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$.
 
 Luonnollisten lukujen $m$ ja $n$ kertolasku määritellään peräkkäisinä yhteenlaskuina
+\laatikko{
 \[m \cdot n = \underbrace{m + m + \ldots + m}_{n\text{ kpl}} = \underbrace{n + n + \ldots + n}_{m\text{ kpl}}.\]
+}
+
+Nollalla kertomisen ajatellaan olevan ''tyhjä yhteenlasku'' eli nolla:
 
 \laatikko{
-Nollalla kertomisen ajatellaan olevan ''tyhjä yhteenlasku'' eli nolla,
-\[0 \cdot m = 0\].
+\[0 \cdot m = 0\]
 }
 
 Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
 $m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
 ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
 Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle
-luvulle $n$ vastaluvun $-n$, jolle $n + (-n) = 0$.
+luvulle vastaluvun.
+
+\laatikko{
+Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$.
+}
 
 Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä
 kokonaislukujen joukon
 \[\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}.\]
 Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
-yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
+yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
+
+\laatikko{
+\[m-n = m+(-n)\]
+}
 
     Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
     
-    \laatikko{
-        Määritelmä
-        
-        Jokaisella luvulla $a$ on vastaluku $-a$, jolle pätee $a+(-a)=0$.
-    }
+
 
 \section{Yhteen- ja vähennyslasku}
 
@@ -113,8 +120,6 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
     \begin{center}
     \includegraphics[scale=0.5]{01-luvut/kuvia/5miinusmiinus8on13-crop.pdf}
     \end{center}
-    
-    Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten ja negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja positiivinen luku kerrotaan keskenään, saadaan negatiivinen luku, mutta kun kaksi negatiivista lukua kerrotaan keskenään, saadaan positiivinen luku.
 
 
 \laatikko{
@@ -138,6 +143,8 @@ Yhteen- ja vähennyslasku kumoavat toisensa
 
 
 \section{Kertolasku}
+
+    Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten ja negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja positiivinen luku kerrotaan keskenään, saadaan negatiivinen luku, mutta kun kaksi negatiivista lukua kerrotaan keskenään, saadaan positiivinen luku.
 
     $3 \cdot 4$ ''kolme kappaletta nelosia''
     
@@ -164,8 +171,10 @@ Yhteen- ja vähennyslasku kumoavat toisensa
 \laatikko{
 Kerto- ja jakolaskun merkkisäännöt
 \begin{itemize}
-\item $-a\cdot (-b)=a\cdot b=ab$
-\item $-a:(-b)=a: b=a:b$
+\item $a\cdot (-b)=(-a)\cdot b=-(ab)$
+\item $(-a)\cdot (-b)=a\cdot b=ab$
+\item $(-a):b=a:(-b)=-\frac{a}{b}$
+\item $(-a):(-b)=a: b=\frac{a}{b}$
 \end{itemize}
 }
 
@@ -244,7 +253,6 @@ Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3
 
 Nämä säännöt voidaan yhdistää yleiseksi säännöksi, jonka mukaan yhteenlaskun sisällä laskujärjestystä voi vaihtaa miten tahansa.
 
-\todo{tarkista, että aiemmin on määritelty vastaluku}
 Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
 
 \laatikko{
@@ -254,7 +262,6 @@ Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujär
 Esim. $5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$
 
 Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
-
 
 \laatikko{
 Kertolaskut voi laskea missä järjestyksessä tahansa
@@ -282,6 +289,30 @@ Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestys
 
 Esim. $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
 
+Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava erittäin tärkeä sääntö:
+
+\laatikko{
+$a(b+c) = ab+ac$ (osittelulaki)
+}
+
+Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan yhdistää koskemaan myös toisin päin olevaa kertolaskun ja yhteenlaskun yhdistelmää, useamman luvun yhteenlaskua, vähennyslaskua ja jakolaskua:
+
+\laatikko{
+\begin{itemize}
+\item $(b+c)a = a(b+c) = ab+ac = ba+ca$ (Sovellettu vaihdantalakia)
+\item $a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad$ (Sovellettu liitäntälkia)
+\item $a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$ (Sovellettu vähennyslakun määritelmää vastaluvun avulla)
+\item $(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a$ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla. Tämä ominaisuus esitellään myöhemmin rationaalilukujen yhteydessä.)
+\end{itemize}
+}
+
+Esimerkiksi seuraava laskutoimitus on helppo laske osittelulain avulla: $2574\cdot 542-2574\cdot 541 = 2574\cdot (542-541) = 2574\cdot 1 = 2574$
+
+Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
+    
+
+\section*{Tehtäviä}
+
 \begin{tehtava}
 Sievennä: \\
 $(2ab+4b^2-8b^3c):(a+2b-4b^2c)$
@@ -289,10 +320,7 @@ $(2ab+4b^2-8b^3c):(a+2b-4b^2c)$
 	$2b$
 	\end{vastaus}
 \end{tehtava}
-    
-
-    \section*{Tehtäviä}
-    
+   
     
         \begin{tehtava}
         Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli celciusasteita tai euroja.)
