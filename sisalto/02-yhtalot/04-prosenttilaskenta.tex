@@ -2,8 +2,6 @@
 
 Sana prosentti tulee latinan kielen sanoista pro centum, mikä tarkoittaa kirjaimellisesti sataa kohden. Prosentteja käytetään ilmaisemaan suhteellista osuutta. Prosentin merkki on \%.
 
-\missingfigure{kuva suorakaiteesta, joka kuvaa perusarvoa (se voi olla vaik 10x10 pientä laatikkoa. Sit kuva, jossa peruarvosta on vähennetty 25\% perusarvosta, eli 75 laatikkoa. Sit kuva, jossa perusarvoon on lisätty 15\%, eli 115 laatikkoa. Sit sopivat havainnollistavat väritykset}
-
 
 \laatikko{1 prosentti $= 1 \% = \frac{1}{100} = 0,01$}
 
@@ -19,85 +17,98 @@ Sana prosentti tulee latinan kielen sanoista pro centum, mikä tarkoittaa kirjai
 
 \todo{tehtävä: ilmaise desimaalilukuna seuraavat prosentit}
 
-Lukua, josta suhde lasketaan, kutsutaan \emph{perusarvoksi}. Esimerkiksi jos sadan euron hintaisen tuotteen hintaa on alennettu 25 prosenttia, niin alennettu hinta on 75 euroa. Jos sen sijaan alkuperäinen hinta nousee 15 prosenttia, niin tuotteen uusi hinta on 115 euroa. Perusarvo on molemmissa tapauksissa 100 euroa.
+%%%%PERUSARVO%%%%%%%
+\laatikko{
+Lukua, josta suhde lasketaan, kutsutaan \emph{perusarvoksi}.
+}
+
+
+\begin{esimerkki}
+Jos sadan euron hintaisen tuotteen hintaa on alennettu 25 prosenttia, niin alennettu hinta on 75 euroa. Jos sen sijaan alkuperäinen hinta nousee 15 prosenttia, niin tuotteen uusi hinta on 115 euroa. Perusarvo on molemmissa tapauksissa 100 euroa.
+
+\missingfigure{kuva suorakaiteesta, joka kuvaa perusarvoa (se voi olla vaik 10x10 pientä laatikkoa. Sit kuva, jossa peruarvosta on vähennetty 25\% perusarvosta, eli 75 laatikkoa. Sit kuva, jossa perusarvoon on lisätty 15\%, eli 115 laatikkoa. Sit sopivat havainnollistavat väritykset}
+\end{esimerkki}
+
 
 \todo{tehtävä perusarvosta}
 
 
+%MUUTOSPROSENTTITEORIA
 \laatikko{
-\emph{Vertailuprosentilla} ilmaistaan, kuinka monta prosenttia luku on toista lukua suurempi. Vertailuprosentin laskennassa käytetään perusarvona sitä lukua, johon verrataan.
+Prosentteja käytetään usein ilmaisemaan suureiden muutoksia, esimerkiksi luku $b$ kasvaa luvuksi $a$. \emph{Muutosprosenttia} laskettaessa muutoksen suuruttaa verrataan alkuperäiseen lukuun. Perusarvona on siis alkuperäinen arvo, johon nähden muutos on tapahtunut.
 
 Jos kysytään, kuinka monta prosenttia $a$ on isompi $b$:tä, se tarkoittaa samaa, kuin kuinka monta $b$:n sadasosaa on se määrä, jolla $a$ on suurempi $b$:tä. Toisin sanoen kuinka monta $b$:n sadasosaa mahtuu $a-b$:hen. Se saadaan laskemalla
 
-$ \frac{a-b}{\frac{b}{100}} = \frac{a-b}{b} \cdot 100$
+\begin{equation*}
+\frac{a-b}{\frac{b}{100}} = \frac{a-b}{b} \cdot 100
+\end{equation*}
+
+Samalla tavalla saadaan laskettua, kuinka monta prosenttia luku kasvoi, kun se muuttui $a$:sta $b$:hen.
+}
+
+
+
+
+%TÄMÄ ON MUUTOSPROSENTTITEHTÄVÄESIMERKKI
+\begin{esimerkki}
+Vesan paino on tammikuussa 68 kg ja kesäkuussa 64 kg. Kuinka monta prosenttia Vesa on laihtunut?
+
+\textbf{Ratkaisu.}
+
+Lasketaan 
+\begin{equation*}
+\frac{68-64}{68}\cdot 100\% = \frac{4}{68} \cdot 100\%=0,06\cdot 100\% = 6\%
+\end{equation*}
+
+\textbf{Vastaus.}
+
+Vesa on laihtunut $6\%$.
+\end{esimerkki}
+
+
+
+
+%%%VERTAILUPROSENTTI%%%%%
+\laatikko{
+\emph{Vertailuprosentilla} ilmaistaan, kuinka monta prosenttia luku on jostain toisesta luvusta. Vertailuprosentin laskennassa käytetään perusarvona sitä lukua, johon verrataan.
+
+Jos kysytään, kuinka monta prosenttia $b$ on $a$:stä, se tarkoittaa samaa, kuin kuinka monta $a$:n sadasosaa $b$ on. Toisin sanoen kuinka monta $a$:n sadasosaa $b$:hen mahtuu. Se saadaan laskemalla 
+
+\begin{equation*}
+\frac{b}{\frac{a}{100}} = \frac{b}{a} \cdot 100
+\end{equation*}
 
 \missingfigure{havainnollistava kuva vertailuprosentista suorakulmioiden avulla}
 }
 
-\todo{tehtävä vertailuprosentista}
+%TÄMÄ ON VERTAILUPROSENTTITEHTÄVÄESIMERKKI
+\begin{esimerkki}
+Vesa ansaitsee kuukaudessa 2300 euroa ja Antero 1700 euroa. Kuinka monta prosenttia Anteron tulot ovat Vesan tuloista? 
 
+\textbf{Ratkaisu.}
+
+Lasketaan
+
+\begin{equation*}
+\frac{1700}{2300} \cdot 100 \%  \approx 0,74\cdot 100 \% = 74 \%
+\end{equation*}
+
+Laskuissa käytettävä perusarvo on Vesan palkka eli 2300 euroa.
+    
+\textbf{Vastaus.}
+
+$74 \%$
+\end{esimerkki}
+
+
+
+%%%%PROSENTTIYKSIKKÖ
 \laatikko{
-Jos kysytään, kuinka monta prosenttia $b$ on $a$:stä, se tarkoittaa samaa, kuin kuinka monta $a$:n sadasosaa $b$ on. Toisin sanoen kuinka monta $a$:n sadasosaa $b$:hen mahtuu. Se saadaan laskemalla 
-
-$\frac{b}{\frac{a}{100}} = \frac{b}{a} \cdot 100$
+\emph{Prosenttiyksikkö} mittaa prosenttiosuuksien välisiä eroja. Esimerkiksi $4\%$ on $2$ prosenttiyksikköä suurempi kuin $2\%$, mutta $100\%$ suurempi kuin $2\%$. Jos prosenttiluku muuttuu, muutos voidaan ilmaista joko prosentteina tai prosenttiyksikköinä.
 }
 
-\begin{esimerkki}
-	Vesa ansaitsee kuukaudessa 2300 euroa ja Antero 1700 euroa.
-    Kuinka monta prosenttia Anteron tulot ovat Vesan tuloista? 
-    
-    {\bf Ratkaisu.}
-    
-    Lasketaan
-    \[
-    \frac{1700}{2300} \cdot 100 \% \approx 0,74\cdot 100 \% = 74 \%.
-    \]
-    Laskuissa käytettävä perusarvo on Vesan palkka eli 2300 euroa.
-    
-    {\bf Vastaus.}
-     $74 \%$
-\end{esimerkki}
 
-
-\begin{esimerkki}
-    Vesa ansaitsee kuukaudessa 2300 euroa ja Antero 1700 euroa.
-    Kuinka monta prosenttia enemmän Vesa ansaitsee kuin Antero?
-    
-    {\bf Ratkaisu.}
-    
-    Lasketaan aluksi Vesan ja Anteron palkkojen erotus
-    \[
-    2300-1700 = 600.
-    \]
-    Sitten lasketaan, kuinka monta prosenttia 600 euroa on Anteron palkasta:
-    \[
-    \frac{600}{1700} \cdot 100 \% \approx 0,35\cdot 100\% = 35 \%.
-    \]
-    
-    {\bf Vastaus.}
-    $35 \%$
-\end{esimerkki}
-
-Prosentteja käytetään usein ilmaisemaan suureiden muutoksia. \emph{Muutosprosenttia} laskettaessa perusarvona on alkuperäinen arvo, johon nähden muutos on tapahtunut.
-
-\begin{esimerkki}
-    Vesan paino on tammikuussa 68 kg ja kesäkuussa 64 kg. Kuinka monta prosenttia Vesa on laihtunut?
-
-    {\bf Ratkaisu.}
-
-    Lasketaan 
-    \[
-    \frac{68-64}{68}\cdot 100\% = \frac{4}{68} \cdot 100\%=0,06\cdot 100\% = 6\%.
-    \]
-    
-    {\bf Vastaus.}
-    Vesa on laihtunut $6\%$.
-\end{esimerkki}
-
-
-\emph{Prosenttiyksikkö} mittaa prosenttiosuuksien välisiä eroja. Jos prosenttiluku muuttuu, muutos voidaan ilmaista joko prosentteina tai prosenttiyksikköinä.
-
-
+%%%%%%PROSENTTIYKSIKKÖTEHTÄVÄESIMERKKI
 \begin{esimerkki}
     Tuotteen markkinaosuus on vuoden tammikuussa 10 \% ja kesäkuussa 15 \%. 
     \begin{enumerate}[a)]
@@ -125,6 +136,7 @@ Prosentteja käytetään usein ilmaisemaan suureiden muutoksia. \emph{Muutospros
     \end{enumerate}
 \end{esimerkki}
 
+\section*{Tehtäviä}
 
 \begin{tehtava}
     Laukku maksaa 225 euroa ja on 25~\%:n alennuksessa. Mikä on alennettu hinta?
