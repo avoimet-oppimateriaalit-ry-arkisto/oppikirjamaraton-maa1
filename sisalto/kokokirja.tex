@@ -171,12 +171,7 @@
 % Infoboksi väreineen
 \definecolor{tuftsBlue}{RGB}{72,145,206}
 \usepackage{mdframed}
-%\newcommand{\laatikko}[1]{\begin{mdframed}[backgroundcolor=tuftsBlue] #1 \end{mdframed}}%
-\definecolor{olivine}{RGB}{154,185,115}
-\definecolor{battleshipGray}{RGB}{132,132,130}
-
-\usepackage[tikz]{bclogo}
-\newcommand{\laatikko}[1]{\begin{bclogo}[couleur = olivine,arrondi = 0.3,logo = , ombre = true, barre = none, couleurOmbre = battleshipGray, blur]{}#1\end{bclogo}}
+\newcommand{\laatikko}[1]{\begin{mdframed}[backgroundcolor=tuftsBlue] #1 \end{mdframed}}
 
 % Esimerkeille oma komento http://tex.stackexchange.com/questions/21227/example-environment
 \newtheorem*{esimerkki}{Esimerkki} %[section]
@@ -187,7 +182,7 @@
 % Harjoitustehtävät answers-paketilla
 \usepackage{answers}
 \Newassociation{vastaus}{Vastaus}{ans}
-\newtheorem{tehtava}{}
+\newtheorem{tehtava}{Tehtävä}
 
 
 % Cancel-paketti supistamista ym. varten
