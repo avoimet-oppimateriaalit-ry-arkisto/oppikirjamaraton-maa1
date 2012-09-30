@@ -9,7 +9,9 @@ Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan
 yhtälö $5x+\sqrt{x} = 7x+7$.
 \end{esimerkki}
 
+\laatikko{
 Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että \emph{yhtälö pätee}.
+}
 
 \begin{esimerkki}
 \begin{enumerate}[a)]
@@ -23,18 +25,50 @@ Nämä laskutavat voidaan kirjoittaa lausekkeiksi, ja merkitsemällä lausekkeet
 
 \begin{esimerkki}
 Kuvassa oleva orsivaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia. Kuinka paljon vaakakupissa on lakritsia?
-%(Ratkaistaan...) (Muita esimerkkejä, vähitellen vaikeutuvia (1. asteen) yhtälöitä)
-\end{esimerkki}
-
+\todo{kahden kilon siika -esimerkin ratkaisu}
 \missingfigure{Kuva kaloista vaa'assa}
 
-Yhtälössä esiintyy yleensä \emph{muuttujia} eli symboleja, joiden arvo voi
-vaihdella. Jos muuttujia on vain yksi, sitä merkitään yleensä kirjaimella $x$.
-Niitä muuttujan $x$ arvoja, joilla yhtälö pätee, kutsutaan yhtälön \emph{ratkaisuiksi}.
-Yhtälön ratkaisemisella tarkoitetaan kaikkien yhtälön ratkaisujen selvittämistä.
+\textbf{Ratkaisu.}
+
+Merkitään lakritsin määrää muuttujalla $x$. Mallinnetaan tilannetta seuraavalla yhtälöllä:
+
+\begin{equation}
+2\text{kg} = \frac{1}{2}\text{kg} + x
+\end{equation}
+
+Ratkaistaan yhtälö vähentämällä molemmilta puolilta puoli kiloa.
+
+\todo{korjaa alignit tässä kohdassa!}
+%\begin{align*}
+$2\text{ kg} = \frac{1}{2}\text{ kg} + x | -\frac{1}{2}\text{ kg}$ \\
+$2\text{ kg} - \frac{1}{2}\text{ kg} = \frac{1}{2}\text{ kg} + x - \frac{1}{2}\text{ kg}$ | \text{yksikön kg voi ottaa yhteiseksi tekijäksi} \\
+$(2-\frac{1}{2})\text{ kg} = (\frac{1}{2} - \frac{1}{2})\text{ kg} + x$ \\
+$(\frac{4}{2} - \frac{1}{2})\text{ kg} = 0 \cdot \text{ kg} + x$ \\
+$ \frac{4-1}{2} \cdot \text{ kg} = 0 + x$ \\
+$ \frac{3}{2} \text{ kg} = x$ \\
+%\end{align*}
+
+\textbf{Vastaus.}
+
+Lakua on $\frac{3}{2}$ kg $= 1 \frac{1}{2}$ kg $= 1,5$ kg.
+\end{esimerkki}
+
+\todo{lisää yhtäöesimerkkejä}
+
 
 \laatikko{
-Tyypillinen tapa ratkaista yhtälöitä on muokata niitä niin, että muokattu yhtälö pätee silloin, kun alkuperäinen yhtälö pätee, ja toisaalta ei päde silloin, kun alkuperäinen yhtälö ei päde. Tällaisia sallittuja muunnoksia ovat esimerkiksi:
+\begin{itemize}
+\item Yhtälössä esiintyy yleensä \emph{muuttujia} eli symboleja, joiden arvo voi
+vaihdella. Jos muuttujia on vain yksi, sitä merkitään yleensä kirjaimella $x$.
+\item Niitä muuttujan $x$ arvoja, joilla yhtälö pätee, kutsutaan yhtälön \emph{ratkaisuiksi}.
+\item Yhtälön ratkaisemisella tarkoitetaan kaikkien yhtälön ratkaisujen selvittämistä.
+\end{itemize}
+}
+
+\todo{joku ihan kehari esimerkki muuttujista}
+
+\laatikko{
+Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä se tarkoittaa sitä, että niitä muokkaa siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällaisia sallittuja muunnoksia ovat esimerkiksi:
 \begin{itemize}
 \item Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku. Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.
 \item Yhtälön molemmat puolet voidaan kertoa nollasta poikkeavalla luvulla.
@@ -43,10 +77,9 @@ saadaan yhtälö $x = 2$.
 \end{itemize}
 }
 
-\missingfigure{Kuva orvivaa'asta, jossa on myös heliumpallo}
-% Nuo pitää ehkä perustella.
+Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
 
-Monet yhtälöt ratkeavat tekemällä tällaisia muunnoksia, kunnes yhtälö on niin yksinkertaisessa muodossa, että ratkaisu voidaan nähdä siitä suoraan.
+Monet yhtälöt ratkeavat siten, että niitä muokataan, kunnes vastauksen voi lukea siitä suoraan, esim $x=3$.
 %Koska jokaisessa muokkausjonon yhtälössä ratkaisut ovat samat, näin saadaan %alkuperäisen yhtälön ratkaisut.
 
 %%esimerkki tulee 1. asteen yhtälön yhteydessä
