@@ -34,14 +34,13 @@
     Jos yhteenlaskettavien murtolukujen nimittäjät eivät ole samat, murtoluvut
     täytyy ensin \emph{laventaa} samannimisiksi ja sitten käyttää samannimisten
     murtolukujen yhteenlaskusääntöä.
-    Jos siis $a/b$ ja $c/d$ ovat murtolukuja ja $b\neq d$, lasketaan
+    Jos siis $\frac{a}{b}$ ja $\frac{c}{d}$ ovat murtolukuja ja $b\neq d$, lasketaan
     \[
     \frac{a}{b} + \frac{c}{d} = \frac{ad}{bd} + \frac{bc}{bd} = \frac{ad+bc}{bd}
     \]
-    Tässä luku $a/b$ lavennetaan luvun $c/d$ nimittäjällä $d$ ja vastaavasti luku
-    $c/d$ lavennetaan ensimmäisen yhteelaskettavan nimittäjällä $b$. Näin saadaan
-    kaksi samannimistä murtolukua, joiden kummankin nimittäjä on yhteenlaskettavien
-    nimittäjien tulo $bd$.
+    Tässä $\frac{a}{b}$ lavennetaan $d$:llä ja $\frac{c}{d}$ lavennetaan
+    $b$:llä, jolloin saadaan kaksi samannimistä murtolukua, joiden kummankin
+    nimittäjä on yhteenlaskettavien nimittäjien tulo $bd$.
     
     \begin{esimerkki}
         Laske
@@ -61,7 +60,7 @@
         \end{eqnarray*}
     \end{esimerkki}
     
-    Murtolukujen $a/b$ ja $c/d$ tulo lasketaan kertomalla lukujen osoittajat ja nimittäjät keskenään:
+    Murtolukujen $\frac{a}{b}$ ja $\frac{c}{d}$ tulo lasketaan kertomalla lukujen osoittajat ja nimittäjät keskenään:
     \[
     \frac{a}{b}\cdot \frac{c}{d} = \frac{a\cdot c}{b\cdot d} = \frac{ac}{cd}.
     \]
@@ -69,9 +68,9 @@
     \[
     q\cdot q^{-1} = 1.
     \]
-    Jos rationaaliluku $q\neq 0$ on esitetty murtolukumuodossa $q=a/b$, niin sen käänteisluku saadaan vaihtamalla osoittaja ja nimittäjä: $q^{-1} = b/a$.
+    Jos rationaaliluku $q\neq 0$ on esitetty murtolukumuodossa $q=\frac{a}{b}$, niin sen käänteisluku saadaan vaihtamalla osoittaja ja nimittäjä: $q^{-1} = \frac{b}{a}$.
     
-    Murtolukujen $p=a/b$ ja $q=c/d\neq 0$ \emph{osamäärä} $p/q$ saadaan, kun kerrotaan luku $p$ luvun $q$ käänteisluvulla:
+    Murtolukujen $p=\frac{a}{b}$ ja $q=\frac{c}{d}\neq 0$ \emph{osamäärä} $p : q$ saadaan, kun kerrotaan luku $p$ luvun $q$ käänteisluvulla:
     \[
     \frac{p}{q} = p\cdot q^{-1} = \frac{a}{b}\cdot\Big(\frac{c}{d}\Big)^{-1} = \frac{a}{b}\cdot \frac{d}{c}
     = \frac{ad}{bc}.
@@ -83,24 +82,28 @@
         \textbf{Murtolukujen laskusääntöjä}
         
         Yhteenlasku
-        \begin{equation}
+        \[
+            \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c},
+        \]
+        \[
             \frac{a}{b} + \frac{c}{d}     =
             \frac{ad}{bd} + \frac{bc}{bd} =
-            \frac{ad+bc}{bd}
-        \end{equation}
+            \frac{ad+bc}{bd}.
+        \]
         
         Kertolasku
-        \begin{equation}
+        \[
             \frac{a}{b}\cdot \frac{c}{d}  =
              \frac{a\cdot c}{b\cdot d}    =
              \frac{ac}{cd}.
-        \end{equation}
+        \]
+        
         Jakolasku
-        \begin{equation}
+        \[
             \frac{a}{b}:\frac{c}{d}   =
             \frac{a}{b}\cdot \frac{d}{c}  =
             \frac{ad}{bc}.
-        \end{equation}
+        \]
     }
     
     Kahta murtolukua vertailtaessa kannattaa ensin laventaa ne saman nimisiksi.
@@ -165,19 +168,6 @@
     Vaihtoehtoinen esitystapa rationaaliluvuille on \emph{desimaaliluvut},
     esimerkiksi murtoluku $\frac{1}{2}$ ja desimaaliluku $0,5$
     esittävät samaa rationaalilukua.
-    
-    Kaksi murtolukua voidaan laskea yhteen seuraavien sääntöjen perusteella:
-    
-    \laatikko{
-        Jos nimittäjät ovat samat, summan osoittaja on osoittajien summa:
-        \begin{equation}
-            \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}
-        \end{equation}
-    }
-    
-    
-    Kaksi ja yksi kolmasosa karkkipussillista karkkia on sama määrä pahoinvointia
-    kuin seitsemän kolmasosakarkkipussillista karkkia.
     
     \todo{enemmän asiaa prosenteista}
     
@@ -255,7 +245,7 @@
             \end{vastaus}
         \end{tehtava}
         
-        \begin{tehtava} %lisää kakkaa
+        \begin{tehtava}
         
         \begin{enumerate}[a)]
         	\item $\displaystyle \frac{\frac{3}{7} + \frac{5}{4}}{3}$
