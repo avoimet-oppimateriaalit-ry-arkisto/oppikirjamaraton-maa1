@@ -1,58 +1,88 @@
-\chapter{Verrannollisuus}
+\chapter{Suoraan ja kääntäen verrannollisuus}
 
 \laatikko{
-Kaksi suuretta ovat suoraan verrannolliset, jos niiden suhde on vakio.
+Kaksi suuretta ovat suoraan verrannolliset, jos toinen saadaan
+toisesta kertomalla se jollakin vakiolla. Tätä vakiota kutsutaan \emph{verrannollisuuskertoimeksi}.
 }
 
+Suoraan verrannollisuus voidaan havaita myös laskemalla suureiden
+suhteita ja huomaamalla, että osamäärä on vakio.
+
 \begin{esimerkki}
-Banaanien kilohinta on $1,90$ euroa. Seuraavassa taulukossa on
-banaanien paino\footnote{Fyysikaalisesti kyse on massasta, mutta arkikielessä termi on paino.}, jonka saa ostettua tietyllä rahamäärällä:
+Banaanien kilohinta on $2,00$ euroa. Seuraavassa taulukossa on
+banaanien paino\footnote{Fysikaalisesti kyse on massasta, mutta
+arkikielessä termi on paino.}, jonka saa ostettua tietyllä rahamäärällä:
 \begin{center} 
-\begin{tabular}{|r|l|}
+\begin{tabular}{|l|r|r|}
 \hline
-Hinta (\euro) & Paino (kg) \\
+Hinta (euroa) & Paino (kg) & Hinta/paino (euroa/kg) \\
 \hline
-$1$ & $0,52$ (Sarake puuttuu: suhde hinta/paino!!)  \\
-$2$ & $1,05$ \\
-$3$ & $1,58$ \\
-$4$ & $2,11$ \\
-$5$ & $2,63$ \\
+$1,00$ & $0,50$ & $2,00$ \\
+$2,00$ & $1,00$ & $2,00$ \\
+$3,00$ & $1,50$ & $2,00$ \\
+$4,00$ & $2,00$ & $2,00$ \\
 \hline
 \end{tabular}
 \end{center}
+Suhteeksi saadaan aina $2,00$ euroa/kg, joten ostettujen banaanien paino
+ja niihin käytetty rahamäärä ovat suoraan verrannolliset.
 \end{esimerkki}
 
 Suoraan verrannollisuutta voidaan kuvata esimerkiksi niin, että jos
-toinen suureista kaksinkertaistuu, niin toinenkin kaksinkertaistuu. Esimerkiksi kaupasta ostettujen hedelmien määrä ja kauppahinta ovat suoraan verrannollisia toisiinsa. Hinnan ja ostettujen banaanien painon suhde on molemmissa tapauksissa vakio.
+toinen suureista kaksinkertaistuu, niin toinenkin kaksinkertaistuu.
+Samoin jos toinen suureista puolittuu, toinenkin suure puolittuu.
 
-Matemaattisesti suoraan verrannollisuus merkitään seuraavasti.
+Jos suoraan verrannollisista suureista piirretään kuvaaja, pisteet
+asettuvat suoralle,
 
-\laatikko{
-Jos suure $a$ on suoraan verrannollinen suureeseen $b$, merkitään
+\missingfigure{Tähän kuva, johon piirretty banaanien paino ja käytetty rahamäärä.}
 
-\begin{equation}
-    \frac{a}{b}=c,
-\end{equation}
-missä $c$ on vakio.
-}
-
-
-Kääntäen verrannollisuus tarkoittaa, että kahden suureen tulo pysyy vakiona. Jos toinen kaksinkertaistuu, toinen puolittuu. Esimerkiksi nopeus ja matkaan tarvittava aika ovat kääntäen verrannollisia toisiinsa. Jos ajat koulumatkan kaksi kertaa nopeammin, matka-aika puolittuu.
-
-Muita esimerkkejä kääntäen verrannollisuudesta ovat:
+Muita esimerkkejä suoraan verrannollisista suureista ovat
 \begin{itemize}
-    \item .
+    \item kuljettu matka ja aika, kun kuljetaan vakionopeudella,
+    \item painovoiman kappaleeseen aiheuttama voima ja kappaleen massa.
 \end{itemize}
 
-Matemaattisesti kääntäen verrannollisuus merkitään seuraavasti.
+
 \laatikko{
-Jos suure $a$ on kääntäen verrannollinen suureeseen $b$, merkitään
-\begin{equation}
-    ab=c,
-\end{equation}
-missä $c$ on vakio.
+Kaksi suuretta ovat kääntäen verrannolliset, jos toinen saadaan toisesta
+jakamalla jokin vakio sillä.
 }
 
+Kääntäen verrannollisuus voidaan havaita myös kertomalla suureet
+keskenään ja huomaamalla, että tulo on vakio.
+
+\begin{esimerkki}
+Nopeus ja matkaan tarvittava aika ovat kääntäen verrannolliset suureet.
+Jos kuljettavana matkana on $80$ km, voidaan nopeudet ja matka-ajat
+kirjoittaa taulukoksi:
+\begin{center} 
+\begin{tabular}{|l|r|r|}
+\hline
+Nopeus (km/h) & Matka-aika (h) & Nopeus$\cdot$matka-aika (km) \\
+\hline
+$40$ & $2$ & $80$ \\
+$80$ & $1$ & $80$ \\
+$100$ & $0,8$ & $80$ \\
+\hline
+\end{tabular}
+\end{center}
+Tulo on aina $80$ km, joten nopeus ja matka-aika ovat kääntäen verrannolliset.
+\end{esimerkki}
+
+Kääntäen verrannollisuutta voidaan kuvata niin, että jos
+toinen suureista kaksinkertaistuu, niin toinen puolittuu.
+
+Jos kääntäen verrannollisista suureista piirretään kuvaaja, pisteet
+muodostavat laskevan käyrän.
+
+\missingfigure{Tähän kuva, johon piirretty matka-aika ja nopeus (yllä olevan
+taulukon mukaisesti)}
+
+Muita esimerkkejä kääntäen verrannollisia suureista ovat
+\begin{itemize}
+    \item kaivamistyön suorittamiseen kuluva aika ja työntekijöiden lukumäärä.
+\end{itemize}
 
 \section*{Tehtäviä}
 
