@@ -1,14 +1,13 @@
 \chapter{Reaaliluvut}
 
-Jo antiikin aikoina huomattiin, että yksinkertaisten geometristen ongelmien ratkaisuina voi olla lukuja, joita ei voi esittää kahden kokonaisluvun osamääränä. Siksi on tarpeen tutkia lukuja, jotka  eivät ole rationaalilukuja. Tällaisia lukuja kutsutaan \emph{irrationaaliluvuiksi}. Esimerkiksi $\sqrt{2}$ on irrationaaliluku, mikä todistetaan luvun lopussa. Toinen tuttu peruskoulusta tuttu irrationaaliluku on ympyrän kehän pituuden suhde halkaisijaan: $\pi$. 
+Joskus yksinkertaisen geometrisen ongelman ratkaisu voi olla luku, jota ei voida esittää rationaalilukuna. Siksi on tarpeen tutkia lukuja, jotka eivät ole rationaalilukuja. Tällaisia lukuja kutsutaan \emph{irrationaaliluvuiksi}.
 
-Kun rationaalilukujen joukon täydentäminen irrationaaliluvuilla johtaa \emph{reaalilukuihin}. Matemaattinen syy reaalilukujen tutkimiseen on se, että rationaaliluvut eivät täytä lukusuoraa kokonaan. Tämä tarkoittaa sitä, että jono rationaalilukuja voi lähestyä lukua, joka ei ole rationaaliluku. Esimerkiksi lukujono
-\[
-3, \quad 3,1, \quad 3,14, \quad 3,145, \quad 3,1459, \quad 3,14592, \quad 3,145926, \ldots
-%265358979392653589793
-\]
-suppenee kohden lukua $\pi$, joka ei ole rationaaliluku vaikka kaikki jonossa esiintyvät luvut ovatkin rationaaliluja. Rationaalilukuja on kuitenkin lukusuoralla tiheässä tiheässä siinä mielessä, että jokaista relaalilukua voidaan approksimoida mielivaltaisen tarkasti jonolla rationaalilukuja.
+Esimerkiksi $\sqrt{2}$ on irrationaaliluku, mikä todistetaan luvun lopussa. Toinen tuttu peruskoulusta tuttu irrationaaliluku on ympyrän kehän pituuden suhde halkaisijaan: $\pi$.
 
+%%%%TÄMÄ ON KUVA LUKUSUORALLA OLEVASTA PIISTÄ JA SQRT 2:STA%%%
+\begin{scriptsize}
+
+\end{scriptsize}
 \definecolor{ffqqqq}{rgb}{1,0,0}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=6.0cm,y=6.0cm]
 \draw[->,color=black] (1.2,0) -- (3.3,0);
@@ -25,24 +24,40 @@ suppenee kohden lukua $\pi$, joka ei ole rationaaliluku vaikka kaikki jonossa es
 \end{tikzpicture}
 
 \laatikko{
-{\bf Reaaliluvut}
+Rationaalilukuja ja irrationaalilukuja kutsutaan yhdessä \emph{reaaliluvuiksi}. Reaalilukujen joukkoja merkitään $\mathbb{R}$.
+}
 
-Kun rationaalilukuihin otetaan mukaan irrationaaliluvut, saadaan reaalilukujen joukko $\mathbb{R}$. Kaikki rationaalilukuja koskevat laskusäännöt pätevät myös reaaliluvuille.}
+Rationaaliluvuilla voidaan approksimoida irrationaalilukuja mielivaltaisen tarkasti. Esimerkiksi $\pi$ voidaan kirjoittaa halutusta tarkkuudesta riippuen seuraaviin muotoihin:
+\[
+3, \quad 3,1, \quad 3,14, \quad 3,145, \quad 3,1459, \quad 3,14592, \quad 3,145926, \ldots
+\]
 
-Siinä missä rationaalilukujen desimaaliesitykset ovat päättyviä tai jaksollisia (tästä puhuttiin luvussa \ref{rationaaliluvut}), ovat
-irrationaalilukujen desimaaliesitykset päättymättömiä ja
-jaksottomia. Esimerkiksi luvun
+Rationaaliluvut eivät ns. täytä koko lukusuoraa, mutta niitä on niin tiheästi, että jokaista irrationaaliluku voidaan approksimoida mielivaltaisen tarkasti jollain rationaaliluvulla.
+
+\missingfigure{kuva tähän lukusuorasta, jolla on neliöjuuri 2 ja sen vieressä rationaalilukuja yhä lähempänä ja lähempänä - ne approksimoivat neliöjuuri kakkosta}
+
+Vaikka menisimme kuinka lähelle jotain irrationaalilukua lukusuoralla, välistä löytyisi vielä jokin rationaaliluku.
+
+
+\laatikko{
+Kaikki rationaalilukuja koskevat laskusäännöt pätevät myös reaaliluvuille.
+}
+
+Tämän perusteleminen on valitettavasti liian pitkällinen asia lukion ykköskurssille.
+
+\todo{pidä huolta, että aiemmin on oikeasti puhuttu rationaalilukujen desimaalilukuesitysten jaksollisuudesta!! tai sitten perustele tässä}
+
+Siinä missä rationaalilukujen desimaaliesitykset ovat päättyviä tai jaksollisia, ovat irrationaalilukujen desimaaliesitykset päättymättömiä ja
+jaksottomia.
+
+Luvun
 \[\sqrt{2} \approx 1,414213562373095048801688724209\ldots\]
-desimaaliesityksessä on toistuvua kohtia, esimerkiksi ylläolevassa esityksessä lukupari 88 esiintyy kahdesti. Päättymättömässä desimaaliestyksessä ei kuitenkaan ole mitään jaksoa, jonka jälkeen luvut alkaisivat alusta.
+desimaaliesityksessä on kyllä toistuvua kohtia, esimerkiksi numeropari $88$ esiintyy kahdesti. Siinä ei kuitenkaan ole mitään jaksoa, jonka jälkeen luvut alkaisivat toistua, toisin kuin esimerkiksi luvussa $3,80612312312312\ldots$.
 
-Reaalilukujen ominaisuuksien tarkka todistaminen on melko monimutkaista, eikä niitä yleensä esitetä lukiokursseissa. Tyydymme toteamaan ilman todistusta, että rationaalilukujen
-laskusäännöt yleistyvät myös reaaliluvuille. Voimme silti laskea kyseiselle luvulle likiarvon
-halutulla tarkkuudella,
-\[ \pi^2 =9,86960440\ldots \].
-Lisää reaalilukujen ominaisuuksista liitteessä \ref{aksioomat}.
+Reaalilukujen ominaisuuksista kerrotaan lisää liitteessä \ref{aksioomat}.
 
-Reaalilukujen myötä kaikki lukiokursseissa esiintyvät lukujoukot on esitelty.
-Ne on lueteltu seuraavassa:
+
+Reaalilukujen myötä kaikki lukiokursseissa esiintyvät lukujoukot on esitelty. Ne on lueteltu seuraavassa:
 \begin{center}\begin{tabular}{l|c|l}
 Joukko & Symboli & Mitä ne ovat\\
 \hline
@@ -93,19 +108,16 @@ Reaaliluvut & $\mathbb{R}$ & Kaikki lukusuoran luvut
 \draw (-3.7,-3) node[anchor=north west] {$-3$};
 \end{tikzpicture}
 
+Lukualueita voidaan laajentaa lisää vielä tästäkin, esimerkiksi \emph{imaginääriluvut} ovat lukuja, jotka eivät ole reaalilukuja, vaan lukuja, joita ei voi edes sijoittaa lukusuoralle. Reaalilukuja ja imaginäärilukuja kutsutaan yhdessä \emph{kompleksiluvuiksi}.
 
-Lukualueita voidaan vielä tästäkin laajentaa. Seuraava laajennus olisi \emph{kompleksilukujen joukko} $\mathbb{C}$. Kompleksilukujen joukosta löytyy reaalilukujen lisäksi esimerkiksi imaginaariyksikkö,  jolle pätee $i^2=-1$. 
-Minkään reaaliluvun neliö ei ole negatiivinen luku.
-% $i = \sqrt{-1}$. % Tämä kaava on täysin väärin. \sqrt{-1} = \pm i (ei i!).
-% Neliöjuuri ei ole yksikäsitteinen kompleksiluvuilla (terv. Antti R.)
-%
-Kompleksiluvut eivät nykyään kuulu lukion oppimäärään, mutta niitä tarvitaan muun muassa insinöörialoilla yliopistossa ja ammattikorkeakoulussa. Esimerkiksi vaihtosähköpiirien analyysissä, signaalinkäsittelyssä ja säätötekniikassa käytetään runsaasti kompleksilukuja. 
+Kompleksilukuja tarvitaan mm. insinöörialoilla yliopistoissa ja ammattikorkeakouluissa. Esimerkiksi vaihtosähköpiirien analyysissä, signaalinkäsittelyssä ja säätötekniikassa käytetään runsaasti kompleksilukuja. 
 
-\section{lausekkeiden sieventäminen}
+\todo{SIIRRÄ LAUSEKKEIDEN SIEVENTÄMINEN JONNEKIN MUUALLE}
+\chapter{Lausekkeiden sieventäminen}
 
 Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin.
 
-Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella eri tavalla. Esimerkiksi merkinnät $42$, $-(-42)$, $6\cdot 7$ ja $(50-29)\cdot 2$ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikale kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
+Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella eri tavalla. Esimerkiksi merkinnät $42$, $-(-42)$, $6\cdot 7$ ja $(50-29)\cdot 2$ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
 
 \laatikko{
 Yhteenlaskut voi laskea missä järjestyksessä tahansa
@@ -117,9 +129,10 @@ $a+(b+c)=(a+b)+c=a+b+c$ (liitäntälaki)
 
 Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3+5)$.
 
-Nämä säännöt voi yhdistää yleiseksi säännöksi, jonka mukaan laskujärjestystä voi vaihtaa ihan miten vain niin kauan kuin lausekkeessa on pelkkää yhteenlaskua.
+Nämä säännöt voi yhdistää yleiseksi säännöksi, jonka mukaan laskujärjestystä voi vaihtaa ihan miten päin tahansa, niin kauan kun lausekkeessa on pelkkää yhteenlaskua.
 
-Tämän säännön voi yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan käänteisluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
+\todo{tarkista, että aiemmin on määritelty vastaluku}
+Tämän säännön voi yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
 
 \laatikko{
 Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasi, kun ajattelee miinusmerkin liikkuvan kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
@@ -137,11 +150,12 @@ $a\cdot b=b\cdot a$ (vaihdantalaki)
 $a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$ (liitäntälaki)
 }
 
-Jakolaskun voi ajatella käänteisluvulla kertomisena, eli
+Esim. $5 \cdot 6 = 6 \cdot 5$
 
-\laatikko{
+$2 \cdot (1+2) = 2 \cdot 1 + 2 \cdot 2$
+
+
 Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun käänteisluvulla kertomisena.
-}
 
 Esim. $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
 
