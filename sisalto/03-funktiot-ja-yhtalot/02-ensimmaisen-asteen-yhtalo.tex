@@ -4,6 +4,35 @@
 Ensimmäisen asteen yhtälö on yhtälö, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.
 }
 
+Yhtälön nimi tulee siitä, että muuttujan $x$ korkein potenssi on $1$.
+
+\begin{esimerkki}
+Muun muassa seuraavat yhtälöt ovat ensimmäisen asteen yhtälöitä:
+\begin{enumerate}[a)]
+\item $2x = 4$
+\item $5x+3 = 0$
+\item $x+2 = 3x-4$
+\end{enumerate}
+\end{esimerkki}
+
+Ensimmäisen asteen yhtälö ratkaistaan siirtämällä ensin
+muuttujan $x$ sisältävät termit yhtälön vasemmalle puolelle ja vakiotermit
+oikealle puolelle. Tämän jälkeen yhtälö jaetaan puolittain
+muuttujan $x$ kertoimella.
+
+\begin{esimerkki}
+Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+\begin{align*}
+7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta 4x.} \\
+3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
+3x &= 3 & &| \, \text{Jaetaan molemmat puolet kolmella eli kerrotaan yhtälö
+puolittain $\frac{1}{3}$:lla.} \\
+x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x = 1$ on siis yhtälön ratkaisu.} \\
+\end{align*}
+\end{esimerkki}
+
+Ensimmäisen asteen yhtälöllä on aina täsmälleen yksi ratkaisu.
+
 \begin{theorem}
 Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä.
 \end{theorem}
@@ -17,20 +46,21 @@ ax - cx + b - d &= 0 & &| \, \textbf{Otetaan yhteinen tekijä.} \\
 \end{align*}
 \end{proof}
 
-\begin{theorem}
-Yleinen lähemistymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun on: \\
+\begin{esimerkki}
+Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun: \\
 (1) Vähennä molemmilta puolilta $cx$. Saat yhtälön $(a-c)x + b = d$. \\
 (2) Vähennä molemmilta puolita $b$. Saat yhtälön $(a-c)x = d-b$. \\
 (3) Jaa $(a-c)$:llä. Saat yhtälön ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
-\end{theorem}
+\end{esimerkki}
 
-Esimerkki. Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
-\begin{align*}
-7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta 4x.} \\
-3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
-3x &= 3 & &| \, \text{Jaetaan molemmat puolet kolmella eli kerrotaan $\frac{1}{3}$:lla.} \\
-x &= 1 & &| \, \text{Saimme yhtälön ratkaistuun muotoon. $x=1$ on siis yhtälön ratkaisu.} \\
-\end{align*}
+\begin{tehtava}
+Mitä yhtälölle $ax+b = 0$ tapahtuu, jos kerroin $a$ saa arvon nolla?
+\begin{vastaus}
+Jos $b = 0$, yhtälö toteutuu kaikilla $x$:n arvoilla. Jos $b \neq 0$, yhtälö
+ei toteudu millään $x$:n arvolla. Periaatteessa kyseessä ei kuitenkaan
+enää ole ensimmäisen asteen yhtälö, mikäli $a = 0$
+\end{vastaus}
+\end{tehtava}
 
 \begin{tehtava}
 %
@@ -62,10 +92,11 @@ Ratkaise:
 \begin{tehtava}
 Ratkaise kysytty muuttuja yhtälöstä
 \begin{enumerate}[a)]
-\item $F=ma$, $m=?$ "voima on massa kertaa kiihtyvyys"
-\item $p=\frac{F}{A}$, $F=?$ "paine on voima jaettuna alalla"
-\item $A=\pi r^2$, $r=?$ "(pallon) pinta-ala on pii kertaa säde toiseen"
-\item $V=\frac{1}{3} \pi r^2 h$, $h=?$ "(kartion) tilavuus on kolmasosa pii kertaa säde toiseen kertaa korkeus"
+\item $F=ma$, $m=?$ (Voima on massa kerrottuna kiihtyvyydellä.)
+\item $p=\frac{F}{A}$, $F=?$ (Paine on voima jaettuna alalla.)
+\item $A=\pi r^2$, $r=?$ (Ympyrän pinta-ala on pii kerrottuna säteen neliöllä.)
+\item $V=\frac{1}{3} \pi r^2 h$, $h=?$ (Kartion tilavuus on piin kolmasosa
+kerrottuna säteen neliöllä ja kartion korkeudella.)
 \end{enumerate}
 \begin{vastaus}
 \begin{enumerate}[a)]
@@ -94,8 +125,9 @@ Kännykkäliittymän kuukausittainen perusmaksu on 2,90 euroa. Lisäksi jokainen
 \end{tehtava}
 
 \begin{tehtava}
-Sadevesikeräin näyttää vesipatsaan korkeuden millimetreissä. Eräänä aamuna kello 9 keräimessä oli 5 mm vettä. Seuraavana aamuna samaan aikaan keräimessä oli 23 mm vettä. Muodosta yhtälö ja ratkaise, kuinka paljon vettä oli satanut keskimäärin tunnissa kuluneen vuorokauden aikana.
+Sadevesikeräin näyttää vesipatsaan korkeuden millimetreinä. Eräänä aamuna
+keräimessä oli 5 mm vettä. Seuraavana aamuna samaan aikaan keräimessä oli 23 mm vettä. Muodosta yhtälö ja ratkaise, kuinka paljon vettä oli keskimäärin tunnissa satanut kuluneen vuorokauden aikana.
 	\begin{vastaus}
-	0,75 mm/tunti
+	$0,75$ mm/tunti
 	\end{vastaus}
 \end{tehtava}
