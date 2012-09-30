@@ -17,6 +17,12 @@ Käytäntöjä:
 \item Funktion sääntöä kutsutaan usein pelkästään funktioksi.
 \end{itemize}
 
+\begin{esimerkki}
+Funktion argumentiksi eli funktion muuttujaksi kutsutaan sulkeiden sisällä olevaa osaa: esimerkiksi $f(x)$:ssä argumentti on $x$. Argumentti voi olla myös monimutkaisempi. Voimme kirjoittaa esim. $f(3x)$ tai $f(f(x))$.
+\end{esimerkki}
+
+\todo{lisää neliöjuuren määritelmä funktiona}
+
 Funktion arvojoukko koostuu niistä maalijoukon alkioista, jotka funktio saa arvokseen ainakin yhdessä määrittelyjoukon pisteessä.
 
 Funktion sääntö määritellään usein kaavan avulla. Voimme esimerkiksi määritellä funktion $f$ reaaliluvuilta reaaliluvuille kaavalla
@@ -41,26 +47,9 @@ x &= 1+\frac{1}{a} & &| \, \text{Huomaamme, että saamme ratkaisun kaikilla $a \
 jokin riippuu jostakin, esitä määrittely ja arvojoukko muodossa f:A->B
 \end{esimerkki}
 
+\todo{nollakohdan määritelmä ja löytäminen; kuvaajasta ja yhtälöstä}
+
 Funktion nimeäminen, $f(x)$ (ei?) vastaa merkinnältään $\sin(x)$:ää. jälkimmäisen tunnistaa, tuttu funktio
-
-\section{Usean muuttujan funktiot}
-
-\laatikko{Funktiolla voi olla monta muuttujaa. Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x,y)$}
-
-\begin{esimerkki}
-
-Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x,y)=xy$.
-
-Pituudet voivat olla vain positiivisia reaalilukuja: $x,y$
-
- määrittely ja arvojoukko
-\end{esimerkki}
-
-\begin{esimerkki}
-Funktion argumentiksi eli funktion muuttujaksi kutsutaan sulkeiden sisällä olevaa osaa: esimerkiksi $f(x)$:ssä argumentti on $x$. Argumentti voi olla myös monimutkaisempi. Voimme kirjoittaa esim. $f(3x)$ tai $f(f(x))$.
-\end{esimerkki}
-
-\todo{lisää neliöjuuren määritelmä funktiona}
 
 \begin{tehtava}
 Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
@@ -104,4 +93,18 @@ Millä $x$:n arvoilla yhtälö $f(f(x)) = x$ pätee, kun
 \end{enumerate}
 \end{vastaus}
 \end{tehtava}
+
+
+\section{Usean muuttujan funktiot}
+
+\laatikko{Funktiolla voi olla monta muuttujaa. Jos funktion $f$ arvo riippuu esimerkiksi muuttujista $x$ ja $y$, merkitään funktiota $f(x,y)$.}
+
+\begin{esimerkki}
+
+Olkoon suorakulmion korkeus $x$ ja leveys $y$. Tiedetään, että suorakulmion pinta-ala voidaan laskea kertomalla sen korkeus ja leveys keskenään, joten suorakulmion pinta-ala voidaan esittää tunnettujen pituuksien $x$ ja $y$ funktiona: $A(x,y)=xy$. Pituudet voivat olla vain positiivisia reaalilukuja, joten vaadimme, että $x>0$ ja $y>0$. Pinta-alaa esittää positiivinen reaaliluku, joten myös $A>0$. Kun tietyssä tapauksessa suorakulmion korkeus on 3 ja leveys 4, suorakulmion pinta-ala on $A(3,4)=3\cdot 4=12$ pinta-alayksikköä.
+
+\end{esimerkki}
+
+
+
 
