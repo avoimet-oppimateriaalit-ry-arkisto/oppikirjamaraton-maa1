@@ -1,40 +1,63 @@
 \chapter{Murtopotenssi}
 
-Mitä voisi tarkoittaa $2^\frac{1}{3}$ ?
+Seuraavaksi tutkitaan potenssin käsitteen laajentamista tilanteeseen, jossa eksponenttina on murtoluku.
+Esmerkiksi voidaan pohtia, mitä tarkoittaa merkintä $2^\frac{1}{3}$? Potenssin laskusääntöjen perusteella
+\[
+(2^{m})^n = 2^{mn},\textrm{ kun }m,n\in \mathbb{Z}.
+\]
+Siten on luonnollista ajatella, että murtopotenssille $2^\frac{1}{3}$ pätee
+\[
+(2^\frac{1}{3})^3 = 2^\frac{3}{3} = 2^1=2.
+\]
+Koska luvun $2$ kuutiojuuri toteuttaa yhtälön $(\sqrt[3]{2})^3=2$, täytyy siis asettaa $2^\frac{1}{3}=\sqrt[3]{2}$. Yleisemmin asetetaan $a^\frac{1}{n} =\sqrt[n]{a}$, kun $n$ on positiivinen kokonaisluku ja $a\ge 0$.
 
-Potenssien laskusäätöjen mukaan $(2^4)^3 = 2^{3\cdot 4} = 2^{12}$, joten miksi ei voisi laskea $\left( 2^{\frac{1}{3}}\right)^3 = 2^{\frac{1}{3}\cdot 3} = 2^1=2$ ? Toisaalta $(\sqrt[3]{2})^3=2$, joten on luontevaa määritellä $2^{\frac{1}{3}} = \sqrt[3]{2}$. Tällanen merkintä on käytännöllinen, koska murtoluvuilla laskeminen on monesti mukavampaa kuin juurimerkinnän käyttö.
+Potenssin potenssin kaavaa on luotevaa myös ajatella käyttäen, että esimerkiksi
+\[
+(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.
+\]
+Yleisemmin otetaan murtopotenssin $a^\frac{m}{n}$ määritelmäksi
+\[
+a^\frac{m}{n} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m,
+\]
+kun $m$ ja $n$ ovat kokonaislukuja ja $n>0$. 
 
-\laatikko{Murtopotenssimerkintä: $a^\frac{1}{n} = \sqrt[n]{a}$, kun $a\geq 0$. \\
-Erityisesti $a^\frac{1}{2}=\sqrt{a}$.}
+\laatikko{{\bf Murtopotenssimerkinnät}
+\[
+a^\frac{1}{n} = \sqrt[n]{a},\textrm{ kun }a\geq 0. 
+\]
+Erityisesti $a^\frac{1}{2}=\sqrt{a}$.
+\[
+a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a\geq 0.
+\]
+}
 
-Tämän jälkeen tuntuisi luontevalta merkitä potenssin potenssin kaavaa käyttäen $(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.$ (Huomaa, että tämä ei ole itsestään selvää, koska potenssien laskusäännöt on toistaiseksi todistettu vain kokonaislukueksponenteille.) Tämä otetaan murtolukueksponentin määritelmäksi.
+%\laatikko{Murtopotenssimerkintä: }
 
-\laatikko{Murtopotenssimerkintä: $a^\frac{m}{n} = (a^{\frac{1}{n}})^m = 
-(\sqrt[n]{a})^m$, kun $a\geq 0$.}
-
-Kun murtolukueksponentit määritellään tällä tavalla, kaikki potenssien
-laskusäännöt ovat sellaisenaan voimassa myös niille, esimerkiksi kaavat
+Kun murtolukueksponentit määritellään näin, kaikki aikaisemmat potenssien
+laskusäännöt ovat sellaisenaan voimassa myös niille. Esimerkiksi kaavat
 \[ a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q \]
-pätevät kaikille rationaaliluvuille $p$ ja $q$. Tämän todistaminen vaatii pitkähköjä
-laskuja, joten todistukset on sijoitettu liitteeseen \ref{pot_todistukset}.
+pätevät kaikille rationaaliluvuille $p$ ja $q$.  Näinden kaavojen todistukset on esitetty liitteessä \ref{pot_todistukset}.
 
-{\bf Huomio määrittelyjoukosta}. Murtopotenssimerkintää käyttettäessä joudumme vaatimaan, että $a\geq 0$ myös silloin, kun $n$ on pariton. Esimerkiksi $\sqrt[3]{-1}=-1$ (koska $(-1)^3=-1$), mutta lauseketta $(-1)^\frac{1}{3}$ ei ole määritelty. Tähän on hyvä syy, sillä muuten seuraa yllättäviä ongelmia:
-
-\[ -1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6}
-= ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1. \]
-
-Hupsis! Mikä meni pieleen? Lavennus $\frac{1}{3}$:sta lukuun $\frac{2}{6}$ on ongelman ydin, mutta olisi hyvin ikävää jos murtolukuja ei saisikaan aina laventaa. Tämän takia peli vihelletään poikki
-heti toisen yhtäsuuruusmerkin kohdalla. On siis sovittu, ettei
-murtopotenssimerkintää käytetä, jos kantaluku on negatiivinen.
+{\bf Huomautus määrittelyjoukosta}. Murtopotenssimerkintää käyttettäessä vaaditaan, että $a\geq 0$ myös silloin, kun $n$ on pariton. Syy tähän on seuraava. Esimerkiksi $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta $(-1)^\frac{1}{3}$ ole tällöin määritelty. Murtopotenssimerkinnän määrittelyst tällöin voi seurata yllättäviä ongelmia:
+\[
+ -1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6}
+= ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1. 
+\]
+Luvun $\frac{1}{3}$ lavennus muotoon $\frac{2}{6}$ on ongelman ydin, mutta murtolukujen lavennussäännöistä lopuminen olisi myös hankalaa. Siksi sovitaan, ettei murtopotenssimerkintää käytetä, jos kantaluku on negatiivinen.
 
 \begin{esimerkki}
-Muuta lausekkeet $\sqrt[5]{3}$ ja $(\sqrt[4]{a})^7$ murtopotenssimuotoon. Ratkaisu: \\
+Muuta lausekkeet $\sqrt[5]{3}$ ja $(\sqrt[4]{a})^7$ murtopotenssimuotoon.
+
+{\bf Ratkaisu.}
+
 $\sqrt[5]{3} = 3^\frac{1}{5}$, \\
 $(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
 \end{esimerkki}
 
 \begin{esimerkki}
-Sievennä lauseke $8^\frac{2}{3}$. Ratkaisu: \\
+Sievennä lauseke $8^\frac{2}{3}$.
+
+{\bf Ratkaisu.}
  $8^\frac{2}{3} = (\sqrt[3]{8})^2 = 2^2 = 4.$
 \end{esimerkki}
 

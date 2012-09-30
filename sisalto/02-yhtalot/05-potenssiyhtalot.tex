@@ -4,17 +4,20 @@
 $
 x^n=a
 $,
-jossa positiivinen kokonaisluku $n$ on potenssiyhtälön \emph{aste}.}
+jossa $n$ on positiivinen kokonaisluku. Eksponentin $n$ arvoa kutsutaan yhtälön
+\emph{asteeksi}.}
 
-Potenssiyhtälöt esiintyvät esimerkiksi, kun lasketaan koron korkoa, sekä pinta-ala- ja tilavuuslaskuissa.
+Potenssiyhtälöitä tarvitaan esimerkiksi tilanteissa, joissa lasketaan
+korolle korkoa. Myös pinta-ala- ja tilavuuslaskuissa esiintyy potenssiyhtälöitä.
 
 \begin{esimerkki}
 \begin{enumerate}
 \item[(a)]
-Yhtälö $27x^9=7$ on potenssiyhtälö, sillä jakamalla puolittain luvulla $27$
-voimme kirjoittaa sen muodossa $x^9 = \frac{7}{27}$.
+Yhtälö $27x^3=7$ on potenssiyhtälö, sillä jakamalla se
+puolittain luvulla $27$ saadaan $x^3 = \frac{7}{27}$.
 \item[(b)]
-Yhtälö $2x^{4}-7=3$ on potenssiyhtälö. Nimittäin
+Yhtälö $2x^{4}-7=3$ on potenssiyhtälö, sillä se voidaan muokata
+muotoon $x^n = a$,
 \begin{eqnarray*}
 2x^{4} -7 &=& 3 \\
 2x^{4} &=& 3+7 \\
@@ -22,26 +25,32 @@ x^{4} &=& \frac{10}{2} \\
 x^{4} &=& 5.
 \end{eqnarray*}
 \item[(c)]
-Yhtälö $x^{\frac{3}{2}}=42$ ei ole potenssiyhtälö, sillä $\frac{3}{2}$ ei ole kokonaisluku. (Se voidaan kuitenkin kirjoittaa potenssiyhtälönä uuden muuttujan $z=x^{\frac{1}{2}}=\sqrt{x}$ suhteen: saamme potenssiyhtälön $z^3 = 42$.)
+Yhtälö $x^{\frac{3}{2}}=42$ ei ole potenssiyhtälö, sillä eksponentti
+$\frac{3}{2}$ ei ole kokonaisluku. Yhtälö voidaan kuitenkin kirjoittaa
+uuden tuntemattoman $z=x^{\frac{1}{2}}=\sqrt{x}$ avulla: tällöin
+saadaan potenssiyhtälö $z^3 = 42$.)
 \item[(d)]
-Yhtälö $x^{-2}=44$ ei ole potenssiyhtälö, sillä $-2$ ei ole positiivinen kokonaisluku. (Se voidaan kuitenkin kirjoittaa potenssiyhtälönä uuden tuntemattoman $z=x^{-1}=\frac{1}{x}$ suhteen: saamme potenssiyhtälön $z^2 = 44$.)
+Yhtälö $x^{-2}=44$ ei ole potenssiyhtälö, sillä $-2$ ei ole positiivinen kokonaisluku. Sekin voidaan kirjoittaa potenssiyhtälönä, kun merkitään
+$z=x^{-1}=\frac{1}{x}$. Tällöin saadaan yhtälö $z^2 = 44$.)
 \end{enumerate}
 \end{esimerkki}
 
-\laatikko{\emph{Potenssiyhtälön ratkaisu}:
+\laatikko{\emph{Potenssiyhtälön ratkaiseminen}:
 \begin{itemize}
 \item
-jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{pariton}, on sillä tasan yksi ratkaisu:
+Jos potenssiyhtälön aste $n$ on \emph{parillinen} ja $a \ge 0$, on sillä kaksi ratkaisua,
 $$
-x = a^{\frac{1}{n}}.
-$$
+x = \pm a^{\frac{1}{n}}
+$$. Merkinnällä $\pm$ tarkoitetaan, että sekä positiivinen että negatiivinen
+arvo käyvät: esimerkiksi $\pm 5$ tarkoittaa sekä lukuja $5$ että $-5$.
 \item
-Jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{parillinen} ja $a\ge 0$, on sillä kaksi ratkaisua:
+Jos aste on \emph{pariton}, on sillä täsmälleen yksi ratkaisu,
 $$
-x = \pm a^{\frac{1}{n}}.
-$$
+x = a^{\frac{1}{n}}
+$$.
 \item
-Jos potenssiyhtälön $x^n=a$ aste $n$ on \emph{parillinen} ja $a< 0$, ei potenssiyhtälöllä ole ratkaisuja.
+Jos aste on \emph{parillinen} ja $a < 0$, ei potenssiyhtälöllä ole yhtään
+ratkaisua.
 \end{itemize}}
 
 \begin{esimerkki}
@@ -59,63 +68,63 @@ Potenssiyhtälöllä $x^6 = -1$ ei ole ratkaisua, sillä $x^4 = (x^3)^2 \ge 0$ k
 
 
 \begin{esimerkki}
-Suursijoittaja Nalle Mursulla $5\ 000$ euroa ylimääräistä rahaa, jonka hän aikoo sijoittaa $30$ vuodeksi.  Nalle Mursu haluaa sijoittamansa pääoman kasvavan $100\ 000$ euroksi $30$ vuodessa.  Kuinka suuren vuotuisen korkokannan Nalle Mursu tarvitsee sijoitukselleen?
+Suursijoittaja Nalle Mursulla on $5\ 000$ euroa ylimääräistä rahaa, jonka hän aikoo sijoittaa $30$ vuodeksi.  Nalle Mursu haluaa sijoittamansa pääoman kasvavan $100\ 000$ euroksi $30$ vuodessa.  Kuinka suuren vuotuisen korkokannan Nalle Mursu tarvitsee sijoitukselleen?
 
-\emph{Ratkaisu}:  Olkoon vuotuinen korkokanta $r$. \emph{Korkoa korolle -periaatten} nojalla $5\ 000$ euron sijoitus kasvaa $30$ vuodessa summaksi $5\ 000\cdot(1+r)^{30}$.  Merkitsemällä $x=1+r$ päädymme yhtälöön $5 000\cdot x^{30} = 100\ 000$.  Jakamalla puolittain luvulla $5\ 000$ päädymme potenssiyhtälöön 
+\emph{Ratkaisu}:  Olkoon vuotuinen korkokanta $r$. \emph{Korkoa korolle -periaatten} nojalla $5\ 000$ euron sijoitus kasvaa $30$ vuodessa summaksi $5\ 000\cdot(1+r)^{30}$.  Merkitsemällä $x=1+r$ saamme yhtälön $5 000\cdot x^{30} = 100\ 000$.  Jakamalla yhtälö puolittain luvulla $5\ 000$ päädymme
+potenssiyhtälöön 
 $$
 x^{30} = 20\ 000,
 $$ 
-jonka ratkaisu on $x=20\ 000^{\frac{1}{30}} = 1{,}39...$. Siten suursijoittaja Nalle Mursun vaatima korkokanta sijoituksellee on noin $r=1-x=1-1{,}39=0{,}39=39\%.$
+jonka ratkaisuksi saadaan $x=20\ 000^{\frac{1}{30}} = 1{,}39...$. Näin
+ollen suursijoittaja Nalle Mursun vaatima korkokanta sijoitukselleen on noin $r=1-x=1-1,39=0,39=39~\%$.
 \end{esimerkki}
 
-Potenssifunktiot ovat tapa katsoa potenssiyhtälöitä.
+%Potenssifunktiot ovat tapa katsoa potenssiyhtälöitä.
 
-\laatikko{\emph{Potenssifunktio} on funktio, jossa muuttuja $x$ korotetaan potenssiin $n$. Potenssifunktion lauseke siis on
-$$
-f(x) = x^n.
-$$
-}
+%\laatikko{\emph{Potenssifunktio} on funktio, jossa muuttuja $x$ korotetaan %potenssiin $n$. Potenssifunktion lauseke siis on
+%$$
+%f(x) = x^n.
+%$$
+%}
 
-Potenssiyhtälöä $x^n=a$ voidaan nyt tarkastella tarkastelemalla funktiota $f(x)=x^n$ ja sen kuvaajaa $y=f(x)$. Tällöin siis $y=a$, eli $y$-akseli vastaa $a$:n arvoja.
+%Potenssiyhtälöä $x^n=a$ voidaan nyt tarkastella tarkastelemalla funktiota %$f(x)=x^n$ ja sen kuvaajaa $y=f(x)$. Tällöin siis $y=a$, eli $y$-akseli vastaa %$a$:n arvoja.
 
-\missingfigure{Funktioiden  $f(x)={x}^3$ ja $g(x)=x^4$ kuvaajat.}
+%\missingfigure{Funktioiden $f(x)={x}^3$ ja $g(x)=x^4$ kuvaajat.}
 
-\laatikko{
-\begin{itemize}
-\item
-Olkoon $n$ \emph{pariton}. Tällöin potenssifunktio $f(x)=x^n$ on kaikkialla aidosti kasvava ja jatkuva. Tästä seuraa, että yhtälöllä $y=f(x)$ on aina tasan yksi ratkaisu kaikilla $y$.    
-\item
-Olkoon $n$ \emph{parillinen}. Tällöin potenssifunktio $f(x)=x^n$ on positiivinen, symmetrinen, jatkuva ja aidosti kasvava, kun $x$ on positiivinen.  Positiivisuudesta seuraa, että yhtälöllä $y=f(x)$ ei ole ratkaisuja, jos $y$ on negatiivinen. Symmetriasta $f(x)=f(-x)$ seuraa, että jos $x$ on ratkaisu, niin myös $-x$ on ratkaisu.  
-\end{itemize}
-}
-
-\sivulaatikko{Tehtäviä puuttuu.  Muuten minun puolestani luku voisi olla valmis. -Tommi Sottinen}
+%\laatikko{
+%\begin{itemize}
+%\item
+%Olkoon $n$ \emph{pariton}. Tällöin potenssifunktio $f(x)=x^n$ on kaikkialla %aidosti kasvava ja jatkuva. Tästä seuraa, että yhtälöllä $y=f(x)$ on aina tasan %yksi ratkaisu kaikilla $y$.    
+%\item
+%Olkoon $n$ \emph{parillinen}. Tällöin potenssifunktio $f(x)=x^n$ on positiivinen, %symmetrinen, jatkuva ja aidosti kasvava, kun $x$ on positiivinen.  %Positiivisuudesta seuraa, että yhtälöllä $y=f(x)$ ei ole ratkaisuja, jos $y$ on %negatiivinen. Symmetriasta $f(x)=f(-x)$ seuraa, että jos $x$ on ratkaisu, niin %myös $-x$ on ratkaisu.  
+%\end{itemize}
+%}
 
 \begin{tehtava}
 Ratkaise potenssiyhtälöt
 \begin{enumerate}
-\item $x^3 = 81.$
-\item $x^5 = 10.$
-\item $x^2 = 4.$
-\item $x^4 = 1.$
+\item $x^3 = 81$
+\item $x^5 = 10$
+\item $x^2 = 4$
+\item $x^4 = 1$.
 \end{enumerate}
 \end{tehtava}
 
 \begin{tehtava}
 Ratkaise potenssiyhtälöt
 \begin{enumerate}
-\item $x^4 - 8 = 0.$
-\item $2x^3 + 7 = 0.$
-\item $\frac{x^2}{4} - \frac{5}{2} = 1.$
-\item $1{,}51 x^4 - 1{,}2 = 7{,}5.$
+\item $x^4 - 8 = 0$
+\item $2x^3 + 7 = 0$
+\item $\frac{x^2}{4} - \frac{5}{2} = 1$
+\item $1,51 x^4 - 1,2 = 7,5$.
 \end{enumerate}
 \end{tehtava}
 
 \begin{tehtava}
-Jumalkuningas Tauno Alpakka rakennuttaa itselleen kuution muotoista hautapalatsia.  Palatsin tulee olla $5\ 000\ \mathrm{m}^3$. 
+Muinainen hallitsija Tauno Alpakka rakennuttaa itselleen kuution muotoista palatsia.  Palatsin tulee olla $5\ 000\ \mathrm{m}^3$. 
 \begin{enumerate}
 \item Kuinka korkea palatsista tulee?
-\item Palatsi päällystetään $10\ \mathrm{cm}$ paksuisella kultakerroksella.  Kuinka monta kiloa kultaa tarvitaan? (Kullan tiheys on $19{,}23\cdot 10^3\ \mathrm{ kg}/\mathrm{m}^3$.)
+\item Palatsi päällystetään $10\ \mathrm{cm}$:n paksuisella kultakerroksella.  Kuinka monta kiloa kultaa tarvitaan? (Kullan tiheys on $19,23 \cdot 10^3\ \mathrm{ kg}/\mathrm{m}^3$.)
 \end{enumerate}
 \end{tehtava}
 
