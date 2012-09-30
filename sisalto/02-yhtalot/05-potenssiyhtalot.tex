@@ -1,11 +1,13 @@
 \chapter{Potenssiyhtälöt}
 
-\laatikko{\emph{Potenssiyhtälö} on yhtälö, joka on esitettävissä muodossa 
+Ensimmäisen asteen yhtälöä $ax+b = 0$ monimutkaisempia yhtälöitä saadaan,
+kun tuntematon $x$ korotetaan potenssiin.
+
+\laatikko{\emph{Potenssiyhtälö} on muotoa 
 $
 x^n=a
 $,
-jossa $n$ on positiivinen kokonaisluku. Eksponentin $n$ arvoa kutsutaan yhtälön
-\emph{asteeksi}.}
+oleva yhtälö, jossa $n$ on positiivinen kokonaisluku. Eksponentin $n$ arvoa kutsutaan potenssiyhtälön \emph{asteeksi}.}
 
 Potenssiyhtälöitä tarvitaan esimerkiksi tilanteissa, joissa lasketaan
 korolle korkoa. Myös pinta-ala- ja tilavuuslaskuissa esiintyy potenssiyhtälöitä.
@@ -38,18 +40,19 @@ $z=x^{-1}=\frac{1}{x}$. Tällöin saadaan yhtälö $z^2 = 44$.)
 \laatikko{\emph{Potenssiyhtälön ratkaiseminen}:
 \begin{itemize}
 \item
-Jos potenssiyhtälön aste $n$ on \emph{parillinen} ja $a \ge 0$, on sillä kaksi ratkaisua,
+Jos potenssiyhtälön aste $n$ on \emph{parillinen} ja $a \ge 0$, yhtälöllä
+on kaksi ratkaisua,
 $$
 x = \pm a^{\frac{1}{n}}
-$$. Merkinnällä $\pm$ tarkoitetaan, että sekä positiivinen että negatiivinen
-arvo käyvät: esimerkiksi $\pm 5$ tarkoittaa sekä lukuja $5$ että $-5$.
+$$. ($\pm$ tarkoittaa, että sekä positiivinen että negatiivinen
+arvo käyvät: $\pm 5$ tarkoittaa sekä lukuja $5$ että $-5$.)
 \item
-Jos aste on \emph{pariton}, on sillä täsmälleen yksi ratkaisu,
+Jos aste on \emph{pariton}, yhtälöllä on täsmälleen yksi ratkaisu,
 $$
 x = a^{\frac{1}{n}}
 $$.
 \item
-Jos aste on \emph{parillinen} ja $a < 0$, ei potenssiyhtälöllä ole yhtään
+Jos aste on \emph{parillinen} ja $a < 0$, potenssiyhtälöllä ei ole yhtään
 ratkaisua.
 \end{itemize}}
 
@@ -99,6 +102,66 @@ ollen suursijoittaja Nalle Mursun vaatima korkokanta sijoitukselleen on noin $r=
 %Olkoon $n$ \emph{parillinen}. Tällöin potenssifunktio $f(x)=x^n$ on positiivinen, %symmetrinen, jatkuva ja aidosti kasvava, kun $x$ on positiivinen.  %Positiivisuudesta seuraa, että yhtälöllä $y=f(x)$ ei ole ratkaisuja, jos $y$ on %negatiivinen. Symmetriasta $f(x)=f(-x)$ seuraa, että jos $x$ on ratkaisu, niin %myös $-x$ on ratkaisu.  
 %\end{itemize}
 %}
+
+Yhtälöt, jotka ovat muotoa $a\cdot x^n = b$ (joskus myös muotoa ($a\cdot x^n - b = 0$), ratkaistavuus riippuu useammasta seikasta. Mikäli $n$ on pariton, yhtälö on aina ratkaistavissa (eli sillä on reaalinen juuri):
+\begin{align*}
+a\cdot x^n &= b \\
+x^n &= \frac{b}{a} \\
+x &= \sqrt[n]{\frac{b}{a}}
+\end{align*}
+
+\begin{esimerkki}
+$2x^3 + 16 = 0 \Leftrightarrow 2x^3 = -16 \Leftrightarrow x^3 = -8  \Leftrightarrow x = \sqrt[3]{-8} = -2 $
+\end{esimerkki}
+
+Mikäli $n$ on parillinen, yhtälö on ratkaistavissa jos ja vain jos $\frac{b}{a} \geq 0 $. Parillisella potenssifunktiolla voi olla yksi, kaksi tai ei yhtään ratkaisua.
+
+\begin{esimerkki}
+$x^2 = 0 \Leftrightarrow x = 0 \\
+\Rightarrow$ Yhtälöllä on yksi ratkaisu.
+\end{esimerkki}
+
+\begin{esimerkki}
+$x^2 - 9 = 0 \Leftrightarrow x^2 = 9 \Leftrightarrow x = \pm 3 \\
+\Rightarrow$ Yhtälöllä on kaksi ratkaisua, sillä $3^2 = 9$ ja $(-3)^2 = 9$.
+\end{esimerkki}
+
+\begin{esimerkki}
+$x^2 + 9 = 0 \Leftrightarrow x^2 = 9 \Leftrightarrow x = \sqrt{-9} \\
+\Rightarrow$ Yhtälöllä ei ole reaalista ratkaisua.
+\end{esimerkki}
+
+\begin{tehtava}
+Ratkaise: \\
+a) $ x^2 = 4 $ \qquad
+b) $ x^3 = 27 $ \qquad
+c) $ x^5 = -1 $ \qquad
+d) $ x^2 - 3 = 0 $ \qquad
+e) $ x^3 + 125 = 0 $
+\begin{vastaus}
+a) $ x = 2 $ \qquad
+b) $ x = 3 $ \qquad
+c) $ x = -1 $ \qquad
+d) $ x = \sqrt{3} $ \qquad
+e) $ x = -5 $ 
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Ratkaise: \\
+a) $ 5x^2 = 25 $ \qquad
+b) $ (2x)^3 = 8 $ \qquad
+c) $ x^4 = \frac{1}{4} $ \qquad
+d) $ (3x)^2 = 36 $ \qquad
+3) $ (4x)^2 - 16 = 0 $ 
+\begin{vastaus}
+a) $ x = \sqrt{5} $ \qquad
+b) $ x = 1 $ \qquad
+c) $ x = -1 $ \qquad
+d) $ x = 2 $ \qquad
+e) Ei ratkaisua. 
+\end{vastaus}
+\end{tehtava}
 
 \begin{tehtava}
 Ratkaise potenssiyhtälöt
