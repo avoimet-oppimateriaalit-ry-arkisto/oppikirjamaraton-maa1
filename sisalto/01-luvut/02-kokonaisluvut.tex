@@ -23,19 +23,17 @@
 
 \chapter{Kokonaisluvut}
 
-Yksinkertaisimmat käyttämämme luvut ovat lukumäärien ilmaisemiseen käytetyt $0,
-1, 2, 3, \ldots$. Näitä kutsutaan \emph{luonnollisiksi luvuiksi}, ja niiden
-joukkoa eli kaikkia luonnollisia lukuja yhdessä merkitään symbolilla
-$\mathbb{N}$. Edellä nolla määriteltiin luonnolliseksi luvuksi, mutta tästä
+Yksinkertaisimmat käyttämämme luvut ovat lukumäärien ilmaisemiseen käytetyt $0, 1, 2, 3, \ldots$. Näitä kutsutaan \emph{luonnollisiksi luvuiksi}, ja niiden joukkoa eli kaikkia luonnollisia lukuja yhdessä merkitään symbolilla $\mathbb{N}$. Edellä nolla määriteltiin luonnolliseksi luvuksi, mutta tästä
 ei ole yhteistä sopimusta: jotkut pitävät nollaa luonnollisena lukuna ja
 toiset eivät.
 
-Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi
-$5 + 3 = 8$.
+Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$.
+
 Luonnollisten lukujen $m$ ja $n$ kertolasku määritellään peräkkäisinä yhteenlaskuina
 \[m \cdot n = \underbrace{m + m + \ldots + m}_{n\text{ kpl}} = \underbrace{n + n + \ldots + n}_{m\text{ kpl}}.\]
+
 Nollalla kertomisen ajatellaan olevan "tyhjä yhteenlasku"\ eli nolla,
-$0 \cdot m = 0$.
+\[0 \cdot m = 0\].
 
 Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
 $m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
@@ -49,7 +47,6 @@ kokonaislukujen joukon
 Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
 yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
 
-\section{Kokonaislukujen laskusäännöt}
 
 \section{Tiivistelmä}
 
@@ -58,6 +55,8 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
     $-a\cdot (-b)=a\cdot b=ab$
     
     $-a:(-b)=a: b=a:b$
+    
+    \todo{tiivistelmästä puuttuu jaollisuus}
 
 \section{Yhteen- ja vähennyslasku}
 
@@ -69,13 +68,9 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
         Jokaisella luvulla $a$ on vastaluku $-a$, jolle pätee $a+(-a)=0$.
     }
     
-    Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee $2+(-2)=0$.
-    Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen
-    luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$.
-    Näin voidaan huomata, että $-(-2)=2$.
+    Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
     
-    Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan myös
-    tulkita lukusuoran avulla.
+    Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan myös tulkita lukusuoran avulla.
     
     % tässä on vähän kyseenalaista käyttää sekaisin sanallista ja numeerista esitystä
     
@@ -85,8 +80,7 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
     
     $5+(+8)$ "viiteen lisätään $+8$"
     
-    $+8$ tarkoittaa samaa kuin $8$. '$+$'-merkkiä käytetään luvun edessä silloin,
-    kun halutaan korostaa, että kyseessä on nimenomaan positiivinen luku.
+    $+8$ tarkoittaa samaa kuin $8$. '$+$'-merkkiä käytetään luvun edessä silloin, kun halutaan korostaa, että kyseessä on nimenomaan positiivinen luku.
     
     \missingfigure{$5+(+8)$ lukusuoralla}
     
@@ -98,30 +92,17 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
     
     $5+(-8)$ "viiteen lisätään $-8$"
     
-    Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään 1, se
-    kasvaa yhdellä. Kun lukuun lisätään 0, se ei kasva lainkaan. Eikö tällöin
-    ole luonnollista ajatella, että kun lisätään luku, joka on pienempi kuin
-    nolla, täytyisi lopputuloksesta tulla vielää pienempi. Tällä logiikalla
-    negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua.
-    Siksi on sovittu, että $5+(-8)$ on yhtä suuri kuin $5-8$.
+    Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään 1, se kasvaa yhdellä. Kun lukuun lisätään 0, se ei kasva lainkaan. Eikö tällöin ole luonnollista ajatella, että kun lisätään luku, joka on pienempi kuin nolla, täytyisi lopputuloksesta tulla vielää pienempi. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua. Siksi on sovittu, että $5+(-8)$ on yhtä suuri kuin $5-8$.
     
     \missingfigure{$5+(-8)$ lukusuoralla}
     
     $5-(-8)$ "viidestä vähennetään $-8$"
     
-    Negatiivisen luvun lisääminen on vastakohtainen positiivisen luvun lisäämiselle.
-    Tällöin olisi luonnollista, että negatiivisen luvun vähentäminen olisi myös
-    vastakohtaista positiivisen luvun vähentämiselle. Kun positiivisen luvun
-    vähentäminen pienentää lukua, pitäisi negatiivisen luvun vähentämisen siis
-    kasvattaa lukua. Tämän vuoksi onkin sovittu, että $5-(-8)$ tarkoittaa samaa
-    kuin $5+8$.
+    Negatiivisen luvun lisääminen on vastakohtainen positiivisen luvun lisäämiselle. Tällöin olisi luonnollista, että negatiivisen luvun vähentäminen olisi myös vastakohtaista positiivisen luvun vähentämiselle. Kun positiivisen luvun vähentäminen pienentää lukua, pitäisi negatiivisen luvun vähentämisen siis kasvattaa lukua. Tämän vuoksi onkin sovittu, että $5-(-8)$ tarkoittaa samaa kuin $5+8$.
     
     \missingfigure{$5-(-8)$ lukusuoralla}
     
-    Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten ja
-    negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja positiivinen luku
-    kerrotaan keskenään, saadaan negatiivinen luku, mutta kun kaksi negatiivista
-    lukua kerrotaan keskenään, saadaan positiivinen luku.
+    Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten ja negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja positiivinen luku kerrotaan keskenään, saadaan negatiivinen luku, mutta kun kaksi negatiivista lukua kerrotaan keskenään, saadaan positiivinen luku.
 
 \section{Kertolasku}
 
@@ -143,23 +124,17 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
 
 \section{Jakolasku}
 
-    Jakolaskua sanotaan kertolaskun käänteistoimitukseksi, koska se tekee tekee
-    saman toimituksen kuin kertolasku, mutta vastakkaiseen suuntaan. Esimerkiksi
-    $100:5\cdot 5=100$ ja $792\cdot 132:132=792$. Kun ensin kerrotaan jollain
-    luvulla, ja sitten jaetaan samalla luvulla, päädytään takaisin samaan, mistä 
-    lähdettiin. Luonnollisesti olisi mukavaa, jos tämä ominaisuus säilyisi myös
-    silloin, kun jaetaan ja kerrotaan negatiivisia lukuja. Tämän vuoksi jakolaskulle
-    on sovittu samat merkkisäännöt kuin kertolaskulle, eli kaksi miinusmerkkiä
-    kumoavat toisensa.
+    Jakolaskua sanotaan kertolaskun käänteistoimitukseksi, koska se tekee tekee saman toimituksen kuin kertolasku, mutta vastakkaiseen suuntaan.
     
-    Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä
-    laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku
-    säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna $-3$:lla on $-12$.
-    Kertolaskun merkkisäännöistä nähdään helposti, että tämän luvun täytyy olla
-    $+4$ eli $4$. Niinpä on sovittu, että $(-12):(-3)=12:3=4$.
+    Esimerkiksi $100:5\cdot 5=100$ ja $792\cdot 132:132=792$.
     
+    Kun ensin kerrotaan jollain luvulla, ja sitten jaetaan samalla luvulla, päädytään takaisin samaan, mistä lähdettiin. Luonnollisesti olisi mukavaa, jos tämä ominaisuus säilyisi myös silloin, kun jaetaan ja kerrotaan negatiivisia lukuja. Tämän vuoksi jakolaskulle on sovittu samat merkkisäännöt kuin kertolaskulle, eli kaksi miinusmerkkiä kumoavat toisensa.
+    
+    Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna $-3$:lla on $-12$. Kertolaskun merkkisäännöistä nähdään helposti, että tämän luvun täytyy olla $+4$ eli $4$. Niinpä on sovittu, että $(-12):(-3)=12:3=4$.
+    
+\section*{Tehtäviä}
+
     \begin{tehtava}
-%perusteht, e-pois?
         Kirjoita laskutoimitukseksi.
         \begin{enumerate}[a)]
             \item Pakkasta on aluksi $-10^{\circ}$C ja sitten pakkanen kiristyy (lisääntyy) kaksi astetta.
@@ -238,8 +213,7 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti $m-n = m+(-n)$.
     \section{Jaollisuus ja tekijöihinjako}
     
     \laatikko{
-    Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa kokonaisluku $c$
-    niin, että $a = b \cdot c$. Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
+    Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$. Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
     }
     
     \begin{esimerkki}
