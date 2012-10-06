@@ -12,6 +12,7 @@
 % Helpottaa pdf(la)tex:in läsnäolon tarkistusta if-lauseilla
 \RequirePackage{ifpdf}
 
+% Luokkamäärittelyt.
 \documentclass[a4paper,onecolumn,12pt,finnish,oneside,final,oldtoc]{boek3}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -39,7 +40,7 @@
 % in Adobe (Acrobat) Reader and other compliant PDF viewers."
 % (Pakko olla ennen fontenc-pakettia)
 \ifpdf % Eräillä saattaa olla buginen cmap. Yritetään välttää sitä.
-\usepackage{cmap}
+	\usepackage{cmap}
 \fi
 
 \usepackage[T1]{fontenc}
@@ -70,13 +71,15 @@
 \RequirePackage{amscd}
 \RequirePackage{amsthm}
 \RequirePackage{mathrsfs}
+\RequirePackage{mathtools}
 
 % Math fonts 
 %\usepackage{arevmath}
 
 % Text fonts 
 % TODO: Poistettu jotta kääntyisi kaikilla.
-\usepackage{lmodern}
+\usepackage{cmbright}
+%\usepackage{lmodern}
 
 \renewcommand{\familydefault}{\sfdefault}
 \fontfamily{\familydefault}
@@ -227,8 +230,7 @@
 % Jotta mikro-etuliitteen saisi pystyyn: $\upmu$
 \usepackage{upgreek}
 
-% Ottaa mathtoolsin käyttöön ja kertoo siitä. mathtoolsia ei kehitysversioissa.
-\usepackage{mathtools}
+% Kertoo mathtoolsin olevan käytössä. Kehitysversioissa ei ole mathtoolsia.
 \newif\iftools
 \toolstrue
 
