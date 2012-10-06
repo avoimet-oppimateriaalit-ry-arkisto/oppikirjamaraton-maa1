@@ -24,24 +24,56 @@ Esimerkkinä annettu desimaaliluku tulkitaan seuraavasti:
 
 Kymmenjärjestelmä saa nimensä siitä, että jokainen luvussa esiintyvä numero kertoo sen paikkaa vastaavien kymmenen potenssien määrän.
 
+\subsection*{Murtoluvun muuttaminen desimaaliluvuksi}
 
-Desimaaliluvut voidaan muuttaa murtoluvuiksi laskemalla ne auki ylläolevan tavan mukaan.
-
-\begin{esimerkki}
-$21,37 = 2 \cdot 10^1 + 1 \cdot 10^0 + 3 \cdot 10^{-1} + 7 \cdot 10^{-2} = 2 \cdot 10 + 1 \cdot 1 + 3 \cdot \frac{1}{10} + 7 \cdot \frac{1}{100} = 21 + \frac{3}{10} + \frac{7}{100} = \frac{21 \cdot 100}{100} + \frac{3 \cdot 10}{10 \cdot 10} + \frac{7}{100} = \frac{21 \cdot 100 + 3 \cdot 10 + 7}{100} = \frac{2100+30+7}{100} = \frac{2137}{100}$
-\end{esimerkki}
-
-Toisaalta päästään paljon helpommalla, kun huomataan, että voidaan vain kertoa ja jakaa koko luku ''niin monella kympillä, kuin on numeroita desimaalipilkun jälkeen''. Täsmällisemmin sanottuna $10^n$:llä, jossa $n$ on pilkun jälkeen tulevien numeroiden määrä.
+Murtoluku on tapa merkitä jakolaskua. Jakolaskun tuloksen esittämiseksi desimaalilukuna
+käytetään peruskoulun alaluokilla opetettavaa jakokulmaa. Jakokulman ajatus on yksinkertaisesti kokeilla, kuinka monta jakajaa, sen kymmenesosaa, sadasosaa ja niin
+edelleen jaettavaan mahtuu. Jakokulmat voi laskea käsin, mutta laskin tekee saman nopeammin.
 
 \begin{esimerkki}
-$21,47 = 21,47 \cdot 1 = 21,47 \cdot \frac{10^2}{10^2} = \frac{21,47 \cdot 100}{100} = \frac{2147}{100}$
+Muutetaan $\frac{21}{4}$ desimaaliluvuksi laskemalla jakolasku $21 : 4$ jakokulmassa.
+
+\[ 
+\begin{array}{cccccc}
+ & \underline{ \ \ } & \underline{5}, & \underline{2} & \underline{5} \\
+ 4 & \!\!|\,2 & 1, & 0 & 0 \\
+ \underline{-} & \underline{2}& \underline{0} \\
+ & & 1 &0 \\
+ & \underline{-} &\underline{ \ \ }  & \underline{8} \\
+ & & & 2 & 0 \\
+ & & \underline{-} & \underline{2} & \underline{0} \\
+ & &  & & 0
+\end{array}
+\]
+Siis $\dfrac{21}{4} = 5,25$.
 \end{esimerkki}
 
-\begin{esimerkki}
-$0,007 = 0,007 \cdot 1 = 0,007 \cdot \frac{10^3}{10^3} = \frac{0,007 \cdot 1000}{1000} = \frac{7}{1000}$
-\end{esimerkki}
+Vastaavasti laskien saadaan $\dfrac{3}{11}=0,27272727272727\ldots \ $ :
+\[ 
+\begin{array}{cccccc}
+ & \underline{ 0}, & \underline{2} & \underline{7} & \underline{2} & 
+ \underline{\ldots} \\
+ 11 & \!\!|\,3, & 0 & 0 & 0 & \ldots \\
+ \underline{-} & \underline{2}& \underline{2} \\
+ & & \boldsymbol{8} &0 \\
+ & \underline{-} &\underline{ 7 }  & \underline{7} \\
+ & & & \boldsymbol{3} & 0 \\
+ & & \underline{-} & \underline{2} & \underline{2} \\
+ & &  & & \boldsymbol{8} & 0 \\
+ & & & & & \ddots
+\end{array}
+\]
+Koska jakojäännökset 3 ja 8 toistuvat loputtomiin, tämä desimaaliluku
+ei ole päättyvä. Siinä on \emph{jakso}: numerosarja 27 toistuu.
+Jaksoa voidaan merkitä yläviivan avulla seuraavasti:
+\[ 0,272727272727272727272727\ldots = 0,\overline{27}. \]
 
-Menetelmän toimivuus kaikkien desimaalilukujen tapauksessa voidaan todistaa tarkastelemalla desimaaliluvun määritelmää, mutta jätetään tässä tekemättä.
+{\bf Kaikkien murtolukujen desimaaliesitykset ovat joko päättyviä tai jaksollisia.}
+Vähennyslaskuissa syntyvät jakojäännökset ovat nimittäin aina jakajaa pienempiä, ja siksi
+ne alkavat väistämättä toistaa itseään, ellei jako jossakin vaiheessa mene tasan.
+Koska eri vahtoehtoja jakojäännöksiksi on yksi jakajaa vähemmän,
+jakson pituus on suurimmillaan yhden verran jakajaa pienempi. Esimerkiksi luvulla
+$\dfrac{1}{7}=0,\overline{142857}$ jakso on pisin mahdollinen, $7-1=6$ numeron mittainen.
 
 \laatikko{
 Tässä on joitain murtolukujen desimaaliesityksiä, jotka on hyvä osata
@@ -54,10 +86,66 @@ Tässä on joitain murtolukujen desimaaliesityksiä, jotka on hyvä osata
 \end{itemize}
 }
 
+\subsection*{Desimaaliluvun muuttaminen murtoluvuksi}
+
+\subsubsection*{Päättyvät desimaaliluvut}
+
+Päättyvät desimaaliluvut voidaan muuttaa murtoluvuiksi muuttamalla kukin
+desimaali erikseen murtoluvuksi ja laskemalla syntyneet luvut yhteen.
+
+\begin{esimerkki}
+$21,37 = 21+ \frac{3}{10}+\frac{7}{100} =
+\frac{2100}{100}+\frac{30}{100}+\frac{7}{100}
+ = \frac{2100+30+7}{100} = \frac{2137}{100}.$
+\end{esimerkki}
+
+Tämä on turhan työlästä, ja paljon helpommalla päästäänkin kun lavennetaan luku ''niin monella kympillä, kuin siinä on numeroita desimaalipilkun jälkeen''. Täsmällisemmin sanottuna $10^n$:llä, jossa $n$ on pilkun jälkeen tulevien numeroiden määrä.
+
+\begin{esimerkki}
+$21,47 = 21,37 \cdot  \frac{100}{100} = \frac{21,37 \cdot 100}{100} = \frac{2137}{100}$
+\end{esimerkki}
+
+%\begin{esimerkki}
+%$0,007 = 0,007 \cdot 1 = 0,007 \cdot \frac{10^3}{10^3} = \frac{0,007 \cdot 1000}{1000} = %\frac{7}{1000}$
+%\end{esimerkki}
+
+%Menetelmän toimivuus kaikkien desimaalilukujen tapauksessa voidaan todistaa %tarkastelemalla desimaaliluvun määritelmää, mutta jätetään tässä tekemättä.
+
+\subsubsection*{Jaksolliset desimaaliluvut}
+
+Minkä tahansa jaksollisen desimaaliluvun voi muuttaa murtoluvuksi seuraavalla tempulla.
+Muutetaan esimerkiksi $0,575757\ldots$ murtoluvuksi. Jos merkitään
+\[
+\begin{array}{rcll}
+x &=& \ \, 0,575757 \ldots\ , &\textrm{saadaan sadalla kertomalla} \\
+100x &=& 57,575757 \ldots \ , &\textrm{joiden erotuksena} \\
+100x - x &=& 57,57 \ldots - 0,57 \ldots \ , & \textrm{eli} \\
+99x &=& 57, & \textrm{josta saadaan} \\
+x &=& \frac{57}{99} = \frac{19}{33}.
+\end{array}
+\]
+Siis $0,575757\ldots = \frac{19}{33}$. Menetelmä toimii kaikille jaksollisille
+desimaaliluvuille: kerrotaan vain sopivalla luvun 10 potenssilla, jotta jakso
+katoaa vähennyslaskussa.
+
+\laatikko{
+Nämä kannattaa muistaa:
+\begin{itemize}
+	\item $ \frac{1}{3} = 0,3333 \ldots$
+	\item $ \frac{2}{3} = 0,6666 \ldots$
+\end{itemize}
+}
+
 \section*{Tehtäviä}
 
 \begin{tehtava}
-Laske ja totea edellä olevien murtolukujen desimaaliesitysten paikkansapitävyys.
+Laske ja totea murtolukujen 
+ $ \frac{1}{10} = 0,1$ , 
+$ \frac{1}{100} = 0,01$ , 
+ $ \frac{1}{2} = 0,5$ , 
+$ \frac{1}{4} = 0,25$ , 
+$ \frac{3}{4} = 0,75$
+desimaaliesitysten paikkansapitävyys.
 \end{tehtava}
 
 \begin{tehtava}
@@ -99,9 +187,6 @@ Muuta murtoluvuksi ja sievennä.
 	\end{enumerate}
 \end{vastaus}
 \end{tehtava}
-
-\todo{rat.lukujen muuttaminen desimaaliluvuiksi, motivaatio, teoria ja esimerkkejä}
-\todo{tehtäviä rat.lukujen muuttamisesta desimaaliluvuiksi (huom! ei päättymättömiä desimaaliluvuista)}
 
 \begin{tehtava}
 	\begin{enumerate}[a)]
@@ -169,6 +254,4 @@ Muunna seuraavat luvut binäärijärjestelmään.
 \end{vastaus}
 \end{tehtava}
 
-\todo{päättymättömät desimaaliluvut, jotka on esitettävissä rationaalilukuina}
-\todo{nämä on hyvä osata: esimerkkejä desimaaliluvuista jotka on esitettävissä rationaalilukuina, esim. 0,333...}
 \todo{tehtäviä päättymättömistä mutta jaksollisista desimaaliluvuista}
