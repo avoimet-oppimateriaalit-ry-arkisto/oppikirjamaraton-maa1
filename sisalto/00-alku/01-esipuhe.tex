@@ -8,11 +8,11 @@
 % based on mathtestx.tex in the mathptmx package
 % and symbols.tex by David Carlisle
 
-Matematiikka tarjoaa työkaluja asioiden täsmälliseen jäsentämiseen, päättelyyn ja mallintamiseen. Alasta riippuen käsittelemme matematiikassa erilaisia \emph{objekteja}: Geometriassa tarkastelemme tasokuvioita ja kolmiulotteisia rakenteita. Algebra tutkii lukujen ja funktioiden ominaisuuksia. Todennäköisyyslaskenta arvioi erilaisten tapausten ja tilanteiden mahdollisuuksia ja riskejä. Matemaattinen analyysi (kurssit 7, 8 ja 10) tutkii funktioita ja niiden muuttumista.
+Matematiikka tarjoaa työkaluja asioiden täsmälliseen jäsentämiseen, päättelyyn ja mallintamiseen. Alasta riippuen käsittelemme matematiikassa erilaisia \textbf{objekteja}: Geometriassa tarkastelemme kaksiulotteisia \textbf{tasokuvioita} ja kolmiulotteisia \textbf{avaruuskappaleita}. Algebra tutkii \textbf{lukualueita} ja niissä määriteltäviä \textbf{laskutoimituksia}. Todennäköisyyslaskenta tarkastelee satunnaisten \textbf{tapahtumien} esiintymistä. Matemaattinen analyysi tutkii \textbf{funktioita} ja niiden ominaisuuksia, esimerkiksi \textbf{jatkuvuutta}, \textbf{derivoituvuutta} ja \textbf{integroituvuutta}. Matemaattista analyysiä käsittelevät pitkässä matematiikassa kurssit 7, 8, 10 ja 13 sekä osin kurssit 9 ja 12. Voidaankin sanoa, että analyysi on keskeisin aihealue lukion pitkässä matematiikassa.\footnote[1]{Tämä Suomessa käytetty lähestymistapa on käytössä monissa länsimaissa. Sen sijaan esimerkiksi Balkanilla geometrialle ja matemaattiselle todistamiselle annetaan edelleen paljon suurempi painoarvo.}
 
-Jokaiseen tarkastelukohteeseen liitetään myös niille ominaisia \emph{operaatioita}. Tämä kurssi käsittelee lähinnä lukuja ja niiden operaatioita, joita \emph{laskutoimituksiksi} kutsutaan. Kirjan ensimmäisessä osassa käsittelemme luvun käsitteen, yleisimmät lukutyypit ja lukujen tavallisimman laskutoimitukset.
+Jokaiseen tarkastelukohteeseen liitetään myös niille ominaisia \textbf{operaatioita}. Tämä kurssi käsittelee lähinnä lukuja ja niiden operaatioita eli laskutoimituksia. Tässä kirjassa esittelemme luvun käsitteen ja yleisimmin käytetyt lukualueet laskutoimituksineen, ja jatkamme niistä \textbf{yhtälöihin} ja funktioihin.
 
-Lukion opetussuunnitelman perusteet 2003 -dokumentin mukaan pitkän matematiikan ensimmäisen kurssin tavoitteena on, että opiskelija 
+Uusimpien (vuoden 2003) lukion opetussuunnitelman perusteiden mukaan pitkän matematiikan ensimmäisen kurssin tavoitteena on, että opiskelija
 \begin{itemize}
 \item vahvistaa yhtälön ratkaisemisen ja prosenttilaskennan taitojaan,
 \item syventää verrannollisuuden, neliöjuuren ja potenssin käsitteiden ymmärtämistään,
@@ -20,41 +20,37 @@ Lukion opetussuunnitelman perusteet 2003 -dokumentin mukaan pitkän matematiikan
 \item syventää funktiokäsitteen ymmärtämistään tutkimalla potenssi- ja eksponenttifunktioita,
 \item ja oppii ratkaisemaan potenssiyhtälöitä.
 \end{itemize}
-Kurssin keskeisin sisältö opetussuunnitelmissa on:
+
+Opetussuunnitelman perusteet määrittelevät kurssin keskeisiksi sisällöiksi
 \begin{itemize}
-\item potenssifunktio
-\item potenssiyhtälön ratkaiseminen
-\item juuret ja murtopotenssi
-\item eksponenttifunktio.
+\item potenssifunktion,
+\item potenssiyhtälön ratkaisemisen,
+\item juuret ja murtopotenssin
+\item sekä eksponenttifunktion.
 \end{itemize}
-
-\section*{Sananen kirjasta}
-
-Tämä kirja on syntynyt noin kahdenkymmenen hengen työn tuloksena pitkänä viikonloppuna 28.--30.9.2012. Tulos on nyt edessäsi. Kirjan \LaTeX-lähdekoodi on saatavilla Githubissa osoitteessa \url{https://github.com/linjaaho/oppikirjamaraton-maa1}.
-
-
 
 \section*{Kiitämme}
 \begin{itemize}
 \item Metropolia AMK
-\item Daniel Valtakari ja Tekniikan akateemisten liitto TEK
-\item Senja Larsen
-\item Kebab Pizza Service
-\item Juhapekka ''Naula'' Tolvanen
+\item Tekniikan akateemisten liitto TEK
 \item Onnibus
-\item Arto Piironen
-\item Paula Thitz
-\item Jokke Häsä
-\item Kaj Sotala
-\item Katleena Kortesuo
+\item Kebab Pizza Service
 \item Heikki Hakkarainen
-\item Tiina Salola
-\item Anni Saarelainen
 \item Eveliina Heinonen
-\item Antti Ruonala
+\item Jokke Häsä
+\item Katleena Kortesuo
 \item Hannu Köngäs
+\item Senja Larsen
 \item Jussi Partanen
-\item Kaikki tärkeät tyypit, joiden nimi unohtui mainita
+\item Arto Piironen
+\item Antti Ruonala
+\item Anni Saarelainen
+\item Tiina Salola
+\item Kaj Sotala
+\item Paula Thitz
+\item Juhapekka ''Naula'' Tolvanen
+\item Daniel Valtakari
+\item Kaikki tärkeät tyypit, joiden nimi unohtui mainita!
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
