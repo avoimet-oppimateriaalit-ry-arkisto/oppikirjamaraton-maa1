@@ -50,12 +50,13 @@ jaksottomia. Monissa tapauksissa on hyvin vaikeaa osoittaa luku irrationaaliseks
 
 Luvun
 \[\sqrt{2} \approx 1,414213562373095048801688724209\ldots\]
-desimaaliesityksessä on kyllä toistuvia kohtia, esimerkiksi numeropari $88$ esiintyy kahdesti. Siinä ei kuitenkaan ole mitään jaksoa, jonka jälkeen luvut alkaisivat toistua, toisin kuin esimerkiksi luvussa $3,80612312312312\ldots$.
+desimaaliesityksessä on kyllä toistuvia kohtia, esimerkiksi numeropari $88$ esiintyy kahdesti. Siinä ei kuitenkaan ole jaksoa, jonka luvut toistuisivat yhä uudestaan
+samassa järjestyksessä, kuten luvussa $3,80612312312312\ldots$.
 
 Reaalilukujen ominaisuuksista kerrotaan lisää liitteessä \ref{aksioomat}.
 
 
-Reaalilukujen myötä kaikki lukiokursseissa esiintyvät lukujoukot on esitelty. Ne on lueteltu seuraavassa:
+Reaalilukujen myötä kaikki lukiokursseissa esiintyvät lukujoukot on nyt esitelty. Ne on lueteltu seuraavassa:
 \begin{center}\begin{tabular}{l|c|l}
 Joukko & Symboli & Mitä ne ovat\\
 \hline
@@ -64,12 +65,9 @@ Luvut 0, 1, 2, 3, $\ldots$ \\
 Kokonaisluvut & $\mathbb{Z}$ & Luvut $\ldots$ -2, -1, 0, 1, 2 $\ldots$ \\
 Rationaaliluvut & $\mathbb{Q}$ & Luvut, jotka voidaan esittää
 murtolukuina \\
-Reaaliluvut & $\mathbb{R}$ & Kaikki lukusuoran luvut
+Reaaliluvut & $\mathbb{R}$ & Kaikki lukusuoran luvut \\
+& & eli kaikki desimaaliluvut
 \end{tabular} \end{center} 
-
-\todo{Kuva lukujoukoista täytyy korjata: kaikki esimerkkiluvut suppeimman
-joukon sisään, johon ne kuuluvat. Ei omaa rinkulaa irrationaaliluvuille.
-Teksti irrationaaliluvut saa jäädä mukaan.}
 
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
 \clip(-7.4,-8.8) rectangle (16.8,8.6);
@@ -77,37 +75,37 @@ Teksti irrationaaliluvut saa jäädä mukaan.}
 \draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2cm and 1.6cm);
 \draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2.9cm and 2.6cm);
 \draw (2,1.5) node[anchor=north west] {$\mathbb{N}$};
-\draw (4.3,2.7) node[anchor=north west] {$\mathbb{Z}$};
-\draw (5.8,3.9) node[anchor=north west] {$\mathbb{Q}$};
-\draw (7.1,-4.2) node[anchor=north west] {{\scriptsize Irrationaaliluvut}}; %TODO: rotate
-\draw (8.4,6.2) node[anchor=north west] {$\mathbb{R}$};
+\draw (4.0,2.7) node[anchor=north west] {$\mathbb{Z}$};
+\draw (5.5,3.9) node[anchor=north west] {$\mathbb{Q}$};
+%\draw (6.6,-4.6) node[anchor=north west] {{\scriptsize Irrationaaliluvut}};
+\draw (9.5,6.1) node[anchor=north west] {$\mathbb{R}$};
 \draw [rotate around={0.5:(4.4,0)}] (4.4,0) ellipse (5cm and 4.2cm);
-\draw [rotate around={18.2:(7.9,-5.4)}] (7.9,-5.4) ellipse (2.7cm and 0.6cm);
+%\draw [rotate around={18.2:(7.9,-5.4)}] (7.9,-5.4) ellipse (2.7cm and 0.6cm);
 \draw (0.8,1.6) node[anchor=north west] {$1$};
 \draw (1,-0.4) node[anchor=north west] {$5$};
 \draw (2.4,-0.2) node[anchor=north west] {$101$};
 \draw (4.8,0.7) node[anchor=north west] {$-5$};
 \draw (1.2,-1.7) node[anchor=north west] {$0$};
 \draw (1.2,3.1) node[anchor=north west] {$-14$};
-\draw (4.1,-1) node[anchor=north west] {$75$};
-\draw (4.2,-2.4) node[anchor=north west] {$\frac{1}{3}$};
-\draw (7.3,1.4) node[anchor=north west] {$\frac{5}{2}$};
-\draw (-1.4,0.9) node[anchor=north west] {$-3$};
-\draw (0.4,-3.1) node[anchor=north west] {$-4$};
-\draw (2.4,4.7) node[anchor=north west] {$3$};
+%\draw (4.1,-1) node[anchor=north west] {$75$};
+\draw (4.2,-2.8) node[anchor=north west] {$-\frac{1}{3}$};
+\draw (6.6,1.4) node[anchor=north west] {$2\frac{1}{2}$};
+\draw (-1.6,0.9) node[anchor=north west] {$-3$};
+%\draw (0.4,-3.1) node[anchor=north west] {$-4$};
+\draw (2.4,4.7) node[anchor=north west] {$2,6$};
 \draw (-1.3,4.1) node[anchor=north west] {$\frac{5}{7}$};
-\draw (-2.3,-1) node[anchor=north west] {$4$};
-\draw (4.5,-5.6) node[anchor=north west] {$\pi$};
-\draw (10.7,-3) node[anchor=north west] {$\sqrt[]{2}$};
-\draw (6,-4.7) node[anchor=north west] {$-\frac{\pi}{2}$};
-\draw (9.8,1.6) node[anchor=north west] {$\frac{5}{2}$};
-\draw (11.1,4) node[anchor=north west] {$\frac{1}{3}$};
-\draw (4.4,7.3) node[anchor=north west] {$3$};
-\draw (-0.1,-5.3) node[anchor=north west] {$0$};
-\draw (-4.9,1.5) node[anchor=north west] {$-5$};
+\draw (-2.7,-1) node[anchor=north west] {$0,1$};
+\draw (5.5,-5.9) node[anchor=north west] {$\pi$};
+\draw (9.1,-3) node[anchor=north west] {$\sqrt[]{2}$};
+%\draw (6,-4.7) node[anchor=north west] {$-\frac{\pi}{2}$};
+%\draw (9.8,1.6) node[anchor=north west] {$\frac{5}{2}$};
+\draw (10.5,3) node[anchor=north west] {$\frac{1}{\sqrt{2}}$};
+%\draw (4.4,7.3) node[anchor=north west] {$3$};
+\draw (-0.1,-5.3) node[anchor=north west] {$\sqrt[8]{15}$};
+%\draw (-4.9,1.5) node[anchor=north west] {$-5$};
 \draw (11.8,-0.9) node[anchor=north west] {$-\frac{\pi}{2}$};
-\draw (-0.6,6.8) node[anchor=north west] {$75$};
-\draw (-3.7,-3) node[anchor=north west] {$-3$};
+\draw (-0.6,6.8) node[anchor=north west] {$0,10110111011110\ldots$};
+%\draw (-3.7,-3) node[anchor=north west] {$-3$};
 \end{tikzpicture}
 
 Lukualueita voidaan laajentaa lisää vielä tästäkin, esimerkiksi \emph{imaginaariluvut} ovat lukuja, jotka eivät ole reaalilukuja, vaan lukuja, joita ei voi edes sijoittaa lukusuoralle. Reaalilukuja ja imaginaarilukuja kutsutaan yhdessä \emph{kompleksiluvuiksi}.
