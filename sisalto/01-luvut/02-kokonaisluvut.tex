@@ -237,9 +237,12 @@ Kerto- ja jakolasku kumoavat toisensa
 
 \section{Lausekkeiden sieventäminen}
 
-Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin.
+Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan \textit{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi.
 
-Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella eri tavalla. Esimerkiksi merkinnät $42$, $-(-42)$, $6\cdot 7$ ja $(50-29)\cdot 2$ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
+Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella eri tavalla. Esimerkiksi merkinnät \begin{align*}
+                & 42 \\ & -(-42) \\ & 6 \cdot 7 \\ & (50-29) \cdot 2                                                                                                      
+                                                                                                                 \end{align*}
+tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
 
 \laatikko{
 Yhteenlaskut voi laskea missä järjestyksessä tahansa
@@ -259,7 +262,11 @@ Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistet
 Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee miinusmerkin kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
 }
 
-Esim. $5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$
+Esim. \begin{align*}
+5-8+7-2 &= 5+(-8)+7+(-2)
+     &=(-2)+(-8)+5+7
+     &=-2-8+5+7
+      \end{align*}
 
 Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
 
@@ -281,7 +288,11 @@ Esim. $5 \cdot 6 = 6 \cdot 5$
 Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun käänteisluvulla kertomisena.
 }
 
-Esim. $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
+Esim. \begin{align*}
+	       5:8\cdot 7:2 &=5\cdot\frac18\cdot 7\cdot\frac12 \\
+		    &=7\cdot \frac12\cdot\frac18\cdot 5 \\ 
+		    &=7:2:8\cdot 5
+      \end{align*}
 
 Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava erittäin tärkeä sääntö:
 
@@ -302,7 +313,11 @@ Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan yhdistää 
 \end{itemize}
 }
 
-Esimerkiksi seuraava laskutoimitus on helppo laske osittelulain avulla: $2574\cdot 542-2574\cdot 541 = 2574\cdot (542-541) = 2574\cdot 1 = 2574$
+Esimerkiksi seuraava laskutoimitus on helppo laskea osittelulain avulla: 
+     \begin{align*}
+	  2574\cdot 542-2574\cdot 541 &= 2574\cdot (542-541)  \\ &= 2574\cdot 1 \\ &= 2574
+     \end{align*}
+
 
 Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
     
