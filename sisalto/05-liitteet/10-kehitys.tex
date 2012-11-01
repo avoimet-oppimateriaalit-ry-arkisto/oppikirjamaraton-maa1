@@ -1,0 +1,113 @@
+\chapter{Kirjan kehitykseen osallistuminen}
+
+Tässä liitteessä kuvataan, kuinka voit osallistua kirjan kehittämiseen.
+
+Työkalut ja niiden käyttötarkoitus lyhyesti:
+
+\begin{enumerate}
+
+\item Virheraportit https://github.com/linjaaho/oppikirjamaraton-maa1/issues
+\item Versionhallinta https://github.com/linjaaho/oppikirjamaraton-maa1
+\item Git-työkalu omalle koneelle: http://git-scm.com/
+\item Koodin muokkaamiseen http://www.xm1math.net/texmaker/
+\item Tekstin prosessointiin \LaTeX (eri distribuutioita)
+\item Kuvituksiin mm. GeoGebra: http://www.geogebra.org/cms/
+
+\end{enumerate}
+
+\section{Tee tunnus github.com:iin}
+
+Tee tunnus githubiin. Github.com on palvelu, joka antaa ilmaista palvelintilaa avoimen lähdekoodin projekteille.
+
+\laatikko{
+https://github.com/signup/free
+}
+
+\section{Forkkaa projekti ja aloita työskentely}
+
+Forkkaaminen (fork) on github-toimenpide, joka tarkoittaa sitä että teet oman versiosi kirjasta. Työstäessäsi muutoksia, teet ensin muutokset omaan versioosi jonka jälkeen lähetät muutostoiveen (pull request) pääprojektin hallinnoijalle.
+
+\begin{enumerate}
+
+\item Kirjaudu sisään github.com:iin ja mene osoitteeseen https://github.com/linjaaho/oppikirjamaraton-maa1/
+\item Etsi fork -nappula ja paina sitä (oikea ylänurkka)
+\item Onnittelut! Olet luonut oman kopioisi projektista. 
+
+\end{enumerate}
+
+Voit muokata omaa versiotasi suoraan githubin nettisivuilta (Edit). Kun olet tehnyt muutoksen nettikäyttöliittymässä, kuvaile yhdellä rivillä mitä teit ja paina Commit changes.
+
+\section{Pull request}
+
+Kun olet tehnyt muutoksen omaan kopioosi, voit lähettää muutosehdotukset suoraan pääkehittäjälle tekemällä Pull Request-muutosehdotuksen. Tämä tapahtuu painamalla Pull Request nappulaa githubissa oman kopiosi sivulla.
+
+Voit tarkastella tekemiäsi muutoksia githubista käsin. Kirjoita pull requestillesi hyvä ja ytimekäs kuvaus.
+
+\laatikko{
+Pull requestit syvällisemmin: https://help.github.com/articles/using-pull-requests
+}
+
+Pienet muutokset, kuten kirjoitusvirheet, voit tehdä suoraan githubin nettikäyttöliittymässä. Isompia muutoksia varten kannattaa asentaa \LaTeX ja git omalle koneellesi, niin voit kokeilla miltä lopputulos näyttää ja muokata koodia tehokkaammin.
+
+\section{Versionhallinta omalle koneelle: git}
+
+Jotta pääsisit paremmin muokkaamaan ja tarkastelemaan koodia, kannattaa asentaa omalle koneelle versionhallintatyökalu. Github tarjoaa omat työkalunsa eri käyttöjärjestelmille, mutta voit myös asentaa alkuperäisen git-versiohallintajärjestelmän osoitteesta http://git-scm.com/
+
+Tässä oppaassa käydään läpi komentorivityökalu-komennot. Vastaavat komennot graafisista työkaluista on helppo löytää. Kaikki komennot suoritetaan pääkansiosta (oppikirjamaraton-maa1). Korvaa tagit (<tagi>) omilla tiedoillasi.
+
+\subsection{Tiedostot omalle koneelle}
+
+\begin{verbatim}
+git clone https://github.com/<oma tunnus>/oppikirjamaraton-maa1.git
+cd oppikirjamaraton-maa1
+\end{verbatim}
+
+\subsection{Päähaaran asettaminen}
+
+Tämä toiminto pitää tehdä, jotta voit tehdä yhteistyötä projektin vetäjän kanssa.
+
+\begin{verbatim}
+git remote add upstream https://github.com/linjaaho/oppikirjamaraton-maa1.git
+\end{verbatim}
+
+\subsection{Muutoksien päivittäminen päähaarasta}
+
+\begin{verbatim}
+git fetch upstream
+git merge upstream/master
+\end{verbatim}
+
+\subsection{Omien muutoksien lähettäminen}
+
+\begin{verbatim}
+git commit -m "<muutoksen kuvaus>" -a
+git push origin master
+\end{verbatim}
+
+Kun olet saanut valmiiksi muutokset, tee pull request github.com:n kautta.
+
+\subsection{Lähdekoodin katsominen ja muokkaaminen}
+
+Voit käyttää koodin muokkaamiseen mitä tahansa tekstieditoria, vaikkapa notepadia. Erillisen tähän tarkoituksene soveltuvan ohjelman asentaminen on kuitenkin suositeltavaa, tässä eräs hyväksi koettu ohjelma: http://www.xm1math.net/texmaker/
+
+\section{lopullisen version kääntämiseen \LaTeX}
+
+\LaTeX on työkalu, jolla saat muutettua tekstimuotoisen lähdekoodin kauniiseen muotoon esim. PDF-formaattiin. Tarvitset tä
+
+\begin{itemize}
+
+\item Mac: http://www.tug.org/mactex/
+\item Windows: http://miktex.org/
+\item Ubuntu: aptitude install latex
+
+\end{itemize}
+
+Komentoriviltä kirja käännetään seuraavilla komennoilla:
+
+\begin{verbatim}
+cd sisalto
+pdflatex kokokirja.tex
+\end{verbatim}
+
+Lyhyt \LaTeX -muistilehtiö: http://www.stdout.org/~winston/latex/latexsheet-a4.pdf
+
