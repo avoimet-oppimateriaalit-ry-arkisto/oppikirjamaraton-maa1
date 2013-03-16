@@ -81,7 +81,9 @@
 \usepackage{cmbright}
 %\usepackage{lmodern}
 
-\renewcommand{\familydefault}{\sfdefault}
+% https://github.com/sliedes/oppikirjamaraton-maa1/commit/1e9916c0ff73406e85422c5bebbd9e461e8c842e
+%\renewcommand{\familydefault}{\sfdefault}
+% Ei näyttänyt ylläoleva vaikuttavan mitenkään - fontti määritelty jossain muualla?
 \fontfamily{\familydefault}
 
 \usepackage{titlesec}
@@ -229,6 +231,15 @@
 
 % Jotta mikro-etuliitteen saisi pystyyn: $\upmu$
 \usepackage{upgreek}
+
+% https://github.com/sliedes/oppikirjamaraton-maa1/commit/c9a8d834ac8b0b50166f973ec856e94c5c65dcab
+% hieman normaalia isompi hyphenpenalty -> isompia sanavälejä, mutta
+% vähemmän tavuviivoja
+\usepackage{hyphenat}
+\hyphenpenalty=1000
+% -> Ei kyllä näytä vaikuttavan yhtään mihinkään, ainakaan ensimmäisellä
+% 22 sivulla.
+ 
 
 % Kertoo mathtoolsin olevan käytössä. Kehitysversioissa ei ole mathtoolsia.
 \newif\iftools

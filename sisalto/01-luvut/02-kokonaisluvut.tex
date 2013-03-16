@@ -89,7 +89,7 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
     
     $5-(+8)$ ''viidestä vähennetään $+8$''
     
-    Tämä tarkoittaa samaa kuin 5-8. Lukusuoralla siis liikutaan 8 pykälää taaksepäin.
+    Tämä tarkoittaa samaa kuin $5-8$. Lukusuoralla siis liikutaan 8 pykälää taaksepäin.
 
 %säädetään kuva vähän irti tuosta edeltävästä tektistä
 \vspace{0.3cm}     
@@ -101,7 +101,7 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 
 %lukiolaiset pitivät näitä epäselvinä kuvina
     
-    Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, se kasvaa yhdellä. Kun lukuun lisätään $0$, se ei kasva lainkaan. Kun lukuun lisätään negatiivinen luku, esim. $-1$, on luonnollista ajatella, että se pienenee. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua. Siksi on sovittu, että $5+(-8)$ on yhtä suuri kuin $5-8$.
+    Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, se kasvaa yhdellä. Kun lukuun lisätään $0$, se ei kasva lainkaan. Kun lukuun lisätään negatiivinen luku, esimerkiksi $-1$, on luonnollista ajatella, että se pienenee. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua. Siksi on sovittu, että $5+(-8)$ on yhtä suuri kuin $5-8$.
     
 %säädetään kuva vähän irti tuosta edeltävästä tektistä
 \vspace{0.3cm}     
@@ -247,9 +247,11 @@ tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $
 \laatikko{
 Yhteenlaskut voi laskea missä järjestyksessä tahansa
 
-$a+b=b+a$ (vaihdantalaki)
-
-$a+(b+c)=(a+b)+c=a+b+c$ (liitäntälaki)
+\begin{tabular}{ll}
+  $a+b=b+a$\qquad\qquad&(vaihdantalaki)\\
+  \\
+  $a+(b+c)=(a+b)+c=a+b+c$\qquad\qquad&(liitäntälaki)
+\end{tabular} 
 }
 
 Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3+5)$.
@@ -262,25 +264,30 @@ Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistet
 Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee miinusmerkin kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
 }
 
-Esim. \begin{align*}
-5-8+7-2 &= 5+(-8)+7+(-2)
-     &=(-2)+(-8)+5+7
-     &=-2-8+5+7
-      \end{align*}
+\begin{esimerkki} 
+$5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$ 
+\end{esimerkki}
 
 Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
 
 \laatikko{
 Kertolaskut voi laskea missä järjestyksessä tahansa
 
-$a\cdot b=b\cdot a$ (vaihdantalaki)
-
-$a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$ (liitäntälaki)
+\begin{tabular}{ll}
+  $a\cdot b=b\cdot a$\qquad\qquad&(vaihdantalaki)\\
+  \\
+  $a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$\qquad\qquad&(liitäntälaki)
+\end{tabular} 
 }
 
 
 
-Esim. $5 \cdot 6 = 6 \cdot 5$
+\begin{esimerkki}
+
+$5 \cdot 6 = 6 \cdot 5$
+ 
+ $2 \cdot (1+2) = 2 \cdot 1 + 2 \cdot 2$
+\end{esimerkki} 
 
 %$2 \cdot (1+2) = 2 \cdot 1 + 2 \cdot 2$
 
@@ -288,16 +295,14 @@ Esim. $5 \cdot 6 = 6 \cdot 5$
 Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun käänteisluvulla kertomisena.
 }
 
-Esim. \begin{align*}
-	       5:8\cdot 7:2 &=5\cdot\tfrac18\cdot 7\cdot\tfrac12 \\
-		    &=7\cdot \tfrac12\cdot\tfrac18\cdot 5 \\ 
-		    &=7:2:8\cdot 5
-      \end{align*}
+\begin{esimerkki}
+$5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
+\end{esimerkki} 
 
 Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava erittäin tärkeä sääntö:
 
 \laatikko{
-$a(b+c) = ab+ac$ (osittelulaki)
+$a(b+c)=ab+ac$\qquad\qquad(osittelulaki)
 
 Vasemmalta oikealle luettaessa puhutaan sulkujen avaamisesta. Oikealta vasemmalle päin mentäessä puhutaan \emph{yhteisen tekijän ottamisesta}.
 }
@@ -308,7 +313,7 @@ Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan yhdistää 
 \begin{itemize}
 \item $(b+c)a = a(b+c) = ab+ac = ba+ca$ (Sovellettu vaihdantalakia)
 \item $a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad$ (Sovellettu liitäntälakia)
-\item $a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$ (Sovellettu vähennyslakun määritelmää vastaluvun avulla)
+\item $a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac$ (Sovellettu vähennyslaskun määritelmää vastaluvun avulla)
 \item $(b+c):a = (b+c)\cdot\dfrac1a = b\cdot\dfrac1a+c\cdot\dfrac1a = b:a+c:a$ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla. Tämä ominaisuus esitellään myöhemmin rationaalilukujen yhteydessä.)
 \end{itemize}
 }
@@ -326,15 +331,15 @@ Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausek
    
     
         \begin{tehtava}
-        Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli celciusasteita tai euroja.)
+        Kirjoita laskutoimitukseksi. (Laskuun ei tarvitse merkitä yksikköjä, eli celsiusasteita tai euroja.)
 
 
         \begin{enumerate}[a)]
-            \item Pakkasta on aluksi $-10 ^{\circ}$C, ja sitten se lisääntyy kahdella pakkasasteella.
-            \item Pakkasta on aluksi $-20 ^{\circ}$C, ja sitten se hellittää (vähentyy) kolme (pakkas)astetta.
-            \item Lämpötila on aluksi $17 ^{\circ}$C, ja sitten se vähentyy viisi astetta.
-            \item Lämpötila on aluksi $5 ^{\circ}$C, ja sitten se kasvaa kuusi astetta.
-            \item Mies on mafialle $30 000$ euroa velkaa ja menehtyy. Hänen kolme
+            \item Pakkasta on aluksi $-10~^{\circ}$C, ja sitten se lisääntyy kahdella pakkasasteella.
+            \item Pakkasta on aluksi $-20~^{\circ}$C, ja sitten se hellittää (vähentyy) kolme (pakkas)astetta.
+            \item Lämpötila on aluksi $17~^{\circ}$C, ja sitten se vähentyy viisi astetta.
+            \item Lämpötila on aluksi $5~^{\circ}$C, ja sitten se kasvaa kuusi astetta.
+            \item Mies on mafialle $30~000$ euroa velkaa ja menehtyy. Hänen kolme 
                 poikaansa jakavat velan tasan keskenään. Kuinka paljon kukin on
                 velkaa mafialle? Merkitse velkaa negatiivisella luvulla.
         \end{enumerate}
@@ -345,7 +350,7 @@ Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausek
                 \item $-20-(-3)=-17$
                 \item $17-5=12$
                 \item $5+6=11$
-                \item $\dfrac{-30 000}{3}=10 000$
+                \item $\dfrac{-30~000}{3}=10~000$
             \end{enumerate}
         \end{vastaus}
     \end{tehtava}
@@ -402,23 +407,23 @@ Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausek
 
     \begin{tehtava}
     Mitkä seuraavista luvuista ovat jaollisia luvulla $4$? Jos luku $a$ on jaollinen luvulla $4$, kerro, millä kokonaisluvulla $b$ pätee $a = 4 \cdot b$.\\
-    a) 1 \quad b) 12  \quad c) 13 \quad d) 2 \quad e) -20 \quad f) 0
+    a) $1$ \quad b) $12$  \quad c) $13$ \quad d) $2$ \quad e) $-20$ \quad f) $0$
     
     \begin{vastaus}
     \begin{enumerate}[a)]
-    	\item Ei ole jaollinen luvulla 4
-    	\item On jaollinen luvulla 4, $12 = 4 \cdot 3$
-    	\item Ei ole jaollinen luvulla 4
-    	\item Ei ole jaollinen luvulla 4
-    	\item On jaollinen luvulla 4, $-20 = 4 \cdot (-5)$
-    	\item On jaollinen luvulla 4, $0 = 4 \cdot 0$
+        \item Ei ole jaollinen luvulla $4$
+      \item On jaollinen luvulla $4$, $12 = 4 \cdot 3$
+      \item Ei ole jaollinen luvulla $4$
+      \item Ei ole jaollinen luvulla $4$
+      \item On jaollinen luvulla $4$, $-20 = 4 \cdot (-5)$
+      \item On jaollinen luvulla $4$, $0 = 4 \cdot 0$ 
     \end{enumerate}
     \end{vastaus}
     \end{tehtava}
     
     \begin{tehtava}
-    Mitkä seuraavista luvuista ovat alkulukuja? Jos luku ei ole alkuluku, esitä se joidenkin kahden kokonaisluvun (jotka eivät ole ykkönen ja luku itse) tulona.\\
-    a) 6 \quad b) 11 \quad c) 29 \quad d) -27 \quad e) -11 \quad f) 0
+      Mitkä seuraavista luvuista ovat alkulukuja? Jos luku ei ole alkuluku, esitä se joidenkin kahden kokonaisluvun (jotka eivät ole $1$ ja luku itse) tulona.\\
+    a) $6$ \quad b) $11$ \quad c) $29$ \quad d) $-27$ \quad e) $-11$ \quad f) $0$ 
     
     \begin{vastaus}
     \begin{enumerate}[a)]
@@ -435,7 +440,7 @@ Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausek
     
     \begin{tehtava}
     Jaa seuraavat luvut alkutekijöihin.\\
-    a) 12 \quad b) 15 \quad c) 28 \quad d) 30 \quad e) 64 \quad f) 90 \quad g) 100
+    a) $12$ \quad b) $15$ \quad c) $28$ \quad d) $30$ \quad e) $64$ \quad f) $90$ \quad g) $100$
     
     \begin{vastaus}
     \begin{enumerate}[a)]
