@@ -25,6 +25,7 @@
 *.maf
 *.mtc
 *.mtc0
+*.pgf-plot.*
 .DS_Store
 sisalto/ans1.tex
 sisalto/kirja-devel.pdf
