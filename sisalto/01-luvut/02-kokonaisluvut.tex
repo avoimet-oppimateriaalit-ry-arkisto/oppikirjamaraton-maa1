@@ -73,7 +73,17 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
     
     $5+8$ ''viiteen lisätään kahdeksan''
     \begin{center}
-    \includegraphics[scale=0.5]{01-luvut/kuvia/5plus8on13-crop.pdf}
+      %    \includegraphics[scale=0.5]{01-luvut/kuvia/5plus8on13-crop.pdf} FIXME Poista tiedosto samalla kun poistat tämän rivin
+      
+      \begin{lukusuora}{-1}{14}{14}
+        %\lukusuoranuolialas{5}{13}
+        %\lukusuoranuolialas{0}{8}
+        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+        \lukusuorauusi
+        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+       \end{lukusuora}
+       ${\color{red}5}+{\color{blue}8}=13$
     \end{center}
     
     $5+(+8)$ ''viiteen lisätään plus kahdeksan''
@@ -81,10 +91,17 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
     $+8$ tarkoittaa samaa kuin $8$. '$+$'-merkkiä käytetään luvun edessä silloin, kun halutaan korostaa, että kyseessä on nimenomaan positiivinen luku.
     
 %säädetään kuva vähän irti tuosta edeltävästä tektistä
-\vspace{0.3cm}     
+%\vspace{0.3cm}     
     
     \begin{center}
-    \includegraphics[scale=0.5]{01-luvut/kuvia/5plusplus8on13-crop.pdf}
+    % \includegraphics[scale=0.5]{01-luvut/kuvia/5plusplus8on13-crop.pdf} FIXME Poista tiedosto samalla kun poistat tämän rivin
+          \begin{lukusuora}{-1}{14}{14}
+        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+        \lukusuorauusi
+        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+       \end{lukusuora}
+       ${\color{red}5}+({\color{blue}+8})=13$
     \end{center}
     
     $5-(+8)$ ''viidestä vähennetään $+8$''
@@ -95,7 +112,14 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 \vspace{0.3cm}     
     
     \begin{center}
-    \includegraphics[scale=0.5]{01-luvut/kuvia/5miinusplus8onmiinus3-crop.pdf}
+    % \includegraphics[scale=0.5]{01-luvut/kuvia/5miinusplus8onmiinus3-crop.pdf} FIXME Poista tiedosto samalla kun poistat tämän rivin
+              \begin{lukusuora}{-4}{8}{14}
+        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+       \end{lukusuora}
+       ${\color{red}5}-({\color{blue}+8})=-3$
     \end{center}
 
 
@@ -107,8 +131,16 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 \vspace{0.3cm}     
 
     \begin{center}
-    \includegraphics[scale=0.5]{01-luvut/kuvia/5plusmiinus8onmiinus3-crop.pdf}
+    %\includegraphics[scale=0.5]{01-luvut/kuvia/5plusmiinus8onmiinus3-crop.pdf} FIXME Poista tiedosto samalla kun poistat tämän rivin
+                 \begin{lukusuora}{-4}{8}{14}
+        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+       \end{lukusuora}
+       ${\color{red}5}+({\color{blue}-8})=-3$
     \end{center}
+    
     
     $5-(-8)$ ''viidestä vähennetään miinus kahdeksan''
     
@@ -118,7 +150,14 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 \vspace{0.3cm}     
         
     \begin{center}
-    \includegraphics[scale=0.5]{01-luvut/kuvia/5miinusmiinus8on13-crop.pdf}
+    %\includegraphics[scale=0.5]{01-luvut/kuvia/5miinusmiinus8on13-crop.pdf} FIXME Poista tiedosto samalla kun poistat tämän rivin
+    \begin{lukusuora}{-1}{14}{14}
+        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+        \lukusuorauusi
+        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+       \end{lukusuora}
+       ${\color{red}5}-({\color{blue}-8})=13$
     \end{center}
 
 
@@ -148,19 +187,54 @@ Yhteen- ja vähennyslasku kumoavat toisensa
 
     $3 \cdot 4$ ''kolme kappaletta nelosia''
     
-    \missingfigure{$3 \cdot 4$ lukusuoralla}
+   \begin{center}
+    \begin{lukusuora}{-1}{14}{14}
+	\color{red} \lukusuoravaliss{0}{4}{$0$}{$4$}
+	\color{red} \lukusuoravaliss{4}{8}{$4$}{$8$}
+	\color{red} \lukusuoravaliss{8}{12}{$8$}{$12$}
+
+      \end{lukusuora}
+      $3\cdot {\color{red}4}=12$
+    \end{center}
     
     $3 \cdot (-4)$ ''kolme kappaletta miinus-nelosia''
     
-    \missingfigure{$3 \cdot (-4)$ lukusuoralla}
+    
+    \begin{center}
+    \begin{lukusuora}{-13}{2}{14}
+	\color{red} \lukusuoravaliss{-12}{-8}{$-12$}{$-8$}
+	\color{red} \lukusuoravaliss{-8}{-4}{$-8$}{$-4$}
+	\color{red} \lukusuoravaliss{-4}{0}{$-4$}{$0$}
+
+      \end{lukusuora}
+      $3\cdot ({\color{red}-4})=-12$
+    \end{center}
     
     $-3 \cdot 4$ ''miinus-kolme nelinkertaistetaan''
     
-    \missingfigure{$-3 \cdot 4$ lukusuoralla}
+    \begin{center}
+    \begin{lukusuora}{-13}{2}{14}
+	\color{red} \lukusuoravaliss{-12}{-9}{$-12$}{$-9$}
+	\color{red} \lukusuoravaliss{-9}{-6}{$-9$}{$-6$}
+	\color{red} \lukusuoravaliss{-6}{-3}{$-6$}{$-3$}
+	\color{red} \lukusuoravaliss{-3}{0}{$-3$}{$0$}
+
+      \end{lukusuora}
+      ${\color{red}-3}\cdot 4=-12$
+    \end{center}
     
     $-3 \cdot (-4)$ ''miinus-kolme miinus-nelinkertaistetaan''
     
-    \missingfigure{$-3 \cdot (-4)$ lukusuoralla}
+    \begin{center}
+    \begin{lukusuora}{-1}{14}{14}
+	\color{red} \lukusuoravaliss{12}{9}{$12$}{$9$}
+	\color{red} \lukusuoravaliss{9}{6}{$9$}{$6$}
+	\color{red} \lukusuoravaliss{6}{3}{$6$}{$3$}
+	\color{red} \lukusuoravaliss{3}{0}{$3$}{$0$}
+
+      \end{lukusuora}
+      ${\color{red}-3}\cdot (-4)=12$
+    \end{center}
 
 \section{Jakolasku}
 

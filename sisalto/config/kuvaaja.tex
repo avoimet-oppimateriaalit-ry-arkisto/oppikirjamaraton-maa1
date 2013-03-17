@@ -1,0 +1,136 @@
+% Ympäristö kuvaajan plottaamiseen. Käytä jos riittää jotta on helppo päivittää.
+% Käyttö:
+% \begin{kuvaajapohja}{2}{-3.14}{3.14}{-1.25}{1.25}
+% 	\kuvaaja{sin(x)}{hassu kuvaaja}{red}
+% 	\kuvaaja{cos(x)}{hassumpi kuvaaja}{blue}
+% \end{kuvaajapohja}
+% piirtää punaisen sinin ja sinisen kosinin välille -3.14 .. 3.14,
+% y-koordinaatti välillä -1.25 .. 1.25, sinin nimenä hassu kuvaaja
+% ja kosinin nimenä hassumpi kuvaaja, skaalattuna kertoimella 2.
+
+
+% kuvaajapohja-ympäristön parametrit: skaala minx maxx miny maxy
+% asetuksia voi muuttaa laittamalla hakasulkuihin \kuvaajaAsetus*-komentoja.
+\newenvironment{kuvaajapohja}[6][]
+{
+\begin{tikzpicture}
+	\newcommand\kuvaajaNaytaLuvut1
+	\newcommand\kuvaajaNaytaRuudukko1
+	#1
+	
+	\pgfmathsetmacro{\kuvaajasmallgrid}{0.25}
+	\pgfmathsetmacro{\kuvaajastep}{1}
+	\ifthenelse{\lengthtest{#2 pt < 0.8 pt}}{
+		\pgfmathsetmacro{\kuvaajasmallgrid}{0.5}
+	}{}
+	\ifthenelse{\lengthtest{#2 pt < 0.4 pt}}{
+		\pgfmathsetmacro{\kuvaajasmallgrid}{1}
+		\pgfmathsetmacro{\kuvaajastep}{2}
+	}{}
+	
+	
+	\if\kuvaajaNaytaRuudukko1
+		\draw[color=black!10!white, step=#2*\kuvaajasmallgrid] (#2*#3, #2*#5) grid (#2*#4, #2*#6);
+		\draw[color=black!50!white, step=#2] (#2*#3, #2*#5) grid (#2*#4, #2*#6);
+	\fi
+	
+	\draw[arrows=-triangle 45, thick] (#2*#3,0) -- (#2*#4,0);
+	\draw[arrows=-triangle 45, thick] (0,#2*#5) -- (0,#2*#6);
+	
+	\if\kuvaajaNaytaLuvut1
+		\pgfmathsetmacro{\xalaraja}{-#3-0.01}
+		\pgfmathsetmacro{\xylaraja}{#4-0.01}
+		\pgfmathsetmacro{\yalaraja}{-#5-0.01}
+		\pgfmathsetmacro{\yylaraja}{#6-0.01}
+		\foreach \sarake in {0,...,\xylaraja}
+		{
+			\ifthenelse{\lengthtest{\sarake pt > 0 pt}}{
+				\pgfmathsetmacro{\kuvaajajakojaannos}{mod(\sarake, \kuvaajastep)}
+				\ifthenelse{\lengthtest{\kuvaajajakojaannos pt = 0 pt}}{
+					\draw (#2*\sarake + 0.1, 0) node[above] {\footnotesize\sarake};
+					\draw[thick] (#2*\sarake, -0.07) -- (#2*\sarake, 0.07);
+				}{}
+			}{}
+		}
+		\foreach \sarake in {0,...,\xalaraja}
+		{
+			\ifthenelse{\lengthtest{\sarake pt > 0 pt}}{
+				\pgfmathsetmacro{\kuvaajajakojaannos}{mod(\sarake, \kuvaajastep)}
+				\ifthenelse{\lengthtest{\kuvaajajakojaannos pt = 0 pt}}{
+					\draw (-#2*\sarake + 0.1, 0) node[above] {\footnotesize-\sarake};
+					\draw[thick] (-#2*\sarake, -0.07) -- (-#2*\sarake, 0.07);
+				}{}
+			}{}
+		}
+		\foreach \rivi in {0,...,\yylaraja}
+		{
+			\ifthenelse{\lengthtest{\rivi pt > 0 pt}}{
+				\pgfmathsetmacro{\kuvaajajakojaannos}{mod(\rivi, \kuvaajastep)}
+				\ifthenelse{\lengthtest{\kuvaajajakojaannos pt = 0 pt}}{
+					\draw (0, #2*\rivi) node[right] {\footnotesize\rivi};
+					\draw[thick] (-0.07, #2*\rivi) -- (0.07, #2*\rivi);
+				}{}
+			}{}
+		}
+		\foreach \rivi in {0,...,\yalaraja}
+		{
+			\ifthenelse{\lengthtest{\rivi pt > 0 pt}}{
+				\pgfmathsetmacro{\kuvaajajakojaannos}{mod(\rivi, \kuvaajastep)}
+				\ifthenelse{\lengthtest{\kuvaajajakojaannos pt = 0 pt}}{
+					\draw (0, -#2*\rivi) node[right] {\footnotesize-\rivi};
+					\draw[thick] (-0.07, -#2*\rivi) -- (0.07, -#2*\rivi);
+				}{}
+			}{}
+		}
+	\fi
+%		\draw (#2, 0) node[above] {1};
+%		\draw (0, #2) node[right] {1};
+	\newcommand\kuvaajascale{#2}
+	\newcommand\kuvaajaminx{#3}
+	\newcommand\kuvaajamaxx{#4}
+	\newcommand\kuvaajaminy{#5}
+	\newcommand\kuvaajamaxy{#6}
+}
+{
+\end{tikzpicture}
+}
+
+% kuvaajapohjaan hakasulkuihin annettava komento, joka poistaa luvut akseleilta.
+\newcommand{\kuvaajaAsetusEiLukuja}{
+	\renewcommand\kuvaajaNaytaLuvut0
+}
+
+% kuvaajapohjaan hakasulkuihin annettava komento, joka poistaa kaikki ruudukot
+\newcommand{\kuvaajaAsetusEiRuudukkoa}{
+	\renewcommand\kuvaajaNaytaRuudukko0
+}
+
+% kuvaaja-komennon parametrit: funktio(x) nimi väri
+\newcommand{\kuvaaja}[3]{
+	\draw[smooth,color=#3,thick,domain=\kuvaajaminx:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+
+% Piirtää pisteen kuvaajaan. Parametrit:
+% x y
+\newcommand{\kuvaajapiste}[2]{
+	\fill (#1*\kuvaajascale, #2*\kuvaajascale) circle (0.07);
+}
+
+% Näytä katkoviivalla funktion kohta ja arvo.
+% parametrit:
+% kohta arvo kohtanimi arvonimi
+\newcommand{\kuvaajakohtaarvo}[4]{
+	\kuvaajapiste{#1}{#2}
+	\draw[thick, dashed] (#1*\kuvaajascale, 0) -- (#1*\kuvaajascale, #2*\kuvaajascale);
+	\draw[thick, dashed] (0, #2*\kuvaajascale) -- (#1*\kuvaajascale, #2*\kuvaajascale);
+	\ifthenelse{\lengthtest{#2 pt > 0 pt}}{
+		\draw (#1*\kuvaajascale, 0) node[below] {#3};
+	}{
+		\draw (#1*\kuvaajascale, 0) node[above] {#3};
+	}
+	\ifthenelse{\lengthtest{#1 pt > 0 pt}}{
+		\draw (0, #2*\kuvaajascale) node[left] {#4};
+	}{
+		\draw (0, #2*\kuvaajascale) node[right] {#4};
+	}
+}

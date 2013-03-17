@@ -1,0 +1,180 @@
+% Ympäristö välien, pisteiden ja käyrien käyttäytymisen kuvaamiseen
+% lukusuoralla.
+% Käyttö:
+% \begin{lukusuora}{-1}{1}{10}
+% \lukusuoraparaabeli{0.2}{0.8}{1}
+% \lukusuoravalisa{0.2}{0.8}{x}{y}
+% \lukusuoravaliaa{-0.5}{-0.3}{a}{b}
+% \lukusuorapiste{0}{$x^2+y^2$}
+% \lukusuoranimi{0.5}{$+$}
+% \lukusuoraalanimi{0.05}{$-$}
+% \end{lukusuora}
+% 
+% luo lukusuoran joka piirretään 10 pituisena, käyttää sisäisesti
+% koordinaatteja -1..1, ja jolla näytetään väli [0.2, 0.8[ ja
+% väli ]-0.5, -0.3[ nimillä [x, y[ ja ]a, b[. Näyttää pisteen
+% 0 nimellä $x^2+y^2$ ja piirtää paraabelin jonka nollakohdat ovat
+% 0.2 ja 0.8 ja huippu 1. Lisäksi se laittaa +-merkin suoran yläpuolelle
+% kohtaan 0.5 ja --merkin suoran alapuolelle kohtaan 0.05.
+%
+% Mielivaltaisia kuvaajia saa lukusuoralle lukusuorakuvaaja-komennolla.
+% Nuolia lukujen välille saa lukusuoranuoli-komennolla.
+
+
+
+% lukusuora-ympäristön parametrit:
+% alkux loppux viivanpituus
+\newenvironment{lukusuora}[3]
+{
+	\begin{tikzpicture}
+		\pgfmathsetmacro{\LSext}{0.1}
+		\draw[arrows=-triangle 45,line width=0.2mm] (0, 0) -- (#3 + \LSext, 0);
+		\pgfmathsetmacro{\LSax}{#1}
+		\pgfmathsetmacro{\LSy}{0}
+		\pgfmathsetmacro{\LSstep}{1}
+		\pgfmathsetmacro{\LSdx}{#2-#1}
+		\pgfmathsetmacro{\LSpituus}{#3}
+}
+{
+	\end{tikzpicture}
+}
+
+% lukusuoravali??-komennon parametrit:
+% alkux loppux alkunimi loppunimi
+
+% avoimet ja suljetut välit:
+% lukusuoravaliss [a, b]
+% lukusuoravalisa [a, b[
+% lukusuoravalias ]a, b]
+% lukusuoravaliaa ]a, b[
+
+\newcommand{\lukusuoravaliss}[4]{
+	\lukusuoravali{#1}{#2}{#3}{#4}{black}{black}
+}
+\newcommand{\lukusuoravalisa}[4]{
+	\lukusuoravali{#1}{#2}{#3}{#4}{black}{white}
+}
+\newcommand{\lukusuoravalias}[4]{
+	\lukusuoravali{#1}{#2}{#3}{#4}{white}{black}
+}
+\newcommand{\lukusuoravaliaa}[4]{
+	\lukusuoravali{#1}{#2}{#3}{#4}{white}{white}
+}
+
+\newcommand{\lukusuoravali}[6]{
+	\ifthenelse{\equal{#1}{}}{
+		\pgfmathsetmacro{\LSxa}{0}
+	}{
+		\pgfmathsetmacro{\LSxa}{\LSpituus*(#1-\LSax)/\LSdx}
+	}
+	\ifthenelse{\equal{#2}{}}{
+		\pgfmathsetmacro{\LSxb}{\LSpituus}
+	}{
+		\pgfmathsetmacro{\LSxb}{\LSpituus*(#2-\LSax)/\LSdx}
+	}
+	\draw[line width=0.6mm] (\LSxa,\LSy) -- (\LSxb,\LSy);
+	\ifthenelse{\equal{#1}{}}{}{
+		\fill (\LSxa,\LSy) circle (0.1);
+		\fill[color=#5] (\LSxa,\LSy) circle (0.08);
+		% Integraalimerkit ovat riittävän korkeita saamaan bounding boxit saman
+		% kokoisiksi.
+		\draw (\LSxa,\LSy) node[above] {\phantom{$\int$}#3\phantom{$\int$}};
+	}
+	\ifthenelse{\equal{#2}{}}{}{
+		\fill (\LSxb,\LSy) circle (0.1);
+		\fill[color=#6] (\LSxb,\LSy) circle (0.08);
+		\draw (\LSxb,\LSy) node[above] {\phantom{$\int$}#4\phantom{$\int$}};
+	}
+}
+
+% lukusuorapiste-komennon parametrit:
+% x nimi
+\newcommand{\lukusuorapiste}[2]{
+	\pgfmathsetmacro{\LSx}{\LSpituus*(#1-\LSax)/\LSdx}
+	\fill (\LSx,\LSy) circle (0.1);
+	\draw (\LSx,\LSy) node[above] {\phantom{$\int$}#2\phantom{$\int$}};
+}
+
+% lukusuorapienipiste-komennon parametrit:
+% x nimi
+\newcommand{\lukusuorapienipiste}[2]{
+	\pgfmathsetmacro{\LSx}{\LSpituus*(#1-\LSax)/\LSdx}
+	\fill (\LSx,\LSy) circle (0.07);
+	\draw (\LSx,\LSy) node[above] {\phantom{$\int$}#2\phantom{$\int$}};
+}
+
+% lukusuorapystyviiva-komennon parametrit:
+% x nimi
+\newcommand{\lukusuorapystyviiva}[2]{
+	\pgfmathsetmacro{\LSx}{\LSpituus*(#1-\LSax)/\LSdx}
+	\draw[thick] (\LSx, \LSy-0.1) -- ++(0, 0.2);
+	\draw (\LSx,\LSy) node[above] {\phantom{$\int$}#2\phantom{$\int$}};
+}
+
+% lukusuoranimi-komennon parametrit:
+% x nimi
+\newcommand{\lukusuoranimi}[2]{
+	\pgfmathsetmacro{\LSx}{\LSpituus*(#1-\LSax)/\LSdx}
+	\draw (\LSx,\LSy) node[above] {\phantom{$\int$}#2\phantom{$\int$}};
+}
+
+% lukusuoraalanimi-komennon parametrit:
+% x nimi
+\newcommand{\lukusuoraalanimi}[2]{
+	\pgfmathsetmacro{\LSx}{\LSpituus*(#1-\LSax)/\LSdx}
+	\draw (\LSx,\LSy) node[below] {\phantom{$\int$}#2\phantom{$\int$}};
+}
+
+% lukusuoraparaabeli-komennon parametrit:
+% nollakohta1 nollakohta2 huippuy
+% kannattaa olla huippuy = -1 tai 1
+\newcommand{\lukusuoraparaabeli}[3]{
+	\pgfmathsetmacro{\LSxa}{\LSpituus*(#1-\LSax)/\LSdx}
+	\pgfmathsetmacro{\LSxb}{\LSpituus*(#2-\LSax)/\LSdx}
+	\providecommand{\LSkaava}{-4*(#3)*(x-\LSxa)*(x-\LSxb)/((\LSxa-\LSxb)**2)}
+	\begin{scope}[shift={(0, \LSy)}]
+		\draw[smooth,samples=300,thick,domain=0:\LSpituus,samples=300] plot function{\LSkaava > -1.5 ? (\LSkaava < 1.5 ? \LSkaava : NaN) : NaN};
+	\end{scope}
+}
+
+% lukusuorakuvaaja-komennon parametrit:
+% kaava
+\newcommand{\lukusuorakuvaaja}[1]{
+	\pgfmathsetmacro{\LSxa}{-\LSpituus*\LSax/\LSdx}
+	\begin{scope}[shift={(\LSxa, \LSy)}]
+		\draw[smooth,samples=300,thick,domain=\LSax:\LSax+\LSdx,xscale=\LSpituus/\LSdx] plot function{(#1) > -1.5 ? ((#1) < 1.5 ? (#1) : NaN) : NaN};
+	\end{scope}
+}
+
+% Piirtää nuolen luvusta x1 lukuun x2 alapuolelta.
+% parametrit:
+% x1 x2
+\newcommand{\lukusuoranuoli}[2]{
+	\pgfmathsetmacro{\LSxa}{\LSpituus*((#1)-\LSax)/\LSdx}
+	\pgfmathsetmacro{\LSxb}{\LSpituus*((#2)-\LSax)/\LSdx}
+	\pgfmathsetmacro{\LSca}{0.8 * \LSxa + 0.2 * \LSxb}
+	\pgfmathsetmacro{\LScb}{0.2 * \LSxa + 0.8 * \LSxb}
+	\draw[arrows=-triangle 45,thick,color=red] (\LSxa, \LSy) .. controls (\LSca, \LSy-1) and (\LScb, \LSy-1) .. (\LSxb, \LSy);
+}
+
+% Piirtää nuolen luvusta x1 lukuun x2 alemmalle suoralle.
+% parametrit:
+% x1 x2
+\newcommand{\lukusuoranuolialas}[2]{
+	\pgfmathsetmacro{\LSxa}{\LSpituus*((#1)-\LSax)/\LSdx}
+	\pgfmathsetmacro{\LSxb}{\LSpituus*((#2)-\LSax)/\LSdx}
+	\pgfmathsetmacro{\LSca}{0.8 * \LSxa + 0.2 * \LSxb}
+	\pgfmathsetmacro{\LScb}{0.2 * \LSxa + 0.8 * \LSxb}
+	\draw[arrows=-triangle 45,thick,color=red] (\LSxa, \LSy) -- (\LSxb, \LSy-\LSstep);
+}
+
+% Tee uusi suora alle.
+\newcommand{\lukusuorauusi}[0]{
+	\pgfmathsetmacro{\LSy}{\LSy-\LSstep}
+	\draw[arrows=-triangle 45,line width=0.2mm] (0, \LSy) -- (\LSpituus + \LSext, \LSy);
+}
+
+% Pakota lukusuoran bounding boxiksi maksimaalinen.
+\newcommand{\lukusuoraisobbox}[0]{
+	\path[use as bounding box] (0, -1.5) rectangle (\LSpituus + \LSext, 1.5);
+}

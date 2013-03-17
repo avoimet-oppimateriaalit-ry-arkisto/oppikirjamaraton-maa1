@@ -32,8 +32,13 @@ Jos aste on pariton, kuvaaja muodostaa ''kaksoismutkan'' ja potenssifunktio
 saa sekä positiivisia että negatiivisia arvoja.
 \end{itemize}
 
-\missingfigure{Potenssifunktioiden kuvaajat -- yksi parillisilla potensseilla ja toinen parittomilla (kerroin a positiivinen).}
-
+%\missingfigure{Potenssifunktioiden kuvaajat -- yksi parillisilla potensseilla ja toinen parittomilla (kerroin a positiivinen).}
+\begin{center}
+\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
+\kuvaaja{0.2*x**2}{$\frac{1}{5}x^2$}{red}
+\kuvaaja{0.2*x**3}{$\frac{1}{5}x^3$}{blue}
+\end{kuvaajapohja}
+\end{center}
 Potenssifunktion tärkeitä erikoistapauksia ovat asteluvut $n = 1$ ja $n = -1$.
 Kun $n = 1$, saadaan edellisessä luvussa esitelty suoraan verrannollinen
 riippuvuus $x$:n ja $f(x)$:n välillä, ja kun $n = -1$, muuttuja $x$ ja
@@ -45,8 +50,27 @@ Tällöin funktion muoto muuttuu merkittävästi. Funktio ei myöskään ole
 enää määritelty kohdassa $x = 0$, vaan funktion arvot
 ''räjähtävät äärettömyyteen'', kun y-akselia lähestytään:
 
-\missingfigure{Potenssifunktioiden kuvaajat - yksi potenssilla -1
-ja toinen potenssilla -2.}
+%\missingfigure{Potenssifunktioiden kuvaajat - yksi potenssilla -1 ja toinen potenssilla -2.}
+
+\begin{center}
+\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
+%\kuvaaja{x**(-1)}{$\frac{1}{5}x^2$}{red}
+%\kuvaaja{x**(-2)}{$\frac{1}{5}x^3$}{blue}
+% FIXME: alla oleva puukotus, että saa äärettömyyteen menevät käppyrät piirtymään oikein
+\newcommand{\kuvaajaneg}[3]{
+\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+\newcommand{\kuvaajapos}[3]{
+\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+\kuvaajaneg{x**(-1)}{$x^{-1}$}{red}
+\kuvaajaneg{x**(-2)}{}{blue}
+
+\kuvaajapos{x**(-1)}{}{red}
+\kuvaajapos{x**(-2)}{$x^{-2}$}{blue}
+
+\end{kuvaajapohja}
+\end{center}
 
 %Potenssifunktiota käsitellään samalla lailla riippumatta eksponentin
 %etumerkistä. Huomaa kuitenkin, että $\frac{1}{x^n} \neq 0 $ kaikilla $x$:n %arvoilla.
